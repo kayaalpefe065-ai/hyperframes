@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <script src="assets/timing.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #a6dcf7;
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      #world {
+        position: absolute;
+        inset: 0;
+        background: #a6dcf7;
+      }
+      #world-canvas {
+        display: block;
+        width: 1080px;
+        height: 1920px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="54.49"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div
+        id="world"
+        class="clip"
+        data-start="0"
+        data-duration="54.49"
+        data-track-index="0"
+        style="z-index: 1"
+      >
+        <canvas id="world-canvas" width="1080" height="1920"></canvas>
+      </div>
+      <div
+        id="hud"
+        data-composition-id="hud"
+        data-composition-src="compositions/hud.html"
+        data-start="0"
+        data-duration="54.49"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 5"
+      ></div>
+      <div
+        id="fx"
+        data-composition-id="fx"
+        data-composition-src="compositions/fx.html"
+        data-start="0"
+        data-duration="54.49"
+        data-track-index="4"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 4"
+      ></div>
+      <div
+        id="cards"
+        data-composition-id="cards"
+        data-composition-src="compositions/cards.html"
+        data-start="0"
+        data-duration="54.49"
+        data-track-index="2"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 8"
+      ></div>
+      <div
+        id="captions"
+        data-composition-id="captions"
+        data-composition-src="compositions/captions.html"
+        data-start="0"
+        data-duration="54.49"
+        data-track-index="3"
+        data-track-kind="captions"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 10"
+      ></div>
+      <audio
+        id="vo"
+        class="clip"
+        src="assets/vo.mp3"
+        data-start="0"
+        data-duration="54.49"
+        data-track-index="5"
+        data-volume="1"
+      ></audio>
+      <audio
+        id="sfx-power"
+        class="clip"
+        src="assets/riser.mp3"
+        data-start="0.000"
+        data-track-index="6"
+        data-volume="0.35"
+      ></audio>
+      <audio
+        id="sfx-cut"
+        class="clip"
+        src="assets/whoosh.mp3"
+        data-start="6.393"
+        data-track-index="7"
+        data-volume="0.4"
+      ></audio>
+      <audio
+        id="sfx-flex"
+        class="clip"
+        src="assets/impact-bass-2.mp3"
+        data-start="11.569"
+        data-track-index="8"
+        data-volume="0.4"
+      ></audio>
+      <audio
+        id="sfx-charge"
+        class="clip"
+        src="assets/riser.mp3"
+        data-start="22.133"
+        data-track-index="9"
+        data-volume="0.45"
+      ></audio>
+      <audio
+        id="sfx-boom1"
+        class="clip"
+        src="assets/crash.wav"
+        data-start="24.332"
+        data-track-index="10"
+        data-volume="0.8"
+      ></audio>
+      <audio
+        id="sfx-bass1"
+        class="clip"
+        src="assets/impact-bass-1.mp3"
+        data-start="24.332"
+        data-track-index="11"
+        data-volume="0.5"
+      ></audio>
+      <audio
+        id="sfx-boom2"
+        class="clip"
+        src="assets/crash.wav"
+        data-start="28.318"
+        data-track-index="12"
+        data-volume="0.6"
+      ></audio>
+      <audio
+        id="sfx-boom3"
+        class="clip"
+        src="assets/impact-bass-1.mp3"
+        data-start="29.218"
+        data-track-index="13"
+        data-volume="0.5"
+      ></audio>
+      <audio
+        id="sfx-boom4"
+        class="clip"
+        src="assets/crash.wav"
+        data-start="30.218"
+        data-track-index="14"
+        data-volume="0.8"
+      ></audio>
+      <audio
+        id="sfx-jump"
+        class="clip"
+        src="assets/pop.mp3"
+        data-start="36.551"
+        data-track-index="15"
+        data-volume="0.4"
+      ></audio>
+      <audio
+        id="sfx-squeeze"
+        class="clip"
+        src="assets/whoosh-short.mp3"
+        data-start="40.525"
+        data-track-index="16"
+        data-volume="0.45"
+      ></audio>
+      <audio
+        id="sfx-later"
+        class="clip"
+        src="assets/whoosh.mp3"
+        data-start="44.862"
+        data-track-index="17"
+        data-volume="0.35"
+      ></audio>
+      <audio
+        id="sfx-out"
+        class="clip"
+        src="assets/whoosh-cinematic.mp3"
+        data-start="51.495"
+        data-track-index="18"
+        data-volume="0.35"
+      ></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+    </script>
+    <script type="module" src="assets/world.js"></script>
+  </body>
+</html>
