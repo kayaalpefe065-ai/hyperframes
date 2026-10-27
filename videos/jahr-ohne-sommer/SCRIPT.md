@@ -12,4 +12,4 @@
 | s8    | Ein einziger Vulkan. Und die halbe Welt hatte keinen Sommer.                                                  |
 
 Quellen: Oppenheimer 2003 (Progress in Physical Geography); Post 1977 (The Last Great Subsistence Crisis in the Western World).
-Stimme: Piper „Thorsten“ (lokal, CC0).
+Stimme: ElevenLabs „Will“ (`bIHbv24MWmeRgasZH58o`, eleven_multilingual_v2, speed 1.06). Szenen-Animationen per Wort-Ankern auf diese Aufnahme umgetaktet.

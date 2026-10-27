@@ -148,7 +148,19 @@
       tl.fromTo("#s2-title", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 3.85);
       tl.fromTo("#s2-sunx", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, svgOrigin: "960 860", duration: 0.4, ease: "back.out(2)" }, 4.3);
       tl.fromTo(["#s2-x1", "#s2-x2"], { strokeDasharray: 340, strokeDashoffset: 340 }, { strokeDashoffset: 0, duration: 0.25, stagger: 0.18, ease: "power2.out" }, 4.75);
-      window.__timelines["s2"] = tl;
+      // Retimed to the ElevenLabs "Will" narration: the scene animation (authored against
+      // the earlier take) is scrubbed piecewise so each beat lands on its spoken word.
+      const master = gsap.timeline({ paused: true });
+      master.fromTo(tl, { time: 0.0 }, { time: 0.4, duration: 0.4, ease: "none" }, 0.0);
+      master.fromTo(tl, { time: 0.4 }, { time: 1.07, duration: 1.14, ease: "none" }, 0.4);
+      master.fromTo(tl, { time: 1.07 }, { time: 1.83, duration: 1.23, ease: "none" }, 1.54);
+      master.fromTo(tl, { time: 1.83 }, { time: 2.25, duration: 0.73, ease: "none" }, 2.77);
+      master.fromTo(tl, { time: 2.25 }, { time: 3.23, duration: 1.74, ease: "none" }, 3.5);
+      master.fromTo(tl, { time: 3.23 }, { time: 4.54, duration: 1.49, ease: "none" }, 5.24);
+      master.fromTo(tl, { time: 4.54 }, { time: 4.76, duration: 0.37, ease: "none" }, 6.73);
+      master.fromTo(tl, { time: 4.76 }, { time: 5.31, duration: 1.32, ease: "none" }, 7.1);
+      master.fromTo(tl, { time: 5.31 }, { time: 6.4, duration: 1.09, ease: "none" }, 8.42);
+      window.__timelines["s2"] = master;
     })();
   </script>
 </template>

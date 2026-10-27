@@ -98,7 +98,19 @@
       tl.fromTo("#s5-veil", { strokeDashoffset: 2420 }, { strokeDashoffset: 0, duration: 2.4, ease: "power2.inOut" }, 1.4);
       tl.to("#s5-dim", { opacity: 0.35, duration: 1.6 }, 2.6);
       tl.to("#s5-sun", { opacity: 0.45, duration: 1.6 }, 2.6);
-      window.__timelines["s5"] = tl;
+      // Retimed to the ElevenLabs "Will" narration: the scene animation (authored against
+      // the earlier take) is scrubbed piecewise so each beat lands on its spoken word.
+      const master = gsap.timeline({ paused: true });
+      master.fromTo(tl, { time: 0.0 }, { time: 0.4, duration: 0.4, ease: "none" }, 0.0);
+      master.fromTo(tl, { time: 0.4 }, { time: 0.86, duration: 0.56, ease: "none" }, 0.4);
+      master.fromTo(tl, { time: 0.86 }, { time: 1.6, duration: 1.05, ease: "none" }, 0.96);
+      master.fromTo(tl, { time: 1.6 }, { time: 2.07, duration: 0.49, ease: "none" }, 2.01);
+      master.fromTo(tl, { time: 2.07 }, { time: 2.61, duration: 0.76, ease: "none" }, 2.5);
+      master.fromTo(tl, { time: 2.61 }, { time: 3.15, duration: 0.59, ease: "none" }, 3.26);
+      master.fromTo(tl, { time: 3.15 }, { time: 4.11, duration: 0.99, ease: "none" }, 3.85);
+      master.fromTo(tl, { time: 4.11 }, { time: 4.45, duration: 0.523, ease: "none" }, 4.84);
+      master.fromTo(tl, { time: 4.45 }, { time: 5.1, duration: 0.647, ease: "none" }, 5.363);
+      window.__timelines["s5"] = master;
     })();
   </script>
 </template>

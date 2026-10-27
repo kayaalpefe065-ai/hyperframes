@@ -229,7 +229,18 @@
       tl.fromTo("#fz4-head", { rotation: 0 }, { rotation: 20, svgOrigin: "0 -160", duration: 0.7, ease: "sine.inOut" }, 1.2);
       tl.fromTo("#fz4-body", { y: 0 }, { y: 10, duration: 0.6, ease: "sine.inOut" }, 2.4);
       tl.fromTo("#s8-end", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 3.6);
-      window.__timelines["s8"] = tl;
+      // Retimed to the ElevenLabs "Will" narration: the scene animation (authored against
+      // the earlier take) is scrubbed piecewise so each beat lands on its spoken word.
+      const master = gsap.timeline({ paused: true });
+      master.fromTo(tl, { time: 0.0 }, { time: 0.4, duration: 0.4, ease: "none" }, 0.0);
+      master.fromTo(tl, { time: 0.4 }, { time: 0.61, duration: 0.35, ease: "none" }, 0.4);
+      master.fromTo(tl, { time: 0.61 }, { time: 1.04, duration: 0.92, ease: "none" }, 0.75);
+      master.fromTo(tl, { time: 1.04 }, { time: 1.37, duration: 0.73, ease: "none" }, 1.67);
+      master.fromTo(tl, { time: 1.37 }, { time: 1.73, duration: 0.3, ease: "none" }, 2.4);
+      master.fromTo(tl, { time: 1.73 }, { time: 2.86, duration: 1.03, ease: "none" }, 2.7);
+      master.fromTo(tl, { time: 2.86 }, { time: 3.31, duration: 0.51, ease: "none" }, 3.73);
+      master.fromTo(tl, { time: 3.31 }, { time: 6.0, duration: 2.69, ease: "none" }, 4.24);
+      window.__timelines["s8"] = master;
     })();
   </script>
 </template>
