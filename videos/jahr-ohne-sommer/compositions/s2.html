@@ -1,0 +1,154 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Patrick Hand";
+      src: url("assets/fonts/patrick-hand.woff2") format("woff2");
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #f4efe4;
+      font-family: "Patrick Hand", sans-serif;
+      color: #1f1d1a;
+    }
+    #s2-cam {
+      position: absolute;
+      inset: 0;
+    }
+    #s2-art {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+    }
+    #s2-art line,
+    #s2-art path,
+    #s2-art circle,
+    #s2-art rect,
+    #s2-art ellipse,
+    #s2-art polygon {
+      stroke: #1f1d1a;
+      stroke-width: 7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .src {
+      position: absolute;
+      left: 48px;
+      top: 34px;
+      font-size: 30px;
+      color: #4a453e;
+      background: rgba(255, 252, 245, 0.85);
+      border-radius: 10px;
+      padding: 2px 12px;
+      z-index: 5;
+    }
+    .label {
+      position: absolute;
+      font-size: 64px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+  </style>
+  <div id="root" data-composition-id="s2" data-width="1920" data-height="1080">
+    <div id="s2-cam">
+      <svg id="s2-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s2-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s2-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s2-boil)">
+
+          <g id="s2-flakes"><circle id="s2-f0" cx="1840" cy="-991" r="5.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f1" cx="232" cy="-414" r="7.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f2" cx="1842" cy="-789" r="8.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f3" cx="1774" cy="-350" r="5.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f4" cx="597" cy="-935" r="10.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f5" cx="1486" cy="-64" r="8.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f6" cx="496" cy="-69" r="6.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f7" cx="1250" cy="-989" r="10.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f8" cx="94" cy="-549" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f9" cx="993" cy="-687" r="9.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f10" cx="718" cy="-492" r="6.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f11" cx="832" cy="-389" r="8.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f12" cx="683" cy="-662" r="7.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f13" cx="983" cy="-697" r="5.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f14" cx="1050" cy="-755" r="7.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f15" cx="71" cy="-545" r="9.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f16" cx="1332" cy="-1091" r="7.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f17" cx="884" cy="-193" r="8.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f18" cx="1903" cy="-310" r="7.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f19" cx="679" cy="-264" r="9.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f20" cx="35" cy="-585" r="8.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f21" cx="1329" cy="-659" r="6.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f22" cx="676" cy="-1017" r="6.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f23" cx="347" cy="-838" r="5.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f24" cx="661" cy="-320" r="10.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f25" cx="725" cy="-191" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f26" cx="734" cy="-302" r="9.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s2-f27" cx="443" cy="-849" r="5.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" /></g>
+          <g id="s2-sunx" transform="translate(960,860)">
+            <circle cx="0" cy="0" r="62" fill="#ffd34d" />
+            <path d="M0,-90 L0,-112 M0,90 L0,112 M-90,0 L-112,0 M90,0 L112,0 M-64,-64 L-80,-80 M64,-64 L80,-80 M-64,64 L-80,80 M64,64 L80,80" />
+            <path id="s2-x1" d="M-120,-120 L120,120" stroke="#e8483b" style="stroke:#e8483b;stroke-width:16" />
+            <path id="s2-x2" d="M120,-120 L-120,120" stroke="#e8483b" style="stroke:#e8483b;stroke-width:16" />
+          </g>
+        </g>
+      </svg>
+      <div id="s2-year" class="label" style="left: 0; width: 1920px; top: 170px; text-align: center; font-size: 300px;">1816</div>
+      <div id="s2-title" class="label" style="left: 0; width: 1920px; top: 520px; text-align: center; font-size: 120px;">Das Jahr ohne Sommer</div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      // Hand-drawn line boil: a new noise seed 12 times a second, driven by timeline time.
+      const turb = document.querySelector("#s2-turb");
+      const clock = { t: 0 };
+      tl.to(clock, {
+        t: 6.4,
+        duration: 6.4,
+        ease: "none",
+        onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))),
+      }, 0);
+      tl.fromTo("#s2-cam", { scale: 1 }, { scale: 1.045, duration: 6.4, ease: "sine.inOut" }, 0);
+
+      tl.fromTo("#s2-f0", { x: 0, y: 0 }, { x: -38, y: 2047, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f1", { x: 0, y: 0 }, { x: -32, y: 1949, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f2", { x: 0, y: 0 }, { x: 22, y: 1987, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f3", { x: 0, y: 0 }, { x: 11, y: 1942, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f4", { x: 0, y: 0 }, { x: 53, y: 1674, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f5", { x: 0, y: 0 }, { x: 13, y: 1778, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f6", { x: 0, y: 0 }, { x: 55, y: 1852, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f7", { x: 0, y: 0 }, { x: -38, y: 1750, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f8", { x: 0, y: 0 }, { x: 1, y: 1981, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f9", { x: 0, y: 0 }, { x: -23, y: 1973, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f10", { x: 0, y: 0 }, { x: 5, y: 1686, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f11", { x: 0, y: 0 }, { x: 60, y: 1231, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f12", { x: 0, y: 0 }, { x: 54, y: 1985, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f13", { x: 0, y: 0 }, { x: -39, y: 1954, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f14", { x: 0, y: 0 }, { x: -37, y: 1472, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f15", { x: 0, y: 0 }, { x: -36, y: 1732, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f16", { x: 0, y: 0 }, { x: 51, y: 1894, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f17", { x: 0, y: 0 }, { x: 10, y: 1621, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f18", { x: 0, y: 0 }, { x: 17, y: 1804, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f19", { x: 0, y: 0 }, { x: 53, y: 1697, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f20", { x: 0, y: 0 }, { x: -39, y: 1457, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f21", { x: 0, y: 0 }, { x: 56, y: 1190, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f22", { x: 0, y: 0 }, { x: 44, y: 1380, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f23", { x: 0, y: 0 }, { x: -35, y: 1573, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f24", { x: 0, y: 0 }, { x: -55, y: 1899, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f25", { x: 0, y: 0 }, { x: -1, y: 1334, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f26", { x: 0, y: 0 }, { x: -30, y: 1568, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-f27", { x: 0, y: 0 }, { x: -41, y: 1749, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#s2-year", { scale: 2.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "power4.out" }, 1.75);
+      tl.fromTo("#s2-title", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 3.85);
+      tl.fromTo("#s2-sunx", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, svgOrigin: "960 860", duration: 0.4, ease: "back.out(2)" }, 4.3);
+      tl.fromTo(["#s2-x1", "#s2-x2"], { strokeDasharray: 340, strokeDashoffset: 340 }, { strokeDashoffset: 0, duration: 0.25, stagger: 0.18, ease: "power2.out" }, 4.75);
+      window.__timelines["s2"] = tl;
+    })();
+  </script>
+</template>

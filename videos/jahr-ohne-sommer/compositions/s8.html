@@ -1,0 +1,235 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Patrick Hand";
+      src: url("assets/fonts/patrick-hand.woff2") format("woff2");
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #f4efe4;
+      font-family: "Patrick Hand", sans-serif;
+      color: #1f1d1a;
+    }
+    #s8-cam {
+      position: absolute;
+      inset: 0;
+    }
+    #s8-art {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+    }
+    #s8-art line,
+    #s8-art path,
+    #s8-art circle,
+    #s8-art rect,
+    #s8-art ellipse,
+    #s8-art polygon {
+      stroke: #1f1d1a;
+      stroke-width: 7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .src {
+      position: absolute;
+      left: 48px;
+      top: 34px;
+      font-size: 30px;
+      color: #4a453e;
+      background: rgba(255, 252, 245, 0.85);
+      border-radius: 10px;
+      padding: 2px 12px;
+      z-index: 5;
+    }
+    .label {
+      position: absolute;
+      font-size: 64px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+  </style>
+  <div id="root" data-composition-id="s8" data-width="1920" data-height="1080">
+    <div id="s8-cam">
+      <svg id="s8-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s8-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s8-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s8-boil)">
+
+          <rect x="-20" y="-20" width="1960" height="1120" fill="#c3c7ce" stroke="none" />
+          <path d="M1380,700 L1460,600 L1500,600 L1580,700 Z" fill="#8f7a66" style="stroke-width:5" />
+          <g id="s8-smoke"><circle cx="1480" cy="560" r="26" fill="#8a8682" style="stroke-width:5" /><circle cx="1505" cy="520" r="34" fill="#8a8682" style="stroke-width:5" /><circle cx="1540" cy="470" r="42" fill="#8a8682" style="stroke-width:5" /></g>
+          <path d="M-20,700 Q480,670 960,700 T1940,690 L1940,1100 L-20,1100 Z" fill="#ffffff" />
+          
+  <g id="fz4" transform="translate(700,930) scale(1.3)">
+    <g id="fz4-body">
+      <line x1="0" y1="-158" x2="0" y2="-66" />
+      <g id="fz4-legl"><line x1="0" y1="-66" x2="-30" y2="0" /></g>
+      <g id="fz4-legr"><line x1="0" y1="-66" x2="30" y2="0" /></g>
+      <g id="fz4-arml"><line x1="0" y1="-140" x2="-46" y2="-92" /></g>
+      <g id="fz4-armr"><line x1="0" y1="-140" x2="46" y2="-92" /></g>
+      <ellipse cx="0" cy="-92" rx="62" ry="22" fill="#e8483b" /><path d="M-40,-108 L-36,-76 M36,-108 L40,-76" stroke="#fff" />
+      <g id="fz4-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec" />
+        <path d="M-14,-238 L-10,-252 M-2,-240 L2,-256 M10,-238 L16,-250" />
+        <circle id="fz4-eyel" cx="-13" cy="-206" r="4.5" fill="#1f1d1a" stroke="none" />
+        <circle id="fz4-eyer" cx="13" cy="-206" r="4.5" fill="#1f1d1a" stroke="none" />
+        <path id="fz4-smile" d="M-14,-186 Q0,-174 14,-186" fill="none" opacity="0" />
+        <path id="fz4-sad" d="M-13,-178 Q0,-190 13,-178" fill="none" opacity="1" />
+        <ellipse id="fz4-oh" cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" stroke="none" opacity="0" />
+      </g>
+    </g>
+  </g>
+          <g id="s8-flakes"><circle id="s8-f0" cx="1095" cy="-436" r="9.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f1" cx="1710" cy="-123" r="6.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f2" cx="967" cy="-58" r="8.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f3" cx="1220" cy="-810" r="6.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f4" cx="1167" cy="-318" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f5" cx="1067" cy="-380" r="5.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f6" cx="546" cy="-909" r="10.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f7" cx="618" cy="-876" r="6.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f8" cx="584" cy="-705" r="6.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f9" cx="1676" cy="-305" r="8.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f10" cx="230" cy="-792" r="5.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f11" cx="370" cy="-411" r="7.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f12" cx="1035" cy="-263" r="6.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f13" cx="728" cy="-268" r="5.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f14" cx="1041" cy="-649" r="6.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f15" cx="313" cy="-591" r="8.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f16" cx="1155" cy="-326" r="7.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f17" cx="500" cy="-160" r="10.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f18" cx="762" cy="-243" r="6.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f19" cx="1366" cy="-447" r="6.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f20" cx="1855" cy="-211" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f21" cx="1668" cy="-302" r="8.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f22" cx="1200" cy="-335" r="6.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f23" cx="1120" cy="-503" r="6.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f24" cx="137" cy="-103" r="9.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f25" cx="1305" cy="-1142" r="10.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f26" cx="1563" cy="-994" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f27" cx="1520" cy="-892" r="5.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f28" cx="1422" cy="-170" r="10.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f29" cx="31" cy="-1143" r="10.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f30" cx="246" cy="-774" r="7.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f31" cx="388" cy="-1057" r="6.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f32" cx="796" cy="-1003" r="9.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f33" cx="1227" cy="-885" r="5.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f34" cx="694" cy="-865" r="6.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f35" cx="862" cy="-717" r="6.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f36" cx="81" cy="-970" r="10.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f37" cx="1864" cy="-421" r="10.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f38" cx="79" cy="-882" r="9.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f39" cx="741" cy="-160" r="5.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f40" cx="383" cy="-152" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f41" cx="1402" cy="-125" r="8.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f42" cx="1826" cy="-245" r="7.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f43" cx="1476" cy="-971" r="6.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f44" cx="737" cy="-611" r="6.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f45" cx="186" cy="-997" r="8.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f46" cx="1093" cy="-1046" r="10.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f47" cx="1019" cy="-718" r="8.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f48" cx="948" cy="-577" r="6.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f49" cx="544" cy="-632" r="10.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f50" cx="585" cy="-180" r="6.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f51" cx="1681" cy="-241" r="6.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f52" cx="472" cy="-470" r="10.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f53" cx="229" cy="-1115" r="6.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f54" cx="1582" cy="-415" r="8.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f55" cx="1248" cy="-754" r="6.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f56" cx="1729" cy="-1115" r="9.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f57" cx="608" cy="-130" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f58" cx="489" cy="-875" r="5.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s8-f59" cx="1418" cy="-392" r="6.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" /></g>
+        </g>
+      </svg>
+      <div id="s8-end" class="label" style="left: 0; width: 1920px; top: 160px; text-align: center; font-size: 96px;">1816 – Das Jahr ohne Sommer</div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      // Hand-drawn line boil: a new noise seed 12 times a second, driven by timeline time.
+      const turb = document.querySelector("#s8-turb");
+      const clock = { t: 0 };
+      tl.to(clock, {
+        t: 6.0,
+        duration: 6.0,
+        ease: "none",
+        onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))),
+      }, 0);
+      tl.fromTo("#s8-cam", { scale: 1 }, { scale: 1.045, duration: 6.0, ease: "sine.inOut" }, 0);
+
+      tl.fromTo("#s8-f0", { x: 0, y: 0 }, { x: 18, y: 1313, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f1", { x: 0, y: 0 }, { x: 14, y: 1627, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f2", { x: 0, y: 0 }, { x: 53, y: 1454, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f3", { x: 0, y: 0 }, { x: -54, y: 1497, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f4", { x: 0, y: 0 }, { x: 51, y: 1791, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f5", { x: 0, y: 0 }, { x: 58, y: 1127, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f6", { x: 0, y: 0 }, { x: -45, y: 1710, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f7", { x: 0, y: 0 }, { x: 3, y: 1085, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f8", { x: 0, y: 0 }, { x: -56, y: 1172, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f9", { x: 0, y: 0 }, { x: -42, y: 1184, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f10", { x: 0, y: 0 }, { x: -36, y: 1311, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f11", { x: 0, y: 0 }, { x: -17, y: 1478, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f12", { x: 0, y: 0 }, { x: -2, y: 1139, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f13", { x: 0, y: 0 }, { x: -58, y: 1813, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f14", { x: 0, y: 0 }, { x: 24, y: 1827, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f15", { x: 0, y: 0 }, { x: -50, y: 1108, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f16", { x: 0, y: 0 }, { x: 1, y: 1435, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f17", { x: 0, y: 0 }, { x: -58, y: 1485, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f18", { x: 0, y: 0 }, { x: -38, y: 1169, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f19", { x: 0, y: 0 }, { x: 31, y: 1604, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f20", { x: 0, y: 0 }, { x: 51, y: 1760, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f21", { x: 0, y: 0 }, { x: 42, y: 1510, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f22", { x: 0, y: 0 }, { x: -28, y: 1157, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f23", { x: 0, y: 0 }, { x: 54, y: 1238, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f24", { x: 0, y: 0 }, { x: 59, y: 1562, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f25", { x: 0, y: 0 }, { x: 50, y: 1427, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f26", { x: 0, y: 0 }, { x: 34, y: 1097, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f27", { x: 0, y: 0 }, { x: 36, y: 1388, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f28", { x: 0, y: 0 }, { x: 40, y: 1714, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f29", { x: 0, y: 0 }, { x: -21, y: 1600, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f30", { x: 0, y: 0 }, { x: -6, y: 1496, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f31", { x: 0, y: 0 }, { x: -48, y: 1188, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f32", { x: 0, y: 0 }, { x: -5, y: 1538, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f33", { x: 0, y: 0 }, { x: -20, y: 1146, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f34", { x: 0, y: 0 }, { x: -59, y: 1780, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f35", { x: 0, y: 0 }, { x: -33, y: 1689, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f36", { x: 0, y: 0 }, { x: -46, y: 1370, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f37", { x: 0, y: 0 }, { x: 37, y: 1358, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f38", { x: 0, y: 0 }, { x: 35, y: 1513, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f39", { x: 0, y: 0 }, { x: -37, y: 1604, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f40", { x: 0, y: 0 }, { x: -26, y: 1763, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f41", { x: 0, y: 0 }, { x: 20, y: 1277, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f42", { x: 0, y: 0 }, { x: -48, y: 1416, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f43", { x: 0, y: 0 }, { x: -40, y: 1108, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f44", { x: 0, y: 0 }, { x: 31, y: 1437, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f45", { x: 0, y: 0 }, { x: 50, y: 1839, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f46", { x: 0, y: 0 }, { x: 48, y: 1914, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f47", { x: 0, y: 0 }, { x: 59, y: 1744, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f48", { x: 0, y: 0 }, { x: 5, y: 1534, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f49", { x: 0, y: 0 }, { x: -30, y: 1278, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f50", { x: 0, y: 0 }, { x: 51, y: 1775, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f51", { x: 0, y: 0 }, { x: 39, y: 1458, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f52", { x: 0, y: 0 }, { x: -18, y: 1864, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f53", { x: 0, y: 0 }, { x: -26, y: 1540, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f54", { x: 0, y: 0 }, { x: -21, y: 1775, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f55", { x: 0, y: 0 }, { x: 35, y: 1176, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f56", { x: 0, y: 0 }, { x: -10, y: 1132, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f57", { x: 0, y: 0 }, { x: -17, y: 1509, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f58", { x: 0, y: 0 }, { x: 6, y: 1092, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-f59", { x: 0, y: 0 }, { x: -51, y: 1910, duration: 6.0, ease: "none" }, 0);
+      tl.fromTo("#s8-smoke", { y: 0, opacity: 0.6 }, { y: -40, opacity: 1, duration: 6.0, ease: "sine.inOut" }, 0);
+      tl.fromTo("#fz4-head", { rotation: 0 }, { rotation: 20, svgOrigin: "0 -160", duration: 0.7, ease: "sine.inOut" }, 1.2);
+      tl.fromTo("#fz4-body", { y: 0 }, { y: 10, duration: 0.6, ease: "sine.inOut" }, 2.4);
+      tl.fromTo("#s8-end", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 3.6);
+      window.__timelines["s8"] = tl;
+    })();
+  </script>
+</template>

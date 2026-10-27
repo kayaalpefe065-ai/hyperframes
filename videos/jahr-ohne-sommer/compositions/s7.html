@@ -1,0 +1,171 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Patrick Hand";
+      src: url("assets/fonts/patrick-hand.woff2") format("woff2");
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #f4efe4;
+      font-family: "Patrick Hand", sans-serif;
+      color: #1f1d1a;
+    }
+    #s7-cam {
+      position: absolute;
+      inset: 0;
+    }
+    #s7-art {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+    }
+    #s7-art line,
+    #s7-art path,
+    #s7-art circle,
+    #s7-art rect,
+    #s7-art ellipse,
+    #s7-art polygon {
+      stroke: #1f1d1a;
+      stroke-width: 7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .src {
+      position: absolute;
+      left: 48px;
+      top: 34px;
+      font-size: 30px;
+      color: #4a453e;
+      background: rgba(255, 252, 245, 0.85);
+      border-radius: 10px;
+      padding: 2px 12px;
+      z-index: 5;
+    }
+    .label {
+      position: absolute;
+      font-size: 64px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+  </style>
+  <div id="root" data-composition-id="s7" data-width="1920" data-height="1080">
+    <div id="s7-cam">
+      <svg id="s7-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s7-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s7-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s7-boil)">
+
+          <path d="M-20,900 Q400,880 860,900 L1940,900 L1940,1100 L-20,1100 Z" fill="#b59a6d" />
+          <g id="s7-raincloud"><path d="M120,250 q-20,-80 70,-90 q40,-70 140,-40 q60,-60 160,-10 q100,-20 110,70 q60,40 0,90 L160,270 q-60,0 -40,-20 z" fill="#8a8f98" /></g>
+          <g id="s7-rain"><line id="s7-rn0" x1="287" y1="-472" x2="277" y2="-432" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn1" x1="516" y1="-538" x2="506" y2="-498" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn2" x1="435" y1="-289" x2="425" y2="-249" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn3" x1="101" y1="-169" x2="91" y2="-129" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn4" x1="86" y1="-231" x2="76" y2="-191" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn5" x1="109" y1="-523" x2="99" y2="-483" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn6" x1="357" y1="103" x2="347" y2="143" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn7" x1="147" y1="-410" x2="137" y2="-370" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn8" x1="499" y1="206" x2="489" y2="246" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn9" x1="464" y1="-263" x2="454" y2="-223" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn10" x1="743" y1="-560" x2="733" y2="-520" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn11" x1="661" y1="-354" x2="651" y2="-314" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn12" x1="161" y1="-500" x2="151" y2="-460" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn13" x1="276" y1="94" x2="266" y2="134" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn14" x1="187" y1="-106" x2="177" y2="-66" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn15" x1="507" y1="-283" x2="497" y2="-243" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn16" x1="443" y1="-547" x2="433" y2="-507" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn17" x1="102" y1="-425" x2="92" y2="-385" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn18" x1="536" y1="-237" x2="526" y2="-197" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn19" x1="280" y1="-102" x2="270" y2="-62" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn20" x1="377" y1="-345" x2="367" y2="-305" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn21" x1="616" y1="-6" x2="606" y2="34" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn22" x1="231" y1="-112" x2="221" y2="-72" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn23" x1="428" y1="144" x2="418" y2="184" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn24" x1="571" y1="-355" x2="561" y2="-315" style="stroke:#3d7bd9;stroke-width:5" /><line id="s7-rn25" x1="746" y1="-500" x2="736" y2="-460" style="stroke:#3d7bd9;stroke-width:5" /></g>
+          <g id="s7-w0"><line x1="120" y1="900" x2="120" y2="660" style="stroke:#7a8a3a;stroke-width:6" /><ellipse id="s7-e0" cx="120" cy="630" rx="16" ry="40" fill="#e9c14a" /></g><g id="s7-w1"><line x1="182" y1="900" x2="182" y2="660" style="stroke:#7a8a3a;stroke-width:6" /><ellipse id="s7-e1" cx="182" cy="630" rx="16" ry="40" fill="#e9c14a" /></g><g id="s7-w2"><line x1="244" y1="900" x2="244" y2="660" style="stroke:#7a8a3a;stroke-width:6" /><ellipse id="s7-e2" cx="244" cy="630" rx="16" ry="40" fill="#e9c14a" /></g><g id="s7-w3"><line x1="306" y1="900" x2="306" y2="660" style="stroke:#7a8a3a;stroke-width:6" /><ellipse id="s7-e3" cx="306" cy="630" rx="16" ry="40" fill="#e9c14a" /></g><g id="s7-w4"><line x1="368" y1="900" x2="368" y2="660" style="stroke:#7a8a3a;stroke-width:6" /><ellipse id="s7-e4" cx="368" cy="630" rx="16" ry="40" fill="#e9c14a" /></g><g id="s7-w5"><line x1="430" y1="900" x2="430" y2="660" style="stroke:#7a8a3a;stroke-width:6" /><ellipse id="s7-e5" cx="430" cy="630" rx="16" ry="40" fill="#e9c14a" /></g><g id="s7-w6"><line x1="492" y1="900" x2="492" y2="660" style="stroke:#7a8a3a;stroke-width:6" /><ellipse id="s7-e6" cx="492" cy="630" rx="16" ry="40" fill="#e9c14a" /></g><g id="s7-w7"><line x1="554" y1="900" x2="554" y2="660" style="stroke:#7a8a3a;stroke-width:6" /><ellipse id="s7-e7" cx="554" cy="630" rx="16" ry="40" fill="#e9c14a" /></g><g id="s7-w8"><line x1="616" y1="900" x2="616" y2="660" style="stroke:#7a8a3a;stroke-width:6" /><ellipse id="s7-e8" cx="616" cy="630" rx="16" ry="40" fill="#e9c14a" /></g>
+          <g id="s7-bread" transform="translate(1040,640)">
+            <path d="M-170,60 q-30,-150 170,-150 q200,0 170,150 z" fill="#d9954a" />
+            <path d="M-80,-50 l30,40 M0,-60 l30,40 M80,-50 l30,40" style="stroke-width:6" />
+          </g>
+          <path id="s7-up" d="M860,420 L960,370 L1050,330 L1140,220 L1230,120" fill="none" style="stroke:#e8483b;stroke-width:14;stroke-dasharray:520;stroke-dashoffset:520" />
+          <path id="s7-head" d="M1200,110 L1245,108 L1235,150" fill="none" style="stroke:#e8483b;stroke-width:14" opacity="0" />
+          
+  <g id="fz3" transform="translate(1560,900) scale(1.05)">
+    <g id="fz3-body">
+      <line x1="0" y1="-158" x2="0" y2="-66" />
+      <g id="fz3-legl"><line x1="0" y1="-66" x2="-30" y2="0" /></g>
+      <g id="fz3-legr"><line x1="0" y1="-66" x2="30" y2="0" /></g>
+      <g id="fz3-arml"><line x1="0" y1="-140" x2="-46" y2="-92" /></g>
+      <g id="fz3-armr"><line x1="0" y1="-140" x2="46" y2="-92" /></g>
+      
+      <g id="fz3-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec" />
+        <path d="M-14,-238 L-10,-252 M-2,-240 L2,-256 M10,-238 L16,-250" />
+        <circle id="fz3-eyel" cx="-13" cy="-206" r="4.5" fill="#1f1d1a" stroke="none" />
+        <circle id="fz3-eyer" cx="13" cy="-206" r="4.5" fill="#1f1d1a" stroke="none" />
+        <path id="fz3-smile" d="M-14,-186 Q0,-174 14,-186" fill="none" opacity="0" />
+        <path id="fz3-sad" d="M-13,-178 Q0,-190 13,-178" fill="none" opacity="1" />
+        <ellipse id="fz3-oh" cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" stroke="none" opacity="0" />
+      </g>
+    </g>
+  </g>
+          <g id="s7-plate"><ellipse cx="1660" cy="830" rx="80" ry="22" fill="#fff" /></g>
+        </g>
+      </svg>
+      <div class="src">Quelle: Post 1977, The Last Great Subsistence Crisis</div>
+      <div id="s7-l1" class="label" style="left: 960px; top: 790px; font-size: 56px;">Brot</div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      // Hand-drawn line boil: a new noise seed 12 times a second, driven by timeline time.
+      const turb = document.querySelector("#s7-turb");
+      const clock = { t: 0 };
+      tl.to(clock, {
+        t: 6.8,
+        duration: 6.8,
+        ease: "none",
+        onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))),
+      }, 0);
+      tl.fromTo("#s7-cam", { scale: 1 }, { scale: 1.045, duration: 6.8, ease: "sine.inOut" }, 0);
+
+      tl.fromTo("#s7-rn0", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn1", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn2", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn3", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn4", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn5", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn6", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn7", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn8", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn9", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn10", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn11", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn12", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn13", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn14", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn15", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn16", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn17", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn18", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn19", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn20", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn21", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn22", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn23", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn24", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.fromTo("#s7-rn25", { y: 0 }, { y: 2040, duration: 6.8, ease: "none" }, 0);
+      tl.to("#s7-w0", { rotation: 14, svgOrigin: "120 900", duration: 1.1, ease: "power2.inOut" }, 0.80);
+      tl.to("#s7-e0", { fill: "#7a5a32", duration: 1.0 }, 0.90);
+      tl.to("#s7-w1", { rotation: 20, svgOrigin: "182 900", duration: 1.1, ease: "power2.inOut" }, 0.85);
+      tl.to("#s7-e1", { fill: "#7a5a32", duration: 1.0 }, 0.95);
+      tl.to("#s7-w2", { rotation: 26, svgOrigin: "244 900", duration: 1.1, ease: "power2.inOut" }, 0.90);
+      tl.to("#s7-e2", { fill: "#7a5a32", duration: 1.0 }, 1.00);
+      tl.to("#s7-w3", { rotation: 14, svgOrigin: "306 900", duration: 1.1, ease: "power2.inOut" }, 0.95);
+      tl.to("#s7-e3", { fill: "#7a5a32", duration: 1.0 }, 1.05);
+      tl.to("#s7-w4", { rotation: 20, svgOrigin: "368 900", duration: 1.1, ease: "power2.inOut" }, 1.00);
+      tl.to("#s7-e4", { fill: "#7a5a32", duration: 1.0 }, 1.10);
+      tl.to("#s7-w5", { rotation: 26, svgOrigin: "430 900", duration: 1.1, ease: "power2.inOut" }, 1.05);
+      tl.to("#s7-e5", { fill: "#7a5a32", duration: 1.0 }, 1.15);
+      tl.to("#s7-w6", { rotation: 14, svgOrigin: "492 900", duration: 1.1, ease: "power2.inOut" }, 1.10);
+      tl.to("#s7-e6", { fill: "#7a5a32", duration: 1.0 }, 1.20);
+      tl.to("#s7-w7", { rotation: 20, svgOrigin: "554 900", duration: 1.1, ease: "power2.inOut" }, 1.15);
+      tl.to("#s7-e7", { fill: "#7a5a32", duration: 1.0 }, 1.25);
+      tl.to("#s7-w8", { rotation: 26, svgOrigin: "616 900", duration: 1.1, ease: "power2.inOut" }, 1.20);
+      tl.to("#s7-e8", { fill: "#7a5a32", duration: 1.0 }, 1.30);
+      tl.fromTo("#s7-bread", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, svgOrigin: "1040 640", duration: 0.4, ease: "back.out(2)" }, 2.5);
+      tl.fromTo("#s7-l1", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 2.6);
+      tl.to("#s7-up", { strokeDashoffset: 0, duration: 0.9, ease: "power2.in" }, 2.9);
+      tl.to("#s7-head", { opacity: 1, duration: 0.1 }, 3.75);
+      tl.fromTo("#fz3", { opacity: 0, x: 1700 }, { opacity: 1, x: 1560, duration: 0.5, ease: "power2.out" }, 4.1);
+      tl.fromTo("#s7-plate", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 4.3);
+      tl.to("#fz3-head", { rotation: 14, svgOrigin: "0 -160", duration: 0.6, ease: "sine.inOut" }, 4.8);
+      tl.to("#fz3-armr", { rotation: -30, svgOrigin: "0 -140", duration: 0.4 }, 4.6);
+      window.__timelines["s7"] = tl;
+    })();
+  </script>
+</template>

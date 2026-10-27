@@ -1,0 +1,284 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Patrick Hand";
+      src: url("assets/fonts/patrick-hand.woff2") format("woff2");
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #f4efe4;
+      font-family: "Patrick Hand", sans-serif;
+      color: #1f1d1a;
+    }
+    #s1-cam {
+      position: absolute;
+      inset: 0;
+    }
+    #s1-art {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+    }
+    #s1-art line,
+    #s1-art path,
+    #s1-art circle,
+    #s1-art rect,
+    #s1-art ellipse,
+    #s1-art polygon {
+      stroke: #1f1d1a;
+      stroke-width: 7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .src {
+      position: absolute;
+      left: 48px;
+      top: 34px;
+      font-size: 30px;
+      color: #4a453e;
+      background: rgba(255, 252, 245, 0.85);
+      border-radius: 10px;
+      padding: 2px 12px;
+      z-index: 5;
+    }
+    .label {
+      position: absolute;
+      font-size: 64px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+  </style>
+  <div id="root" data-composition-id="s1" data-width="1920" data-height="1080">
+    <div id="s1-cam">
+      <svg id="s1-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s1-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s1-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s1-boil)">
+
+          <rect id="s1-sky" x="-20" y="-20" width="1960" height="820" fill="#9fd3f0" stroke="none" />
+          <g id="s1-sun"><circle cx="1560" cy="220" r="90" fill="#ffd34d" />
+            <path d="M1560,90 L1560,60 M1560,350 L1560,380 M1430,220 L1400,220 M1690,220 L1720,220 M1468,128 L1447,107 M1652,128 L1673,107 M1468,312 L1447,333 M1652,312 L1673,333" /></g>
+          <g id="s1-cloud"><path d="M1290,260 q-10,-70 70,-70 q30,-60 110,-40 q60,-50 130,0 q80,-10 80,60 q50,30 0,70 L1310,280 q-50,0 -20,-20 z" fill="#d7dade" /></g>
+          <path id="s1-ground" d="M-20,770 Q480,730 960,760 T1940,750 L1940,1100 L-20,1100 Z" fill="#a7d07a" />
+          <path id="s1-snowcover" d="M-20,770 Q480,730 960,760 T1940,750 L1940,1100 L-20,1100 Z" fill="#ffffff" opacity="0" />
+          <g id="s1-flakes"><circle id="s1-f0" cx="869" cy="-517" r="10.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f1" cx="1128" cy="-941" r="8.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f2" cx="181" cy="-807" r="5.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f3" cx="80" cy="-40" r="10.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f4" cx="302" cy="-1133" r="8.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f5" cx="465" cy="-1116" r="7.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f6" cx="997" cy="-426" r="8.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f7" cx="534" cy="-23" r="11.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f8" cx="605" cy="-890" r="6.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f9" cx="769" cy="-193" r="7.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f10" cx="1" cy="-913" r="10.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f11" cx="763" cy="-1067" r="8.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f12" cx="167" cy="-774" r="10.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f13" cx="473" cy="-1036" r="5.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f14" cx="1074" cy="-644" r="6.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f15" cx="1236" cy="-1018" r="7.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f16" cx="1864" cy="-242" r="6.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f17" cx="757" cy="-185" r="8.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f18" cx="409" cy="-858" r="9.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f19" cx="141" cy="-1048" r="8.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f20" cx="714" cy="-638" r="10.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f21" cx="1664" cy="-943" r="5.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f22" cx="479" cy="-936" r="9.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f23" cx="1824" cy="-153" r="8.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f24" cx="74" cy="-62" r="6.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f25" cx="1582" cy="-476" r="6.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f26" cx="132" cy="-892" r="8.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f27" cx="538" cy="-113" r="6.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f28" cx="856" cy="-1082" r="6.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f29" cx="253" cy="-741" r="10.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f30" cx="1327" cy="-490" r="5.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f31" cx="1748" cy="-358" r="10.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f32" cx="926" cy="-325" r="6.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f33" cx="1049" cy="-317" r="10.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f34" cx="1523" cy="-116" r="7.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f35" cx="1673" cy="-679" r="9.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f36" cx="1200" cy="-718" r="8.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f37" cx="1228" cy="-28" r="10.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f38" cx="1411" cy="-494" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f39" cx="1440" cy="-1116" r="8.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f40" cx="1341" cy="-588" r="8.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f41" cx="22" cy="-810" r="9.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f42" cx="1739" cy="-404" r="7.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f43" cx="1279" cy="-926" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f44" cx="1690" cy="-716" r="8.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f45" cx="953" cy="-204" r="10.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f46" cx="531" cy="-959" r="7.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f47" cx="795" cy="-443" r="8.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f48" cx="1886" cy="-639" r="5.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f49" cx="80" cy="-349" r="8.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f50" cx="37" cy="-996" r="7.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f51" cx="456" cy="-991" r="5.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f52" cx="1210" cy="-410" r="9.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f53" cx="383" cy="-613" r="6.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f54" cx="1371" cy="-948" r="6.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f55" cx="999" cy="-456" r="9.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f56" cx="1740" cy="-1051" r="10.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f57" cx="871" cy="-443" r="10.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f58" cx="1688" cy="-250" r="10.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f59" cx="393" cy="-334" r="9.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f60" cx="410" cy="-133" r="10.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f61" cx="1518" cy="-788" r="10.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f62" cx="159" cy="-652" r="8.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f63" cx="55" cy="-236" r="5.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f64" cx="643" cy="-260" r="5.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f65" cx="1389" cy="-201" r="9.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f66" cx="1822" cy="-1053" r="6.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f67" cx="1399" cy="-428" r="8.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f68" cx="598" cy="-719" r="10.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" />
+    <circle id="s1-f69" cx="1633" cy="-56" r="8.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5" /></g>
+          
+  <g id="fz" transform="translate(0,0) scale(1.25)">
+    <g id="fz-body">
+      <line x1="0" y1="-158" x2="0" y2="-66" />
+      <g id="fz-legl"><line x1="0" y1="-66" x2="-30" y2="0" /></g>
+      <g id="fz-legr"><line x1="0" y1="-66" x2="30" y2="0" /></g>
+      <g id="fz-arml"><line x1="0" y1="-140" x2="-46" y2="-92" /></g>
+      <g id="fz-armr"><line x1="0" y1="-140" x2="46" y2="-92" /></g>
+      <ellipse cx="0" cy="-92" rx="62" ry="22" fill="#e8483b" /><path d="M-40,-108 L-36,-76 M36,-108 L40,-76" stroke="#fff" /><g id="fz-shades"><rect x="-30" y="-214" width="24" height="15" rx="5" fill="#1f1d1a" /><rect x="6" y="-214" width="24" height="15" rx="5" fill="#1f1d1a" /><line x1="-6" y1="-209" x2="6" y2="-209" /></g>
+      <g id="fz-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec" />
+        <path d="M-14,-238 L-10,-252 M-2,-240 L2,-256 M10,-238 L16,-250" />
+        <circle id="fz-eyel" cx="-13" cy="-206" r="4.5" fill="#1f1d1a" stroke="none" />
+        <circle id="fz-eyer" cx="13" cy="-206" r="4.5" fill="#1f1d1a" stroke="none" />
+        <path id="fz-smile" d="M-14,-186 Q0,-174 14,-186" fill="none" opacity="1" />
+        <path id="fz-sad" d="M-13,-178 Q0,-190 13,-178" fill="none" opacity="0" />
+        <ellipse id="fz-oh" cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" stroke="none" opacity="0" />
+      </g>
+    </g>
+  </g>
+        </g>
+      </svg>
+      <div id="s1-cal" class="label" style="left: 120px; top: 120px; width: 230px; height: 230px; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; padding-top: 18px;">
+        <div style="background:#e8483b;color:#fff;font-size:44px;margin:-18px -0px 10px;padding:12px 0;border-radius:14px 14px 0 0;">1816</div>
+        <div style="font-size:84px;">Juni</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      // Hand-drawn line boil: a new noise seed 12 times a second, driven by timeline time.
+      const turb = document.querySelector("#s1-turb");
+      const clock = { t: 0 };
+      tl.to(clock, {
+        t: 5.6,
+        duration: 5.6,
+        ease: "none",
+        onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))),
+      }, 0);
+      tl.fromTo("#s1-cam", { scale: 1 }, { scale: 1.045, duration: 5.6, ease: "sine.inOut" }, 0);
+
+      tl.set("#fz", { x: -200, y: 860 }, 0);
+      tl.fromTo("#s1-cal", { scale: 0, rotation: -12 }, { scale: 1, rotation: -4, duration: 0.45, ease: "back.out(2)" }, 0.35);
+      tl.fromTo("#fz", { x: -200 }, { x: 780, duration: 1.7, ease: "power2.out" }, 0.9);
+      tl.to("#fz-legl", { rotation: 22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 0.90);
+      tl.to("#fz-legr", { rotation: -22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 0.90);
+      tl.to("#fz-legl", { rotation: -22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 1.18);
+      tl.to("#fz-legr", { rotation: 22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 1.18);
+      tl.to("#fz-legl", { rotation: 22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 1.46);
+      tl.to("#fz-legr", { rotation: -22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 1.46);
+      tl.to("#fz-legl", { rotation: -22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 1.74);
+      tl.to("#fz-legr", { rotation: 22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 1.74);
+      tl.to("#fz-legl", { rotation: 22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 2.02);
+      tl.to("#fz-legr", { rotation: -22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 2.02);
+      tl.to("#fz-legl", { rotation: -22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 2.30);
+      tl.to("#fz-legr", { rotation: 22, svgOrigin: "0 -66", duration: 0.28, ease: "sine.inOut" }, 2.30);
+      tl.to(["#fz-legl", "#fz-legr"], { rotation: 0, svgOrigin: "0 -66", duration: 0.2 }, 2.58);
+      tl.to("#fz-armr", { rotation: -100, svgOrigin: "0 -140", duration: 0.3, ease: "back.out(2)" }, 2.0);
+      tl.fromTo("#s1-cloud", { x: -900 }, { x: 0, duration: 1.0, ease: "power2.inOut" }, 2.2);
+      tl.to("#s1-sun", { opacity: 0.25, duration: 0.6 }, 2.7);
+      tl.to("#s1-sky", { fill: "#b6bac2", duration: 0.8 }, 2.6);
+      tl.to("#s1-ground", { fill: "#9db38a", duration: 0.8 }, 2.6);
+      tl.fromTo("#s1-f0", { x: 0, y: 0 }, { x: 1, y: 736, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f1", { x: 0, y: 0 }, { x: 35, y: 805, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f2", { x: 0, y: 0 }, { x: 23, y: 880, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f3", { x: 0, y: 0 }, { x: 14, y: 815, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f4", { x: 0, y: 0 }, { x: -37, y: 565, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f5", { x: 0, y: 0 }, { x: 41, y: 725, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f6", { x: 0, y: 0 }, { x: -5, y: 818, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f7", { x: 0, y: 0 }, { x: 25, y: 893, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f8", { x: 0, y: 0 }, { x: 32, y: 569, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f9", { x: 0, y: 0 }, { x: 42, y: 942, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f10", { x: 0, y: 0 }, { x: 58, y: 737, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f11", { x: 0, y: 0 }, { x: -28, y: 867, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f12", { x: 0, y: 0 }, { x: -46, y: 858, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f13", { x: 0, y: 0 }, { x: -39, y: 875, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f14", { x: 0, y: 0 }, { x: -44, y: 847, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f15", { x: 0, y: 0 }, { x: -28, y: 629, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f16", { x: 0, y: 0 }, { x: -35, y: 912, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f17", { x: 0, y: 0 }, { x: 59, y: 582, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f18", { x: 0, y: 0 }, { x: -24, y: 678, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f19", { x: 0, y: 0 }, { x: 12, y: 642, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f20", { x: 0, y: 0 }, { x: 9, y: 743, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f21", { x: 0, y: 0 }, { x: 38, y: 922, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f22", { x: 0, y: 0 }, { x: -36, y: 935, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f23", { x: 0, y: 0 }, { x: -48, y: 717, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f24", { x: 0, y: 0 }, { x: -29, y: 836, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f25", { x: 0, y: 0 }, { x: 26, y: 614, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f26", { x: 0, y: 0 }, { x: 14, y: 898, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f27", { x: 0, y: 0 }, { x: -28, y: 547, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f28", { x: 0, y: 0 }, { x: 9, y: 695, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f29", { x: 0, y: 0 }, { x: 19, y: 952, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f30", { x: 0, y: 0 }, { x: -58, y: 555, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f31", { x: 0, y: 0 }, { x: 16, y: 549, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f32", { x: 0, y: 0 }, { x: -51, y: 960, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f33", { x: 0, y: 0 }, { x: 24, y: 850, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f34", { x: 0, y: 0 }, { x: 48, y: 828, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f35", { x: 0, y: 0 }, { x: 9, y: 903, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f36", { x: 0, y: 0 }, { x: -50, y: 796, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f37", { x: 0, y: 0 }, { x: -13, y: 846, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f38", { x: 0, y: 0 }, { x: -50, y: 892, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f39", { x: 0, y: 0 }, { x: -32, y: 742, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f40", { x: 0, y: 0 }, { x: -29, y: 927, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f41", { x: 0, y: 0 }, { x: -40, y: 625, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f42", { x: 0, y: 0 }, { x: -21, y: 915, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f43", { x: 0, y: 0 }, { x: 50, y: 879, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f44", { x: 0, y: 0 }, { x: -44, y: 673, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f45", { x: 0, y: 0 }, { x: 54, y: 839, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f46", { x: 0, y: 0 }, { x: -34, y: 656, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f47", { x: 0, y: 0 }, { x: 41, y: 672, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f48", { x: 0, y: 0 }, { x: 45, y: 553, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f49", { x: 0, y: 0 }, { x: 35, y: 670, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f50", { x: 0, y: 0 }, { x: 40, y: 550, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f51", { x: 0, y: 0 }, { x: -6, y: 804, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f52", { x: 0, y: 0 }, { x: 22, y: 943, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f53", { x: 0, y: 0 }, { x: -3, y: 545, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f54", { x: 0, y: 0 }, { x: 24, y: 685, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f55", { x: 0, y: 0 }, { x: 35, y: 705, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f56", { x: 0, y: 0 }, { x: -44, y: 843, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f57", { x: 0, y: 0 }, { x: 8, y: 698, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f58", { x: 0, y: 0 }, { x: 18, y: 735, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f59", { x: 0, y: 0 }, { x: 26, y: 809, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f60", { x: 0, y: 0 }, { x: 4, y: 950, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f61", { x: 0, y: 0 }, { x: -18, y: 899, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f62", { x: 0, y: 0 }, { x: -2, y: 863, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f63", { x: 0, y: 0 }, { x: -39, y: 876, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f64", { x: 0, y: 0 }, { x: 2, y: 602, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f65", { x: 0, y: 0 }, { x: -1, y: 937, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f66", { x: 0, y: 0 }, { x: -25, y: 761, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f67", { x: 0, y: 0 }, { x: 7, y: 894, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f68", { x: 0, y: 0 }, { x: -35, y: 918, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.fromTo("#s1-f69", { x: 0, y: 0 }, { x: -36, y: 781, duration: 2.9999999999999996, ease: "none" }, 2.6);
+      tl.to("#s1-snowcover", { opacity: 1, duration: 2.2, ease: "sine.in" }, 3.0);
+      tl.to("#fz-armr", { rotation: 0, svgOrigin: "0 -140", duration: 0.25 }, 3.0);
+      tl.to("#fz-head", { rotation: -8, svgOrigin: "0 -160", duration: 0.3, ease: "back.out(3)" }, 3.1);
+      tl.to("#fz-smile", { opacity: 0, duration: 0.12 }, 3.1);
+      tl.to("#fz-sad", { opacity: 0, duration: 0.12 }, 3.1);
+      tl.to("#fz-oh", { opacity: 1, duration: 0.12 }, 3.1);
+      tl.fromTo("#fz-body", { x: -3 }, { x: 3, duration: 0.08, repeat: 24, yoyo: true, ease: "none" }, 3.6);
+      window.__timelines["s1"] = tl;
+    })();
+  </script>
+</template>

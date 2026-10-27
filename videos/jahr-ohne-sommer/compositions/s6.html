@@ -1,0 +1,131 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Patrick Hand";
+      src: url("assets/fonts/patrick-hand.woff2") format("woff2");
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #f4efe4;
+      font-family: "Patrick Hand", sans-serif;
+      color: #1f1d1a;
+    }
+    #s6-cam {
+      position: absolute;
+      inset: 0;
+    }
+    #s6-art {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+    }
+    #s6-art line,
+    #s6-art path,
+    #s6-art circle,
+    #s6-art rect,
+    #s6-art ellipse,
+    #s6-art polygon {
+      stroke: #1f1d1a;
+      stroke-width: 7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .src {
+      position: absolute;
+      left: 48px;
+      top: 34px;
+      font-size: 30px;
+      color: #4a453e;
+      background: rgba(255, 252, 245, 0.85);
+      border-radius: 10px;
+      padding: 2px 12px;
+      z-index: 5;
+    }
+    .label {
+      position: absolute;
+      font-size: 64px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+  </style>
+  <div id="root" data-composition-id="s6" data-width="1920" data-height="1080">
+    <div id="s6-cam">
+      <svg id="s6-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s6-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s6-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s6-boil)">
+
+          <path d="M-20,900 Q480,880 960,900 T1940,890 L1940,1100 L-20,1100 Z" fill="#e9ecef" />
+          <g id="s6-sun"><circle cx="230" cy="380" r="120" fill="#ffd34d" /></g>
+          <line id="s6-r0" x1="380" y1="260" x2="1150" y2="380" style="stroke:#f2b31f;stroke-width:12" /><line id="s6-r1" x1="380" y1="355" x2="1150" y2="475" style="stroke:#f2b31f;stroke-width:12" /><line id="s6-r2" x1="380" y1="450" x2="1150" y2="570" style="stroke:#f2b31f;stroke-width:12" /><line id="s6-r3" x1="380" y1="545" x2="1150" y2="665" style="stroke:#f2b31f;stroke-width:12" /><line id="s6-r4" x1="380" y1="640" x2="1150" y2="760" style="stroke:#f2b31f;stroke-width:12" /><line id="s6-r5" x1="380" y1="735" x2="1150" y2="855" style="stroke:#f2b31f;stroke-width:12" />
+          <g id="s6-haze" opacity="0">
+            <path d="M700,140 q60,-60 120,0 q70,-40 100,40 q-30,180 20,330 q-20,120 30,260 q-60,80 -140,30 q-80,40 -110,-60 q30,-160 -20,-320 q-20,-140 0,-280 z" fill="#9c9893" />
+          </g>
+          
+  <g id="fz2" transform="translate(1250,940) scale(1.1)">
+    <g id="fz2-body">
+      <line x1="0" y1="-158" x2="0" y2="-66" />
+      <g id="fz2-legl"><line x1="0" y1="-66" x2="-30" y2="0" /></g>
+      <g id="fz2-legr"><line x1="0" y1="-66" x2="30" y2="0" /></g>
+      <g id="fz2-arml"><line x1="0" y1="-140" x2="-46" y2="-92" /></g>
+      <g id="fz2-armr"><line x1="0" y1="-140" x2="46" y2="-92" /></g>
+      <path d="M-30,-160 L30,-160 L36,-140 L-34,-140 Z M18,-148 L30,-100 L14,-98 Z" fill="#3d7bd9" />
+      <g id="fz2-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec" />
+        <path d="M-14,-238 L-10,-252 M-2,-240 L2,-256 M10,-238 L16,-250" />
+        <circle id="fz2-eyel" cx="-13" cy="-206" r="4.5" fill="#1f1d1a" stroke="none" />
+        <circle id="fz2-eyer" cx="13" cy="-206" r="4.5" fill="#1f1d1a" stroke="none" />
+        <path id="fz2-smile" d="M-14,-186 Q0,-174 14,-186" fill="none" opacity="0" />
+        <path id="fz2-sad" d="M-13,-178 Q0,-190 13,-178" fill="none" opacity="1" />
+        <ellipse id="fz2-oh" cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" stroke="none" opacity="0" />
+      </g>
+    </g>
+  </g>
+          <g id="s6-thermo" transform="translate(1620,540)">
+            <rect x="-38" y="-330" width="76" height="560" rx="38" fill="#fff" />
+            <circle cx="0" cy="260" r="72" fill="#fff" />
+            <circle id="s6-bulb" cx="0" cy="260" r="52" fill="#e8483b" stroke="none" style="stroke-width:0" />
+            <rect id="s6-merc" x="-16" y="-260" width="32" height="520" rx="16" fill="#e8483b" style="stroke-width:0" />
+            <path d="M38,-240 L60,-240 M38,-140 L60,-140 M38,-40 L60,-40 M38,60 L60,60 M38,160 L60,160" style="stroke-width:5" />
+          </g>
+        </g>
+      </svg>
+      <div id="s6-label" class="label" style="left: 1500px; top: 960px; font-size: 52px;">Sommer 1816</div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      // Hand-drawn line boil: a new noise seed 12 times a second, driven by timeline time.
+      const turb = document.querySelector("#s6-turb");
+      const clock = { t: 0 };
+      tl.to(clock, {
+        t: 5.3,
+        duration: 5.3,
+        ease: "none",
+        onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))),
+      }, 0);
+      tl.fromTo("#s6-cam", { scale: 1 }, { scale: 1.045, duration: 5.3, ease: "sine.inOut" }, 0);
+
+      tl.fromTo("#s6-haze", { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }, 0.6);
+      tl.to("#s6-r0", { attr: { x2: 760, y2: 320 }, duration: 0.6, ease: "power2.inOut" }, 1.00);
+      tl.to("#s6-r2", { attr: { x2: 760, y2: 510 }, duration: 0.6, ease: "power2.inOut" }, 1.14);
+      tl.to("#s6-r3", { attr: { x2: 760, y2: 605 }, duration: 0.6, ease: "power2.inOut" }, 1.21);
+      tl.to("#s6-r5", { attr: { x2: 760, y2: 795 }, duration: 0.6, ease: "power2.inOut" }, 1.35);
+      tl.fromTo("#s6-merc", { scaleY: 1 }, { scaleY: 0.32, svgOrigin: "0 260", duration: 1.3, ease: "power2.inOut" }, 2.2);
+      tl.to(["#s6-merc", "#s6-bulb"], { fill: "#3d7bd9", duration: 1.0 }, 2.4);
+      tl.to("#s6-sun", { opacity: 0.55, duration: 1.0 }, 1.0);
+      tl.to("#fz2-arml", { rotation: 70, svgOrigin: "0 -140", duration: 0.3 }, 3.3);
+      tl.to("#fz2-armr", { rotation: -70, svgOrigin: "0 -140", duration: 0.3 }, 3.35);
+      tl.fromTo("#fz2-body", { x: -3 }, { x: 3, duration: 0.08, repeat: 23, yoyo: true, ease: "none" }, 3.4);
+      window.__timelines["s6"] = tl;
+    })();
+  </script>
+</template>
