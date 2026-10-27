@@ -1,0 +1,126 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s15-cam { position: absolute; inset: 0; }
+    #s15-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s15-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s15-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s15-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s15-cam .wd { display: inline-block; }
+    #s15-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s15-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s15-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s15-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s15-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s15-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s15-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s15-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s15-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s15-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s15" data-width="1920" data-height="1080">
+    <div id="s15-cam">
+      <svg id="s15-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s15-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s15-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s15-boil)">
+<rect id="s15-sky" x="-40" y="-40" width="2000" height="1160" fill="#e3eef4" style="stroke:none"/>
+<g id="s15-strat"><rect x="-40" y="-40" width="2000" height="300" fill="#cfdbe8" style="stroke:none"/></g>
+<g id="s15-gr"><path d="M-40,960 Q480,920 960,950 T1960,940 L1960,1120 L-40,1120 Z" fill="#a9a08f"/></g>
+<g id="s15-vol" transform="translate(1250,965) scale(0.18)" ><g id="s15-vol-in"><path d="M-450,0 L-170,-380 Q-120,-410 -80,-370 Q0,-330 80,-370 Q120,-410 170,-380 L450,0 Z" fill="#9b7653"/></g></g>
+<g id="s15-axis"><line x1="220" y1="950" x2="220" y2="90"/><line x1="200" y1="950" x2="240" y2="950" style="stroke-width:5"/><line x1="200" y1="745" x2="240" y2="745" style="stroke-width:5"/><line x1="200" y1="540" x2="240" y2="540" style="stroke-width:5"/><line x1="200" y1="335" x2="240" y2="335" style="stroke-width:5"/><line x1="200" y1="130" x2="240" y2="130" style="stroke-width:5"/></g>
+<g id="s15-cl" transform="translate(700,800) scale(0.6)" ><g id="s15-cl-in"><path d="M-170,40 q-30,-70 50,-80 q20,-70 110,-55 q60,-60 140,-5 q90,-10 90,70 q40,40 -20,70 L-150,70 q-60,0 -20,-30 z" fill="#d7dade"/></g></g>
+<g id="s15-cl2" transform="translate(1600,790) scale(0.5)" ><g id="s15-cl2-in"><path d="M-170,40 q-30,-70 50,-80 q20,-70 110,-55 q60,-60 140,-5 q90,-10 90,70 q40,40 -20,70 L-150,70 q-60,0 -20,-30 z" fill="#d7dade"/></g></g>
+<g id="s15-plane" transform="translate(500,730)"><path d="M-60,0 L60,0 L80,-10 L60,-14 L-50,-14 Z" fill="#fff"/><path d="M-10,-8 L20,-40 L30,-40 L20,-8 Z" fill="#fff"/></g>
+<g id="s15-so"><g id="s15-so-0" transform="translate(1211,869)" ><g id="s15-so-0-in"><circle cx="0" cy="0" r="10.8" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-1" transform="translate(1289,841)" ><g id="s15-so-1-in"><circle cx="0" cy="0" r="6.8" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-2" transform="translate(1265,874)" ><g id="s15-so-2-in"><circle cx="0" cy="0" r="10.4" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-3" transform="translate(1229,854)" ><g id="s15-so-3-in"><circle cx="0" cy="0" r="11.0" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-4" transform="translate(1232,851)" ><g id="s15-so-4-in"><circle cx="0" cy="0" r="9.5" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-5" transform="translate(1279,875)" ><g id="s15-so-5-in"><circle cx="0" cy="0" r="7.1" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-6" transform="translate(1228,877)" ><g id="s15-so-6-in"><circle cx="0" cy="0" r="10.0" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-7" transform="translate(1229,858)" ><g id="s15-so-7-in"><circle cx="0" cy="0" r="8.6" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-8" transform="translate(1216,863)" ><g id="s15-so-8-in"><circle cx="0" cy="0" r="8.1" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-9" transform="translate(1256,877)" ><g id="s15-so-9-in"><circle cx="0" cy="0" r="7.8" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-10" transform="translate(1242,875)" ><g id="s15-so-10-in"><circle cx="0" cy="0" r="9.2" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-11" transform="translate(1249,878)" ><g id="s15-so-11-in"><circle cx="0" cy="0" r="11.0" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-12" transform="translate(1221,847)" ><g id="s15-so-12-in"><circle cx="0" cy="0" r="6.1" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-13" transform="translate(1265,869)" ><g id="s15-so-13-in"><circle cx="0" cy="0" r="10.7" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-14" transform="translate(1250,875)" ><g id="s15-so-14-in"><circle cx="0" cy="0" r="7.4" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-15" transform="translate(1219,842)" ><g id="s15-so-15-in"><circle cx="0" cy="0" r="6.5" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-16" transform="translate(1277,862)" ><g id="s15-so-16-in"><circle cx="0" cy="0" r="8.3" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-17" transform="translate(1250,847)" ><g id="s15-so-17-in"><circle cx="0" cy="0" r="8.0" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-18" transform="translate(1238,849)" ><g id="s15-so-18-in"><circle cx="0" cy="0" r="10.7" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-19" transform="translate(1276,853)" ><g id="s15-so-19-in"><circle cx="0" cy="0" r="7.6" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-20" transform="translate(1237,858)" ><g id="s15-so-20-in"><circle cx="0" cy="0" r="10.5" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-21" transform="translate(1283,872)" ><g id="s15-so-21-in"><circle cx="0" cy="0" r="6.4" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-22" transform="translate(1219,860)" ><g id="s15-so-22-in"><circle cx="0" cy="0" r="8.4" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-23" transform="translate(1277,877)" ><g id="s15-so-23-in"><circle cx="0" cy="0" r="7.9" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-24" transform="translate(1233,842)" ><g id="s15-so-24-in"><circle cx="0" cy="0" r="9.7" fill="#e9d84a" style="stroke-width:4"/></g></g><g id="s15-so-25" transform="translate(1286,846)" ><g id="s15-so-25-in"><circle cx="0" cy="0" r="10.5" fill="#e9d84a" style="stroke-width:4"/></g></g></g>
+        </g>
+
+      </svg>
+<div id="s15-km0" class="label " style="left:60px;top:925px;font-size:34px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">0</span> <span class="wd">km</span></div>
+<div id="s15-km1" class="label " style="left:60px;top:720px;font-size:34px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">10</span> <span class="wd">km</span></div>
+<div id="s15-km2" class="label " style="left:60px;top:515px;font-size:34px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">20</span> <span class="wd">km</span></div>
+<div id="s15-km3" class="label " style="left:60px;top:310px;font-size:34px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">30</span> <span class="wd">km</span></div>
+<div id="s15-km4" class="label " style="left:60px;top:105px;font-size:34px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">40</span> <span class="wd">km</span></div>
+<div id="s15-lstr" class="label " style="left:1380px;top:120px;font-size:60px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Stratosphäre</span></div>
+<div id="s15-lw" class="label " style="left:860px;top:640px;font-size:44px;color:#5b6670;text-align:center;" data-rot="0"><span class="wd">Wolken</span> <span class="wd">&</span> <span class="wd">Wetter</span></div>
+<div id="s15-lt" class="label box" style="left:300px;top:300px;font-size:64px;color:#1f1d1a;text-align:center;" data-rot="-2"><span class="wd">≈</span> <span class="wd">60</span> <span class="wd">Mio.</span> <span class="wd">Tonnen</span> <span class="wd">SO₂</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s15-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 7.84, duration: 7.84, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s15-cam", { scale: 1.0 }, { scale: 1.03, duration: 7.84, ease: "sine.inOut" }, 0);
+      D("#s15-axis", 0.1, 0.6);
+      W("#s15-km0", 0.2, 0.08);
+      W("#s15-km1", 0.28, 0.08);
+      W("#s15-km2", 0.36, 0.08);
+      W("#s15-km3", 0.44, 0.08);
+      W("#s15-km4", 0.52, 0.08);
+      W("#s15-lt", 0.6, 0.08);
+      W("#s15-lw", 1.94, 0.08);
+      tl.fromTo("#s15-so-0-in", { x: 0, y: 0 }, { x: 306.1879661604969, y: -703.6228093366082, duration: 2.6, ease: "power2.inOut" }, 2.53);
+      tl.fromTo("#s15-so-1-in", { x: 0, y: 0 }, { x: -393.34474839127677, y: -780.4983336807351, duration: 2.6, ease: "power2.inOut" }, 2.57);
+      tl.fromTo("#s15-so-2-in", { x: 0, y: 0 }, { x: -73.87169778461657, y: -798.822450305437, duration: 2.6, ease: "power2.inOut" }, 2.61);
+      tl.fromTo("#s15-so-3-in", { x: 0, y: 0 }, { x: -499.0585407231898, y: -723.2656634740374, duration: 2.6, ease: "power2.inOut" }, 2.65);
+      tl.fromTo("#s15-so-4-in", { x: 0, y: 0 }, { x: -233.72371934811372, y: -723.7502712212804, duration: 2.6, ease: "power2.inOut" }, 2.69);
+      tl.fromTo("#s15-so-5-in", { x: 0, y: 0 }, { x: 423.4076083645798, y: -762.408638731913, duration: 2.6, ease: "power2.inOut" }, 2.73);
+      tl.fromTo("#s15-so-6-in", { x: 0, y: 0 }, { x: 225.05044740053518, y: -813.339974363532, duration: 2.6, ease: "power2.inOut" }, 2.7699999999999996);
+      tl.fromTo("#s15-so-7-in", { x: 0, y: 0 }, { x: 308.019285527462, y: -801.8914355655544, duration: 2.6, ease: "power2.inOut" }, 2.8099999999999996);
+      tl.fromTo("#s15-so-8-in", { x: 0, y: 0 }, { x: 314.0953134656768, y: -756.2503608409467, duration: 2.6, ease: "power2.inOut" }, 2.8499999999999996);
+      tl.fromTo("#s15-so-9-in", { x: 0, y: 0 }, { x: 443.06808707945993, y: -731.6056000510546, duration: 2.6, ease: "power2.inOut" }, 2.8899999999999997);
+      tl.fromTo("#s15-so-10-in", { x: 0, y: 0 }, { x: -70.81673086936621, y: -803.3540259921708, duration: 2.6, ease: "power2.inOut" }, 2.9299999999999997);
+      tl.fromTo("#s15-so-11-in", { x: 0, y: 0 }, { x: -538.1020365889628, y: -715.8893811829383, duration: 2.6, ease: "power2.inOut" }, 2.9699999999999998);
+      tl.fromTo("#s15-so-12-in", { x: 0, y: 0 }, { x: 25.342301270115968, y: -793.288148168577, duration: 2.6, ease: "power2.inOut" }, 3.01);
+      tl.fromTo("#s15-so-13-in", { x: 0, y: 0 }, { x: -300.8666741638507, y: -738.9546041775977, duration: 2.6, ease: "power2.inOut" }, 3.05);
+      tl.fromTo("#s15-so-14-in", { x: 0, y: 0 }, { x: -56.45272576998957, y: -750.0512364104771, duration: 2.6, ease: "power2.inOut" }, 3.09);
+      tl.fromTo("#s15-so-15-in", { x: 0, y: 0 }, { x: 7.169431410432594, y: -708.8537133719716, duration: 2.6, ease: "power2.inOut" }, 3.13);
+      tl.fromTo("#s15-so-16-in", { x: 0, y: 0 }, { x: -568.6958594786691, y: -707.6945898794175, duration: 2.6, ease: "power2.inOut" }, 3.17);
+      tl.fromTo("#s15-so-17-in", { x: 0, y: 0 }, { x: 108.0521837578874, y: -694.7538154620089, duration: 2.6, ease: "power2.inOut" }, 3.21);
+      tl.fromTo("#s15-so-18-in", { x: 0, y: 0 }, { x: -412.5317711515205, y: -815.5127130427605, duration: 2.6, ease: "power2.inOut" }, 3.25);
+      tl.fromTo("#s15-so-19-in", { x: 0, y: 0 }, { x: -271.57498009007827, y: -794.1530580003225, duration: 2.6, ease: "power2.inOut" }, 3.29);
+      tl.fromTo("#s15-so-20-in", { x: 0, y: 0 }, { x: 13.575814033406118, y: -782.4449269812835, duration: 2.6, ease: "power2.inOut" }, 3.33);
+      tl.fromTo("#s15-so-21-in", { x: 0, y: 0 }, { x: -580.3317804592982, y: -784.7709805151093, duration: 2.6, ease: "power2.inOut" }, 3.3699999999999997);
+      tl.fromTo("#s15-so-22-in", { x: 0, y: 0 }, { x: 437.10192403152814, y: -697.0446930448179, duration: 2.6, ease: "power2.inOut" }, 3.4099999999999997);
+      tl.fromTo("#s15-so-23-in", { x: 0, y: 0 }, { x: 134.2403235816056, y: -781.8771299864289, duration: 2.6, ease: "power2.inOut" }, 3.4499999999999997);
+      tl.fromTo("#s15-so-24-in", { x: 0, y: 0 }, { x: -455.31757116130836, y: -712.0824411046224, duration: 2.6, ease: "power2.inOut" }, 3.4899999999999998);
+      tl.fromTo("#s15-so-25-in", { x: 0, y: 0 }, { x: -462.8898703201695, y: -785.0288550171939, duration: 2.6, ease: "power2.inOut" }, 3.53);
+      tl.fromTo("#s15-strat", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "none" }, 4.45);
+      W("#s15-lstr", 4.65, 0.08);
+      window.__timelines["s15"] = tl;
+    })();
+  </script>
+</template>

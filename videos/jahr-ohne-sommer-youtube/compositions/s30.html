@@ -1,0 +1,110 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s30-cam { position: absolute; inset: 0; }
+    #s30-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s30-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s30-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s30-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s30-cam .wd { display: inline-block; }
+    #s30-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s30-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s30-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s30-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s30-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s30-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s30-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s30-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s30-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s30-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s30" data-width="1920" data-height="1080">
+    <div id="s30-cam">
+      <svg id="s30-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s30-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s30-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s30-boil)">
+<rect x="-40" y="560" width="1000" height="560" fill="#8a6a45" style="stroke:none"/><line x1="-40" y1="560" x2="960" y2="560"/>
+<g id="s30-p0" transform="translate(200,700)" ><g id="s30-p0-in"><ellipse cx="0" cy="0" rx="70" ry="48" fill="#d6b06a"/></g></g>
+<g id="s30-p1" transform="translate(420,820)" ><g id="s30-p1-in"><ellipse cx="0" cy="0" rx="70" ry="48" fill="#d6b06a"/></g></g>
+<g id="s30-p2" transform="translate(650,690)" ><g id="s30-p2-in"><ellipse cx="0" cy="0" rx="70" ry="48" fill="#d6b06a"/></g></g>
+<g id="s30-p3" transform="translate(800,860)" ><g id="s30-p3-in"><ellipse cx="0" cy="0" rx="70" ry="48" fill="#d6b06a"/></g></g>
+<g id="s30-glass" transform="translate(1330,700)"><path d="M-90,-300 L90,-300 Q90,-130 0,-110 Q-90,-130 -90,-300 Z" fill="#fff"/><path d="M-82,-240 L82,-240 Q80,-140 0,-122 Q-80,-140 -82,-240 Z" fill="#8e2747"/><line x1="0" y1="-110" x2="0" y2="0"/><line x1="-70" y1="0" x2="70" y2="0"/></g>
+<g id="s30-fig" transform="translate(1640,900) scale(1.1)" ><g id="s30-fig-in">
+      <line x1="0" y1="-158" x2="0" y2="-66"/>
+      <g id="s30-fig-legl"><line x1="0" y1="-66" x2="-30" y2="0"/></g>
+      <g id="s30-fig-legr"><line x1="0" y1="-66" x2="30" y2="0"/></g>
+      <g id="s30-fig-arml"><polyline points="0,-140 -46,-92" fill="none"/></g>
+      <g id="s30-fig-armr"><polyline points="0,-140 46,-92" fill="none"/></g>
+      
+      <g id="s30-fig-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec"/>
+        <circle cx="-13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <circle cx="13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <g id="s30-fig-smile" style="opacity:1"><path d="M-14,-186 Q0,-174 14,-186" fill="none" style="stroke-width:5"/></g>
+        <g id="s30-fig-sad" style="opacity:0"><path d="M-13,-178 Q0,-190 13,-178" fill="none" style="stroke-width:5"/></g>
+        <g id="s30-fig-oh" style="opacity:0"><ellipse cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" style="stroke:none"/></g>
+        
+      </g></g></g>
+        </g>
+
+      </svg>
+<div id="s30-lk" class="label " style="left:280px;top:470px;font-size:60px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Kartoffeln</span></div>
+<div id="s30-ls" class="label " style="left:1440px;top:280px;font-size:80px;color:#7a9a1a;text-align:center;" data-rot="-5"><span class="wd">sauer!</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s30-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 5.93, duration: 5.93, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s30-cam", { scale: 1.0 }, { scale: 1.03, duration: 5.93, ease: "sine.inOut" }, 0);
+      W("#s30-lk", 0.35, 0.08);
+      tl.to("#s30-p0-in", { scale: 0.8, transformOrigin: "50% 50%", duration: 0.8, ease: "power2.inOut" }, 1.13);
+      tl.to("#s30-p1-in", { scale: 0.8, transformOrigin: "50% 50%", duration: 0.8, ease: "power2.inOut" }, 1.2799999999999998);
+      tl.to("#s30-p2-in", { scale: 0.8, transformOrigin: "50% 50%", duration: 0.8, ease: "power2.inOut" }, 1.43);
+      tl.to("#s30-p3-in", { scale: 0.8, transformOrigin: "50% 50%", duration: 0.8, ease: "power2.inOut" }, 1.5799999999999998);
+      tl.to("#s30-p0-in ellipse, #s30-p1-in ellipse, #s30-p2-in ellipse, #s30-p3-in ellipse", { fill: "#4f3f2a", duration: 1.2, ease: "none" }, 1.13);
+      D("#s30-glass", 2.67, 0.5);
+      tl.to("#s30-fig-smile", { opacity: 0, duration: 0.1, ease: "none" }, 3.19);
+      tl.to("#s30-fig-sad", { opacity: 0, duration: 0.1, ease: "none" }, 3.19);
+      tl.to("#s30-fig-oh", { opacity: 1, duration: 0.1, ease: "none" }, 3.19);
+      W("#s30-ls", 3.19, 0.08);
+      tl.to("#s30-fig-head", { x: 5, duration: 0.06, repeat: 6, yoyo: true, ease: "none" }, 3.19);
+      tl.set("#s30-fig-head", { x: 0 }, 3.660);
+      window.__timelines["s30"] = tl;
+    })();
+  </script>
+</template>

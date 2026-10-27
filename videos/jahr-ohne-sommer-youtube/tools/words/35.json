@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Wer",
+    "start": 0.01,
+    "end": 0.26,
+    "id": "w0"
+  },
+  {
+    "text": "kann",
+    "start": 0.26,
+    "end": 0.6,
+    "id": "w1"
+  },
+  {
+    "text": "packt",
+    "start": 0.6,
+    "end": 1.02,
+    "id": "w2"
+  },
+  {
+    "text": "seine",
+    "start": 1.02,
+    "end": 1.37,
+    "id": "w3"
+  },
+  {
+    "text": "Sachen?",
+    "start": 1.37,
+    "end": 2.19,
+    "id": "w4"
+  },
+  {
+    "text": "Aus",
+    "start": 2.21,
+    "end": 2.38,
+    "id": "w5"
+  },
+  {
+    "text": "Baden",
+    "start": 2.38,
+    "end": 2.69,
+    "id": "w6"
+  },
+  {
+    "text": "und",
+    "start": 2.69,
+    "end": 2.88,
+    "id": "w7"
+  },
+  {
+    "text": "Württemberg",
+    "start": 2.88,
+    "end": 3.55,
+    "id": "w8"
+  },
+  {
+    "text": "wandern",
+    "start": 3.56,
+    "end": 3.99,
+    "id": "w9"
+  },
+  {
+    "text": "Zehntausende",
+    "start": 4,
+    "end": 4.73,
+    "id": "w10"
+  },
+  {
+    "text": "aus.",
+    "start": 4.74,
+    "end": 5.06,
+    "id": "w11"
+  }
+]

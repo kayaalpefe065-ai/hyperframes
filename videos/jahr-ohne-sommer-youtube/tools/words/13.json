@@ -1,0 +1,92 @@
+[
+  {
+    "text": "und",
+    "start": 0.02,
+    "end": 0.28,
+    "id": "w0"
+  },
+  {
+    "text": "dann",
+    "start": 0.28,
+    "end": 0.61,
+    "id": "w1"
+  },
+  {
+    "text": "kommt",
+    "start": 0.67,
+    "end": 1.06,
+    "id": "w2"
+  },
+  {
+    "text": "der",
+    "start": 1.06,
+    "end": 1.16,
+    "id": "w3"
+  },
+  {
+    "text": "Hunger.",
+    "start": 1.16,
+    "end": 2.02,
+    "id": "w4"
+  },
+  {
+    "text": "Die",
+    "start": 2.02,
+    "end": 2.21,
+    "id": "w5"
+  },
+  {
+    "text": "Asche",
+    "start": 2.21,
+    "end": 2.56,
+    "id": "w6"
+  },
+  {
+    "text": "hat",
+    "start": 2.56,
+    "end": 2.77,
+    "id": "w7"
+  },
+  {
+    "text": "Felder",
+    "start": 2.77,
+    "end": 3.1,
+    "id": "w8"
+  },
+  {
+    "text": "und",
+    "start": 3.1,
+    "end": 3.4,
+    "id": "w9"
+  },
+  {
+    "text": "Brunnen",
+    "start": 3.4,
+    "end": 3.72,
+    "id": "w10"
+  },
+  {
+    "text": "begraben.",
+    "start": 4.02,
+    "end": 4.56,
+    "id": "w11"
+  },
+  {
+    "text": "Zehntausende",
+    "start": 4.58,
+    "end": 5.17,
+    "id": "w12"
+  },
+  {
+    "text": "weitere",
+    "start": 5.23,
+    "end": 5.61,
+    "id": "w13"
+  },
+  {
+    "text": "sterben.",
+    "start": 5.61,
+    "end": 6.28,
+    "id": "w14"
+  }
+]

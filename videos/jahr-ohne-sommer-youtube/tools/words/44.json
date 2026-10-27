@@ -1,0 +1,92 @@
+[
+  {
+    "text": "Ob",
+    "start": 0.02,
+    "end": 0.1,
+    "id": "w0"
+  },
+  {
+    "text": "der",
+    "start": 0.1,
+    "end": 0.25,
+    "id": "w1"
+  },
+  {
+    "text": "Hafermangel",
+    "start": 0.25,
+    "end": 0.8,
+    "id": "w2"
+  },
+  {
+    "text": "ihn",
+    "start": 0.8,
+    "end": 0.95,
+    "id": "w3"
+  },
+  {
+    "text": "wirklich",
+    "start": 0.95,
+    "end": 1.32,
+    "id": "w4"
+  },
+  {
+    "text": "darauf",
+    "start": 1.39,
+    "end": 1.64,
+    "id": "w5"
+  },
+  {
+    "text": "brachte,",
+    "start": 1.71,
+    "end": 2.16,
+    "id": "w6"
+  },
+  {
+    "text": "ist",
+    "start": 2.16,
+    "end": 2.3,
+    "id": "w7"
+  },
+  {
+    "text": "nicht",
+    "start": 2.3,
+    "end": 2.54,
+    "id": "w8"
+  },
+  {
+    "text": "sicher.",
+    "start": 2.54,
+    "end": 2.95,
+    "id": "w9"
+  },
+  {
+    "text": "Aber",
+    "start": 3.02,
+    "end": 3.25,
+    "id": "w10"
+  },
+  {
+    "text": "manche",
+    "start": 3.25,
+    "end": 3.63,
+    "id": "w11"
+  },
+  {
+    "text": "Forscher",
+    "start": 3.63,
+    "end": 4.13,
+    "id": "w12"
+  },
+  {
+    "text": "vermuten",
+    "start": 4.13,
+    "end": 4.63,
+    "id": "w13"
+  },
+  {
+    "text": "es.",
+    "start": 4.63,
+    "end": 4.97,
+    "id": "w14"
+  }
+]

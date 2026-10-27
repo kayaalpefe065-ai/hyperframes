@@ -1,0 +1,110 @@
+[
+  {
+    "text": "Feuer-Säulen",
+    "start": 0.09,
+    "end": 0.75,
+    "id": "w0"
+  },
+  {
+    "text": "schießen",
+    "start": 0.75,
+    "end": 1.25,
+    "id": "w1"
+  },
+  {
+    "text": "in",
+    "start": 1.26,
+    "end": 1.38,
+    "id": "w2"
+  },
+  {
+    "text": "den",
+    "start": 1.38,
+    "end": 1.51,
+    "id": "w3"
+  },
+  {
+    "text": "Himmel.",
+    "start": 1.54,
+    "end": 2,
+    "id": "w4"
+  },
+  {
+    "text": "Glühende",
+    "start": 2.09,
+    "end": 2.51,
+    "id": "w5"
+  },
+  {
+    "text": "Lawinen",
+    "start": 2.52,
+    "end": 2.97,
+    "id": "w6"
+  },
+  {
+    "text": "aus",
+    "start": 2.97,
+    "end": 3.16,
+    "id": "w7"
+  },
+  {
+    "text": "Asche",
+    "start": 3.16,
+    "end": 3.47,
+    "id": "w8"
+  },
+  {
+    "text": "und",
+    "start": 3.47,
+    "end": 3.61,
+    "id": "w9"
+  },
+  {
+    "text": "Gas",
+    "start": 3.61,
+    "end": 4.03,
+    "id": "w10"
+  },
+  {
+    "text": "rasen",
+    "start": 4.03,
+    "end": 4.2,
+    "id": "w11"
+  },
+  {
+    "text": "die",
+    "start": 4.2,
+    "end": 4.37,
+    "id": "w12"
+  },
+  {
+    "text": "Hänge",
+    "start": 4.38,
+    "end": 4.68,
+    "id": "w13"
+  },
+  {
+    "text": "hinunter,",
+    "start": 4.68,
+    "end": 5.33,
+    "id": "w14"
+  },
+  {
+    "text": "bis",
+    "start": 5.33,
+    "end": 5.53,
+    "id": "w15"
+  },
+  {
+    "text": "ins",
+    "start": 5.53,
+    "end": 5.73,
+    "id": "w16"
+  },
+  {
+    "text": "Meer.",
+    "start": 5.73,
+    "end": 6,
+    "id": "w17"
+  }
+]

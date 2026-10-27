@@ -1,0 +1,68 @@
+[
+  {
+    "text": "Lord",
+    "start": 0,
+    "end": 0.19,
+    "id": "w0"
+  },
+  {
+    "text": "Byron",
+    "start": 0.34,
+    "end": 0.51,
+    "id": "w1"
+  },
+  {
+    "text": "schlägt",
+    "start": 0.51,
+    "end": 0.9,
+    "id": "w2"
+  },
+  {
+    "text": "einen",
+    "start": 0.9,
+    "end": 1.19,
+    "id": "w3"
+  },
+  {
+    "text": "Wettbewerb",
+    "start": 1.19,
+    "end": 1.74,
+    "id": "w4"
+  },
+  {
+    "text": "vor.",
+    "start": 1.74,
+    "end": 2.33,
+    "id": "w5"
+  },
+  {
+    "text": "Jeder",
+    "start": 2.5,
+    "end": 2.87,
+    "id": "w6"
+  },
+  {
+    "text": "soll",
+    "start": 2.87,
+    "end": 3.2,
+    "id": "w7"
+  },
+  {
+    "text": "eine",
+    "start": 3.2,
+    "end": 3.43,
+    "id": "w8"
+  },
+  {
+    "text": "Gruselgeschichte",
+    "start": 3.43,
+    "end": 4.54,
+    "id": "w9"
+  },
+  {
+    "text": "schreiben.",
+    "start": 4.54,
+    "end": 5.2,
+    "id": "w10"
+  }
+]

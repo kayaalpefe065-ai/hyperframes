@@ -1,0 +1,92 @@
+[
+  {
+    "text": "Ernten",
+    "start": 0,
+    "end": 0.47,
+    "id": "w0"
+  },
+  {
+    "text": "verfaulten,",
+    "start": 0.47,
+    "end": 1.44,
+    "id": "w1"
+  },
+  {
+    "text": "Brot",
+    "start": 1.49,
+    "end": 1.7,
+    "id": "w2"
+  },
+  {
+    "text": "wurde",
+    "start": 1.7,
+    "end": 2.04,
+    "id": "w3"
+  },
+  {
+    "text": "unbezahlbar,",
+    "start": 2.04,
+    "end": 2.8,
+    "id": "w4"
+  },
+  {
+    "text": "Menschen",
+    "start": 3.13,
+    "end": 3.44,
+    "id": "w5"
+  },
+  {
+    "text": "wanderten",
+    "start": 3.44,
+    "end": 4,
+    "id": "w6"
+  },
+  {
+    "text": "aus",
+    "start": 4,
+    "end": 4.43,
+    "id": "w7"
+  },
+  {
+    "text": "und",
+    "start": 4.88,
+    "end": 5,
+    "id": "w8"
+  },
+  {
+    "text": "am",
+    "start": 5,
+    "end": 5.12,
+    "id": "w9"
+  },
+  {
+    "text": "Ende",
+    "start": 5.15,
+    "end": 5.39,
+    "id": "w10"
+  },
+  {
+    "text": "entstand",
+    "start": 5.39,
+    "end": 5.91,
+    "id": "w11"
+  },
+  {
+    "text": "sogar",
+    "start": 5.93,
+    "end": 6.2,
+    "id": "w12"
+  },
+  {
+    "text": "ein",
+    "start": 6.2,
+    "end": 6.32,
+    "id": "w13"
+  },
+  {
+    "text": "Monster.",
+    "start": 6.32,
+    "end": 6.96,
+    "id": "w14"
+  }
+]

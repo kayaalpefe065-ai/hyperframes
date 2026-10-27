@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Die",
+    "start": 0.01,
+    "end": 0.22,
+    "id": "w0"
+  },
+  {
+    "text": "Folge,",
+    "start": 0.22,
+    "end": 0.72,
+    "id": "w1"
+  },
+  {
+    "text": "die",
+    "start": 0.72,
+    "end": 0.98,
+    "id": "w2"
+  },
+  {
+    "text": "Preise",
+    "start": 0.98,
+    "end": 1.37,
+    "id": "w3"
+  },
+  {
+    "text": "explodieren.",
+    "start": 1.37,
+    "end": 2.27,
+    "id": "w4"
+  },
+  {
+    "text": "Getreide",
+    "start": 2.65,
+    "end": 3.14,
+    "id": "w5"
+  },
+  {
+    "text": "kostet",
+    "start": 3.14,
+    "end": 3.54,
+    "id": "w6"
+  },
+  {
+    "text": "bald",
+    "start": 3.62,
+    "end": 3.8,
+    "id": "w7"
+  },
+  {
+    "text": "zwei,",
+    "start": 3.8,
+    "end": 4.19,
+    "id": "w8"
+  },
+  {
+    "text": "dreimal",
+    "start": 4.19,
+    "end": 4.64,
+    "id": "w9"
+  },
+  {
+    "text": "so",
+    "start": 4.64,
+    "end": 4.77,
+    "id": "w10"
+  },
+  {
+    "text": "viel",
+    "start": 4.77,
+    "end": 4.92,
+    "id": "w11"
+  },
+  {
+    "text": "wie",
+    "start": 4.92,
+    "end": 5.34,
+    "id": "w12"
+  },
+  {
+    "text": "vorher.",
+    "start": 5.34,
+    "end": 5.9,
+    "id": "w13"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Stell",
+    "start": 0.01,
+    "end": 0.38,
+    "id": "w0"
+  },
+  {
+    "text": "dir",
+    "start": 0.38,
+    "end": 0.6,
+    "id": "w1"
+  },
+  {
+    "text": "vor,",
+    "start": 0.6,
+    "end": 0.97,
+    "id": "w2"
+  },
+  {
+    "text": "es",
+    "start": 0.97,
+    "end": 1.12,
+    "id": "w3"
+  },
+  {
+    "text": "ist",
+    "start": 1.12,
+    "end": 1.34,
+    "id": "w4"
+  },
+  {
+    "text": "Juni.",
+    "start": 1.34,
+    "end": 1.8,
+    "id": "w5"
+  },
+  {
+    "text": "Du",
+    "start": 1.86,
+    "end": 1.93,
+    "id": "w6"
+  },
+  {
+    "text": "willst",
+    "start": 1.93,
+    "end": 2.32,
+    "id": "w7"
+  },
+  {
+    "text": "ins",
+    "start": 2.32,
+    "end": 2.52,
+    "id": "w8"
+  },
+  {
+    "text": "Freibad",
+    "start": 2.52,
+    "end": 2.98,
+    "id": "w9"
+  },
+  {
+    "text": "und",
+    "start": 3.17,
+    "end": 3.28,
+    "id": "w10"
+  },
+  {
+    "text": "draußen",
+    "start": 3.28,
+    "end": 3.76,
+    "id": "w11"
+  },
+  {
+    "text": "schneit",
+    "start": 4.46,
+    "end": 4.76,
+    "id": "w12"
+  },
+  {
+    "text": "es.",
+    "start": 4.76,
+    "end": 5.15,
+    "id": "w13"
+  }
+]

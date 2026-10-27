@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Bettler",
+    "start": 0,
+    "end": 0.53,
+    "id": "w0"
+  },
+  {
+    "text": "ziehen",
+    "start": 0.53,
+    "end": 0.98,
+    "id": "w1"
+  },
+  {
+    "text": "von",
+    "start": 0.99,
+    "end": 1.16,
+    "id": "w2"
+  },
+  {
+    "text": "Dorf",
+    "start": 1.22,
+    "end": 1.52,
+    "id": "w3"
+  },
+  {
+    "text": "zu",
+    "start": 1.52,
+    "end": 1.66,
+    "id": "w4"
+  },
+  {
+    "text": "Dorf.",
+    "start": 1.67,
+    "end": 2.26,
+    "id": "w5"
+  },
+  {
+    "text": "In",
+    "start": 2.26,
+    "end": 2.43,
+    "id": "w6"
+  },
+  {
+    "text": "der",
+    "start": 2.63,
+    "end": 2.69,
+    "id": "w7"
+  },
+  {
+    "text": "Schweiz",
+    "start": 2.69,
+    "end": 3.32,
+    "id": "w8"
+  },
+  {
+    "text": "und",
+    "start": 3.32,
+    "end": 3.49,
+    "id": "w9"
+  },
+  {
+    "text": "in",
+    "start": 3.49,
+    "end": 3.6,
+    "id": "w10"
+  },
+  {
+    "text": "Süddeutschland",
+    "start": 3.6,
+    "end": 4.38,
+    "id": "w11"
+  },
+  {
+    "text": "sterben",
+    "start": 4.38,
+    "end": 4.78,
+    "id": "w12"
+  },
+  {
+    "text": "Tausende.",
+    "start": 4.78,
+    "end": 5.28,
+    "id": "w13"
+  }
+]

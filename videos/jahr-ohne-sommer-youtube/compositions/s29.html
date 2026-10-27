@@ -1,0 +1,113 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s29-cam { position: absolute; inset: 0; }
+    #s29-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s29-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s29-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s29-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s29-cam .wd { display: inline-block; }
+    #s29-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s29-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s29-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s29-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s29-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s29-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s29-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s29-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s29-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s29-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s29" data-width="1920" data-height="1080">
+    <div id="s29-cam">
+      <svg id="s29-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s29-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s29-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s29-boil)">
+<rect id="s29-sky" x="-40" y="-40" width="2000" height="1160" fill="#a9b1ba" style="stroke:none"/>
+<g id="s29-gr"><path d="M-40,860 Q480,820 960,850 T1960,840 L1960,1120 L-40,1120 Z" fill="#7d6b4a"/></g>
+<g id="s29-w1" transform="translate(560,870)" ><g id="s29-w1-in"><g id="s29-w1-0" transform="translate(-240,0)"><line x1="0" y1="0" x2="0" y2="-210" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-236" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w1-1" transform="translate(-180,0)"><line x1="0" y1="0" x2="0" y2="-247" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-273" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w1-2" transform="translate(-120,0)"><line x1="0" y1="0" x2="0" y2="-234" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-260" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w1-3" transform="translate(-60,0)"><line x1="0" y1="0" x2="0" y2="-221" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-247" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w1-4" transform="translate(0,0)"><line x1="0" y1="0" x2="0" y2="-258" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-284" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w1-5" transform="translate(60,0)"><line x1="0" y1="0" x2="0" y2="-245" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-271" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w1-6" transform="translate(120,0)"><line x1="0" y1="0" x2="0" y2="-232" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-258" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w1-7" transform="translate(180,0)"><line x1="0" y1="0" x2="0" y2="-219" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-245" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w1-8" transform="translate(240,0)"><line x1="0" y1="0" x2="0" y2="-256" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-282" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g></g></g>
+<g id="s29-w2" transform="translate(1500,870) scale(0.9)" ><g id="s29-w2-in"><g id="s29-w2-0" transform="translate(-120,0)"><line x1="0" y1="0" x2="0" y2="-210" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-236" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w2-1" transform="translate(-60,0)"><line x1="0" y1="0" x2="0" y2="-247" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-273" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w2-2" transform="translate(0,0)"><line x1="0" y1="0" x2="0" y2="-234" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-260" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w2-3" transform="translate(60,0)"><line x1="0" y1="0" x2="0" y2="-221" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-247" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g><g id="s29-w2-4" transform="translate(120,0)"><line x1="0" y1="0" x2="0" y2="-258" style="stroke:#6b8f3a;stroke-width:6"/><ellipse cx="0" cy="-284" rx="14" ry="34" fill="#9ec27a" style="stroke-width:5"/></g></g></g>
+<g id="s29-fig" transform="translate(1050,900) scale(1.1)" ><g id="s29-fig-in">
+      <line x1="0" y1="-158" x2="0" y2="-66"/>
+      <g id="s29-fig-legl"><line x1="0" y1="-66" x2="-30" y2="0"/></g>
+      <g id="s29-fig-legr"><line x1="0" y1="-66" x2="30" y2="0"/></g>
+      <g id="s29-fig-arml"><polyline points="0,-140 -46,-92" fill="none"/></g>
+      <g id="s29-fig-armr"><polyline points="0,-140 46,-92" fill="none"/></g>
+      
+      <g id="s29-fig-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec"/>
+        <circle cx="-13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <circle cx="13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <g id="s29-fig-smile" style="opacity:0"><path d="M-14,-186 Q0,-174 14,-186" fill="none" style="stroke-width:5"/></g>
+        <g id="s29-fig-sad" style="opacity:1"><path d="M-13,-178 Q0,-190 13,-178" fill="none" style="stroke-width:5"/></g>
+        <g id="s29-fig-oh" style="opacity:0"><ellipse cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" style="stroke:none"/></g>
+        <path d="M-38,-226 Q0,-282 38,-226 Z" fill="#7d5a3a"/><line x1="30" y1="-228" x2="62" y2="-224"/>
+      </g></g></g>
+<g id="s29-rn"><line x1="1052" y1="167" x2="1042" y2="211" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1622" y1="106" x2="1612" y2="150" style="stroke:#5a8fc4;stroke-width:5"/><line x1="980" y1="164" x2="970" y2="208" style="stroke:#5a8fc4;stroke-width:5"/><line x1="798" y1="832" x2="788" y2="876" style="stroke:#5a8fc4;stroke-width:5"/><line x1="199" y1="271" x2="189" y2="315" style="stroke:#5a8fc4;stroke-width:5"/><line x1="432" y1="171" x2="422" y2="215" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1918" y1="149" x2="1908" y2="193" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1167" y1="245" x2="1157" y2="289" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1402" y1="274" x2="1392" y2="318" style="stroke:#5a8fc4;stroke-width:5"/><line x1="327" y1="260" x2="317" y2="304" style="stroke:#5a8fc4;stroke-width:5"/><line x1="783" y1="640" x2="773" y2="684" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1080" y1="8" x2="1070" y2="52" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1294" y1="116" x2="1284" y2="160" style="stroke:#5a8fc4;stroke-width:5"/><line x1="983" y1="33" x2="973" y2="77" style="stroke:#5a8fc4;stroke-width:5"/><line x1="789" y1="633" x2="779" y2="677" style="stroke:#5a8fc4;stroke-width:5"/><line x1="990" y1="597" x2="980" y2="641" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1453" y1="422" x2="1443" y2="466" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1239" y1="221" x2="1229" y2="265" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1186" y1="624" x2="1176" y2="668" style="stroke:#5a8fc4;stroke-width:5"/><line x1="190" y1="794" x2="180" y2="838" style="stroke:#5a8fc4;stroke-width:5"/><line x1="705" y1="-53" x2="695" y2="-9" style="stroke:#5a8fc4;stroke-width:5"/><line x1="288" y1="161" x2="278" y2="205" style="stroke:#5a8fc4;stroke-width:5"/><line x1="133" y1="222" x2="123" y2="266" style="stroke:#5a8fc4;stroke-width:5"/><line x1="797" y1="495" x2="787" y2="539" style="stroke:#5a8fc4;stroke-width:5"/><line x1="896" y1="791" x2="886" y2="835" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1266" y1="140" x2="1256" y2="184" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1680" y1="541" x2="1670" y2="585" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1857" y1="578" x2="1847" y2="622" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1854" y1="18" x2="1844" y2="62" style="stroke:#5a8fc4;stroke-width:5"/><line x1="534" y1="831" x2="524" y2="875" style="stroke:#5a8fc4;stroke-width:5"/><line x1="42" y1="779" x2="32" y2="823" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1748" y1="-56" x2="1738" y2="-12" style="stroke:#5a8fc4;stroke-width:5"/><line x1="289" y1="771" x2="279" y2="815" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1843" y1="722" x2="1833" y2="766" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1391" y1="605" x2="1381" y2="649" style="stroke:#5a8fc4;stroke-width:5"/><line x1="591" y1="-192" x2="581" y2="-148" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1206" y1="735" x2="1196" y2="779" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1822" y1="346" x2="1812" y2="390" style="stroke:#5a8fc4;stroke-width:5"/><line x1="16" y1="-15" x2="6" y2="29" style="stroke:#5a8fc4;stroke-width:5"/><line x1="862" y1="44" x2="852" y2="88" style="stroke:#5a8fc4;stroke-width:5"/><line x1="53" y1="4" x2="43" y2="48" style="stroke:#5a8fc4;stroke-width:5"/><line x1="960" y1="-66" x2="950" y2="-22" style="stroke:#5a8fc4;stroke-width:5"/><line x1="217" y1="-25" x2="207" y2="19" style="stroke:#5a8fc4;stroke-width:5"/><line x1="65" y1="631" x2="55" y2="675" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1662" y1="14" x2="1652" y2="58" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1217" y1="729" x2="1207" y2="773" style="stroke:#5a8fc4;stroke-width:5"/><line x1="468" y1="153" x2="458" y2="197" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1692" y1="608" x2="1682" y2="652" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1193" y1="642" x2="1183" y2="686" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1100" y1="134" x2="1090" y2="178" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1316" y1="631" x2="1306" y2="675" style="stroke:#5a8fc4;stroke-width:5"/><line x1="107" y1="141" x2="97" y2="185" style="stroke:#5a8fc4;stroke-width:5"/><line x1="565" y1="740" x2="555" y2="784" style="stroke:#5a8fc4;stroke-width:5"/><line x1="553" y1="514" x2="543" y2="558" style="stroke:#5a8fc4;stroke-width:5"/><line x1="835" y1="201" x2="825" y2="245" style="stroke:#5a8fc4;stroke-width:5"/><line x1="960" y1="749" x2="950" y2="793" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1264" y1="213" x2="1254" y2="257" style="stroke:#5a8fc4;stroke-width:5"/><line x1="289" y1="165" x2="279" y2="209" style="stroke:#5a8fc4;stroke-width:5"/><line x1="904" y1="485" x2="894" y2="529" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1917" y1="144" x2="1907" y2="188" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1805" y1="765" x2="1795" y2="809" style="stroke:#5a8fc4;stroke-width:5"/><line x1="850" y1="35" x2="840" y2="79" style="stroke:#5a8fc4;stroke-width:5"/><line x1="449" y1="777" x2="439" y2="821" style="stroke:#5a8fc4;stroke-width:5"/><line x1="333" y1="487" x2="323" y2="531" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1253" y1="-23" x2="1243" y2="21" style="stroke:#5a8fc4;stroke-width:5"/><line x1="60" y1="477" x2="50" y2="521" style="stroke:#5a8fc4;stroke-width:5"/><line x1="102" y1="382" x2="92" y2="426" style="stroke:#5a8fc4;stroke-width:5"/><line x1="1865" y1="292" x2="1855" y2="336" style="stroke:#5a8fc4;stroke-width:5"/><line x1="599" y1="-87" x2="589" y2="-43" style="stroke:#5a8fc4;stroke-width:5"/><line x1="580" y1="139" x2="570" y2="183" style="stroke:#5a8fc4;stroke-width:5"/></g>
+        </g>
+
+      </svg>
+<div id="s29-lr" class="label box" style="left:300px;top:260px;font-size:64px;color:#1f1d1a;text-align:center;" data-rot="-3"><span class="wd">nicht</span> <span class="wd">reif</span></div>
+<div id="s29-lv" class="label box" style="left:1350px;top:300px;font-size:64px;color:#e8483b;text-align:center;" data-rot="3"><span class="wd">verfault</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s29-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 7.5, duration: 7.5, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s29-cam", { scale: 1.0 }, { scale: 1.04, duration: 7.5, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s29-rn", { y: 0 }, { y: 200, duration: 7.5, ease: "none" }, 0);
+      W("#s29-lr", 3.82, 0.08);
+      tl.to("#s29-w1-0", { rotation: -45, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.28);
+      tl.to("#s29-w1-1", { rotation: 50, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.34);
+      tl.to("#s29-w1-2", { rotation: -45, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.4);
+      tl.to("#s29-w1-3", { rotation: 50, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.46);
+      tl.to("#s29-w1-4", { rotation: -45, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.5200000000000005);
+      tl.to("#s29-w1-5", { rotation: 50, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.58);
+      tl.to("#s29-w1-6", { rotation: -45, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.640000000000001);
+      tl.to("#s29-w1-7", { rotation: 50, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.7);
+      tl.to("#s29-w1-8", { rotation: -45, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.76);
+      tl.to("#s29-w2-0", { rotation: 45, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.48);
+      tl.to("#s29-w2-1", { rotation: -50, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.54);
+      tl.to("#s29-w2-2", { rotation: 45, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.6000000000000005);
+      tl.to("#s29-w2-3", { rotation: -50, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.66);
+      tl.to("#s29-w2-4", { rotation: 45, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.in" }, 4.720000000000001);
+      W("#s29-lv", 5.0, 0.08);
+      window.__timelines["s29"] = tl;
+    })();
+  </script>
+</template>

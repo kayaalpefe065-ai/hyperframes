@@ -1,0 +1,110 @@
+[
+  {
+    "text": "Für",
+    "start": 0.06,
+    "end": 0.18,
+    "id": "w0"
+  },
+  {
+    "text": "die",
+    "start": 0.18,
+    "end": 0.36,
+    "id": "w1"
+  },
+  {
+    "text": "Bauern",
+    "start": 0.36,
+    "end": 0.72,
+    "id": "w2"
+  },
+  {
+    "text": "ist",
+    "start": 0.72,
+    "end": 0.9,
+    "id": "w3"
+  },
+  {
+    "text": "es",
+    "start": 0.9,
+    "end": 1.02,
+    "id": "w4"
+  },
+  {
+    "text": "eine",
+    "start": 1.02,
+    "end": 1.27,
+    "id": "w5"
+  },
+  {
+    "text": "Katastrophe.",
+    "start": 1.27,
+    "end": 2,
+    "id": "w6"
+  },
+  {
+    "text": "Das",
+    "start": 2.06,
+    "end": 2.22,
+    "id": "w7"
+  },
+  {
+    "text": "Getreide",
+    "start": 2.22,
+    "end": 2.79,
+    "id": "w8"
+  },
+  {
+    "text": "wird",
+    "start": 2.8,
+    "end": 3.09,
+    "id": "w9"
+  },
+  {
+    "text": "nicht",
+    "start": 3.09,
+    "end": 3.41,
+    "id": "w10"
+  },
+  {
+    "text": "reif.",
+    "start": 3.47,
+    "end": 3.89,
+    "id": "w11"
+  },
+  {
+    "text": "Es",
+    "start": 4.06,
+    "end": 4.13,
+    "id": "w12"
+  },
+  {
+    "text": "verfault",
+    "start": 4.13,
+    "end": 4.65,
+    "id": "w13"
+  },
+  {
+    "text": "auf",
+    "start": 4.65,
+    "end": 4.86,
+    "id": "w14"
+  },
+  {
+    "text": "den",
+    "start": 4.86,
+    "end": 5.06,
+    "id": "w15"
+  },
+  {
+    "text": "nassen",
+    "start": 5.06,
+    "end": 5.41,
+    "id": "w16"
+  },
+  {
+    "text": "Feldern.",
+    "start": 5.47,
+    "end": 6,
+    "id": "w17"
+  }
+]

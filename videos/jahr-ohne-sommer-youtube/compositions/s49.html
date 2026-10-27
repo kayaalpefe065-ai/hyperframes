@@ -1,0 +1,82 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s49-cam { position: absolute; inset: 0; }
+    #s49-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s49-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s49-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s49-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s49-cam .wd { display: inline-block; }
+    #s49-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s49-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s49-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s49-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s49-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s49-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s49-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s49-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s49-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s49-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s49" data-width="1920" data-height="1080">
+    <div id="s49-cam">
+      <svg id="s49-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s49-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s49-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s49-boil)">
+<g id="s49-th" transform="translate(1560,820)" ><g id="s49-th-in"><rect x="-34" y="-460" width="68" height="460" rx="34" fill="#fff"/><g id="s49-th-hg"><rect x="-16" y="-294" width="32" height="294" fill="#e8483b" style="stroke:none"/></g><circle cx="0" cy="20" r="56" fill="#e8483b"/><line x1="34" y1="-40" x2="64" y2="-40" style="stroke-width:5"/><line x1="34" y1="-100" x2="64" y2="-100" style="stroke-width:5"/><line x1="34" y1="-160" x2="64" y2="-160" style="stroke-width:5"/><line x1="34" y1="-220" x2="64" y2="-220" style="stroke-width:5"/><line x1="34" y1="-280" x2="64" y2="-280" style="stroke-width:5"/><line x1="34" y1="-340" x2="64" y2="-340" style="stroke-width:5"/><line x1="34" y1="-400" x2="64" y2="-400" style="stroke-width:5"/></g></g>
+        </g>
+
+      </svg>
+<div id="s49-ph" class="photo" style="left:180px;top:130px;width:960px;height:640px;"><div class="ph-clip"><img id="s49-ph-img" src="assets/img/pinatubo.jpg" alt="" style="object-fit:cover;object-position:50% 50%"/></div><div class="tape" style="left:-28px;top:-18px;"></div><div class="tape" style="right:-28px;top:-18px;"></div><div class="credit">Pinatubo, 15. Juni 1991 · Foto: USGS, gemeinfrei</div></div>
+<div id="s49-ly" class="label box" style="left:1300px;top:110px;font-size:96px;color:#1f1d1a;text-align:center;" data-rot="4"><span class="wd">1991</span></div>
+<div id="s49-lk" class="label " style="left:1180px;top:560px;font-size:52px;color:#3a6fb0;text-align:center;" data-rot="0"><span class="wd">messbar</span> <span class="wd">kühler</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s49-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 8.52, duration: 8.52, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s49-cam", { scale: 1.0 }, { scale: 1.03, duration: 8.52, ease: "sine.inOut" }, 0);
+      W("#s49-ly", 0.35, 0.08);
+      P("#s49-ph", 2.38, -2);
+      D("#s49-th", 5.32, 0.5);
+      tl.to("#s49-th-hg", { scaleY: 0.82, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.inOut" }, 6.57);
+      W("#s49-lk", 6.63, 0.08);
+      window.__timelines["s49"] = tl;
+    })();
+  </script>
+</template>

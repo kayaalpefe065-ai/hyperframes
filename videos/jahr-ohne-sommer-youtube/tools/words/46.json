@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Dazu",
+    "start": 0,
+    "end": 0.28,
+    "id": "w0"
+  },
+  {
+    "text": "ein",
+    "start": 0.28,
+    "end": 0.49,
+    "id": "w1"
+  },
+  {
+    "text": "großes",
+    "start": 0.49,
+    "end": 0.91,
+    "id": "w2"
+  },
+  {
+    "text": "Landwirtschaftsfest",
+    "start": 0.91,
+    "end": 2.25,
+    "id": "w3"
+  },
+  {
+    "text": "in",
+    "start": 2.25,
+    "end": 2.39,
+    "id": "w4"
+  },
+  {
+    "text": "Kanstadt.",
+    "start": 2.39,
+    "end": 3.64,
+    "id": "w5"
+  },
+  {
+    "text": "Daraus",
+    "start": 3.64,
+    "end": 4.29,
+    "id": "w6"
+  },
+  {
+    "text": "wird",
+    "start": 4.29,
+    "end": 4.73,
+    "id": "w7"
+  },
+  {
+    "text": "später",
+    "start": 4.73,
+    "end": 5.4,
+    "id": "w8"
+  },
+  {
+    "text": "der",
+    "start": 5.4,
+    "end": 5.61,
+    "id": "w9"
+  },
+  {
+    "text": "Kanstatter",
+    "start": 5.61,
+    "end": 6.32,
+    "id": "w10"
+  },
+  {
+    "text": "Wasen.",
+    "start": 6.32,
+    "end": 6.91,
+    "id": "w11"
+  }
+]

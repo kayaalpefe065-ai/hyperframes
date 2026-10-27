@@ -1,0 +1,122 @@
+[
+  {
+    "text": "Im",
+    "start": 0,
+    "end": 0.13,
+    "id": "w0"
+  },
+  {
+    "text": "Durchschnitt",
+    "start": 0.13,
+    "end": 0.91,
+    "id": "w1"
+  },
+  {
+    "text": "wird",
+    "start": 0.91,
+    "end": 1.14,
+    "id": "w2"
+  },
+  {
+    "text": "es",
+    "start": 1.19,
+    "end": 1.3,
+    "id": "w3"
+  },
+  {
+    "text": "auf",
+    "start": 1.3,
+    "end": 1.5,
+    "id": "w4"
+  },
+  {
+    "text": "der",
+    "start": 1.5,
+    "end": 1.7,
+    "id": "w5"
+  },
+  {
+    "text": "Erde",
+    "start": 1.7,
+    "end": 2,
+    "id": "w6"
+  },
+  {
+    "text": "etwa",
+    "start": 2,
+    "end": 2.24,
+    "id": "w7"
+  },
+  {
+    "text": "ein",
+    "start": 2.24,
+    "end": 2.42,
+    "id": "w8"
+  },
+  {
+    "text": "halbes",
+    "start": 2.42,
+    "end": 2.78,
+    "id": "w9"
+  },
+  {
+    "text": "bis",
+    "start": 2.78,
+    "end": 2.96,
+    "id": "w10"
+  },
+  {
+    "text": "ein",
+    "start": 2.96,
+    "end": 3.14,
+    "id": "w11"
+  },
+  {
+    "text": "Grad",
+    "start": 3.14,
+    "end": 3.38,
+    "id": "w12"
+  },
+  {
+    "text": "kälter.",
+    "start": 3.38,
+    "end": 4.56,
+    "id": "w13"
+  },
+  {
+    "text": "Klingt",
+    "start": 4.56,
+    "end": 5.49,
+    "id": "w14"
+  },
+  {
+    "text": "wenig,",
+    "start": 5.49,
+    "end": 6.32,
+    "id": "w15"
+  },
+  {
+    "text": "ist",
+    "start": 6.32,
+    "end": 6.48,
+    "id": "w16"
+  },
+  {
+    "text": "es",
+    "start": 6.48,
+    "end": 6.58,
+    "id": "w17"
+  },
+  {
+    "text": "aber",
+    "start": 6.58,
+    "end": 6.79,
+    "id": "w18"
+  },
+  {
+    "text": "nicht.",
+    "start": 6.79,
+    "end": 7.24,
+    "id": "w19"
+  }
+]

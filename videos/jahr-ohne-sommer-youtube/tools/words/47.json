@@ -1,0 +1,104 @@
+[
+  {
+    "text": "1817",
+    "start": 0,
+    "end": 0.88,
+    "id": "w0"
+  },
+  {
+    "text": "wird",
+    "start": 0.95,
+    "end": 1.25,
+    "id": "w1"
+  },
+  {
+    "text": "das",
+    "start": 1.25,
+    "end": 1.42,
+    "id": "w2"
+  },
+  {
+    "text": "Wetter",
+    "start": 1.5,
+    "end": 1.94,
+    "id": "w3"
+  },
+  {
+    "text": "endlich",
+    "start": 1.94,
+    "end": 2.49,
+    "id": "w4"
+  },
+  {
+    "text": "besser.",
+    "start": 2.49,
+    "end": 3.72,
+    "id": "w5"
+  },
+  {
+    "text": "Als",
+    "start": 3.72,
+    "end": 3.88,
+    "id": "w6"
+  },
+  {
+    "text": "die",
+    "start": 3.97,
+    "end": 4.06,
+    "id": "w7"
+  },
+  {
+    "text": "ersten",
+    "start": 4.06,
+    "end": 4.4,
+    "id": "w8"
+  },
+  {
+    "text": "vollen",
+    "start": 4.4,
+    "end": 4.72,
+    "id": "w9"
+  },
+  {
+    "text": "Erntewagen",
+    "start": 4.74,
+    "end": 5.31,
+    "id": "w10"
+  },
+  {
+    "text": "in",
+    "start": 5.31,
+    "end": 5.42,
+    "id": "w11"
+  },
+  {
+    "text": "die",
+    "start": 5.42,
+    "end": 5.58,
+    "id": "w12"
+  },
+  {
+    "text": "Dörferrollen",
+    "start": 5.58,
+    "end": 6.2,
+    "id": "w13"
+  },
+  {
+    "text": "feiern",
+    "start": 6.2,
+    "end": 6.46,
+    "id": "w14"
+  },
+  {
+    "text": "die",
+    "start": 6.46,
+    "end": 6.67,
+    "id": "w15"
+  },
+  {
+    "text": "Menschen.",
+    "start": 6.67,
+    "end": 7.32,
+    "id": "w16"
+  }
+]

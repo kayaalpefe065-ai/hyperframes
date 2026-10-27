@@ -1,0 +1,68 @@
+[
+  {
+    "text": "und",
+    "start": 0,
+    "end": 0.21,
+    "id": "w0"
+  },
+  {
+    "text": "alles",
+    "start": 0.21,
+    "end": 0.57,
+    "id": "w1"
+  },
+  {
+    "text": "begann",
+    "start": 0.57,
+    "end": 0.99,
+    "id": "w2"
+  },
+  {
+    "text": "mit",
+    "start": 0.99,
+    "end": 1.2,
+    "id": "w3"
+  },
+  {
+    "text": "einem",
+    "start": 1.2,
+    "end": 1.55,
+    "id": "w4"
+  },
+  {
+    "text": "einzigen",
+    "start": 1.55,
+    "end": 2.11,
+    "id": "w5"
+  },
+  {
+    "text": "Berg,",
+    "start": 2.11,
+    "end": 2.61,
+    "id": "w6"
+  },
+  {
+    "text": "über",
+    "start": 2.61,
+    "end": 2.9,
+    "id": "w7"
+  },
+  {
+    "text": "11.000",
+    "start": 2.9,
+    "end": 4.09,
+    "id": "w8"
+  },
+  {
+    "text": "km",
+    "start": 4.09,
+    "end": 4.22,
+    "id": "w9"
+  },
+  {
+    "text": "entfernt.",
+    "start": 4.22,
+    "end": 4.79,
+    "id": "w10"
+  }
+]

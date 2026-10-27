@@ -1,0 +1,98 @@
+[
+  {
+    "text": "Rund",
+    "start": 0.01,
+    "end": 0.29,
+    "id": "w0"
+  },
+  {
+    "text": "um",
+    "start": 0.29,
+    "end": 0.43,
+    "id": "w1"
+  },
+  {
+    "text": "den",
+    "start": 0.43,
+    "end": 0.65,
+    "id": "w2"
+  },
+  {
+    "text": "Berg",
+    "start": 0.65,
+    "end": 0.87,
+    "id": "w3"
+  },
+  {
+    "text": "wird",
+    "start": 0.98,
+    "end": 1.21,
+    "id": "w4"
+  },
+  {
+    "text": "es",
+    "start": 1.28,
+    "end": 1.37,
+    "id": "w5"
+  },
+  {
+    "text": "tagelang",
+    "start": 1.37,
+    "end": 1.91,
+    "id": "w6"
+  },
+  {
+    "text": "stockdunkel.",
+    "start": 1.98,
+    "end": 3.18,
+    "id": "w7"
+  },
+  {
+    "text": "Tag",
+    "start": 3.4,
+    "end": 3.47,
+    "id": "w8"
+  },
+  {
+    "text": "und",
+    "start": 3.47,
+    "end": 3.63,
+    "id": "w9"
+  },
+  {
+    "text": "Nacht",
+    "start": 3.71,
+    "end": 3.98,
+    "id": "w10"
+  },
+  {
+    "text": "sind",
+    "start": 3.98,
+    "end": 4.15,
+    "id": "w11"
+  },
+  {
+    "text": "nicht",
+    "start": 4.34,
+    "end": 4.53,
+    "id": "w12"
+  },
+  {
+    "text": "mehr",
+    "start": 4.55,
+    "end": 4.73,
+    "id": "w13"
+  },
+  {
+    "text": "zu",
+    "start": 4.8,
+    "end": 4.92,
+    "id": "w14"
+  },
+  {
+    "text": "unterscheiden.",
+    "start": 4.92,
+    "end": 5.8,
+    "id": "w15"
+  }
+]

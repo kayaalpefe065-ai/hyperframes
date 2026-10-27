@@ -1,0 +1,87 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s46-cam { position: absolute; inset: 0; }
+    #s46-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s46-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s46-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s46-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s46-cam .wd { display: inline-block; }
+    #s46-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s46-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s46-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s46-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s46-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s46-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s46-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s46-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s46-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s46-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s46" data-width="1920" data-height="1080">
+    <div id="s46-cam">
+      <svg id="s46-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s46-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s46-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s46-boil)">
+<rect id="s46-sky" x="-40" y="-40" width="2000" height="1160" fill="#9fd3f0" style="stroke:none"/>
+<g id="s46-gr"><path d="M-40,860 Q480,820 960,850 T1960,840 L1960,1120 L-40,1120 Z" fill="#a7d07a"/></g>
+<g id="s46-tent" transform="translate(620,880)"><path d="M-300,0 L-300,-220 L0,-380 L300,-220 L300,0 Z" fill="#fff"/><path d="M-300,-220 L300,-220" fill="none"/><path d="M-60,0 L0,-160 L60,0 Z" fill="#8a5a3c"/><line x1="0" y1="-380" x2="0" y2="-460"/><path d="M0,-460 L60,-440 L0,-420 Z" fill="#e8483b"/></g>
+<g id="s46-cow" transform="translate(1100,880)"><ellipse cx="0" cy="-130" rx="130" ry="70" fill="#fff"/><circle cx="-40" cy="-150" r="22" fill="#1f1d1a"/><line x1="-80" y1="-80" x2="-80" y2="0"/><line x1="80" y1="-80" x2="80" y2="0"/><ellipse cx="160" cy="-170" rx="50" ry="40" fill="#fff"/><circle cx="150" cy="-120" r="22" fill="#e8483b"/></g>
+<g id="s46-wheel" transform="translate(1560,880)"><line x1="-120" y1="0" x2="0" y2="-300"/><line x1="120" y1="0" x2="0" y2="-300"/><circle cx="0" cy="-300" r="230" fill="none"/><line x1="0" y1="-300" x2="230" y2="-300" style="stroke-width:4"/><rect x="206" y="-320" width="48" height="40" fill="#e8483b" style="stroke-width:4"/><line x1="0" y1="-300" x2="163" y2="-137" style="stroke-width:4"/><rect x="139" y="-157" width="48" height="40" fill="#ffd34d" style="stroke-width:4"/><line x1="0" y1="-300" x2="0" y2="-70" style="stroke-width:4"/><rect x="-24" y="-90" width="48" height="40" fill="#5a8fc4" style="stroke-width:4"/><line x1="0" y1="-300" x2="-163" y2="-137" style="stroke-width:4"/><rect x="-187" y="-157" width="48" height="40" fill="#e8483b" style="stroke-width:4"/><line x1="0" y1="-300" x2="-230" y2="-300" style="stroke-width:4"/><rect x="-254" y="-320" width="48" height="40" fill="#ffd34d" style="stroke-width:4"/><line x1="0" y1="-300" x2="-163" y2="-463" style="stroke-width:4"/><rect x="-187" y="-483" width="48" height="40" fill="#5a8fc4" style="stroke-width:4"/><line x1="0" y1="-300" x2="-0" y2="-530" style="stroke-width:4"/><rect x="-24" y="-550" width="48" height="40" fill="#e8483b" style="stroke-width:4"/><line x1="0" y1="-300" x2="163" y2="-463" style="stroke-width:4"/><rect x="139" y="-483" width="48" height="40" fill="#ffd34d" style="stroke-width:4"/></g>
+        </g>
+
+      </svg>
+<div id="s46-y1818" class="label box" style="left:430px;top:250px;font-size:64px;"><span class="wd">1818</span></div>
+<div id="s46-lc" class="label " style="left:1180px;top:120px;font-size:72px;color:#e8483b;text-align:center;" data-rot="0"><span class="wd">Cannstatter</span> <span class="wd">Wasen</span></div>
+<div id="s46-ll" class="label " style="left:300px;top:340px;font-size:52px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Landwirtschaftsfest</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s46-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 8.86, duration: 8.86, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s46-cam", { scale: 1.0 }, { scale: 1.04, duration: 8.86, ease: "sine.inOut" }, 0);
+      D("#s46-tent", 0.96, 0.6);
+      W("#s46-y1818", 1.26, 0.08);
+      W("#s46-ll", 2.74, 0.08);
+      D("#s46-cow", 2.64, 0.5);
+      D("#s46-wheel", 4.88, 0.9);
+      W("#s46-lc", 6.37, 0.08);
+      window.__timelines["s46"] = tl;
+    })();
+  </script>
+</template>

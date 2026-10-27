@@ -1,0 +1,98 @@
+[
+  {
+    "text": "im",
+    "start": 0,
+    "end": 0.35,
+    "id": "w0"
+  },
+  {
+    "text": "Mai.",
+    "start": 0.35,
+    "end": 1.2,
+    "id": "w1"
+  },
+  {
+    "text": "Frost.",
+    "start": 1.27,
+    "end": 2.18,
+    "id": "w2"
+  },
+  {
+    "text": "Und",
+    "start": 2.18,
+    "end": 2.42,
+    "id": "w3"
+  },
+  {
+    "text": "in",
+    "start": 2.42,
+    "end": 2.5,
+    "id": "w4"
+  },
+  {
+    "text": "der",
+    "start": 2.5,
+    "end": 2.69,
+    "id": "w5"
+  },
+  {
+    "text": "Schweiz",
+    "start": 2.69,
+    "end": 3.13,
+    "id": "w6"
+  },
+  {
+    "text": "schneit",
+    "start": 3.13,
+    "end": 3.59,
+    "id": "w7"
+  },
+  {
+    "text": "es",
+    "start": 3.64,
+    "end": 3.76,
+    "id": "w8"
+  },
+  {
+    "text": "in",
+    "start": 3.76,
+    "end": 3.89,
+    "id": "w9"
+  },
+  {
+    "text": "diesem",
+    "start": 3.89,
+    "end": 4.28,
+    "id": "w10"
+  },
+  {
+    "text": "Jahr",
+    "start": 4.28,
+    "end": 4.56,
+    "id": "w11"
+  },
+  {
+    "text": "in",
+    "start": 4.56,
+    "end": 4.68,
+    "id": "w12"
+  },
+  {
+    "text": "jedem",
+    "start": 4.68,
+    "end": 4.98,
+    "id": "w13"
+  },
+  {
+    "text": "einzelnen",
+    "start": 5,
+    "end": 5.58,
+    "id": "w14"
+  },
+  {
+    "text": "Monat.",
+    "start": 5.58,
+    "end": 6.09,
+    "id": "w15"
+  }
+]

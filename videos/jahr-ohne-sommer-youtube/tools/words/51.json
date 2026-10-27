@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Ein",
+    "start": 0,
+    "end": 0.35,
+    "id": "w0"
+  },
+  {
+    "text": "einziger",
+    "start": 0.35,
+    "end": 1.24,
+    "id": "w1"
+  },
+  {
+    "text": "Vulkan",
+    "start": 1.26,
+    "end": 2,
+    "id": "w2"
+  },
+  {
+    "text": "und",
+    "start": 2,
+    "end": 2.12,
+    "id": "w3"
+  },
+  {
+    "text": "die",
+    "start": 2.16,
+    "end": 2.25,
+    "id": "w4"
+  },
+  {
+    "text": "halbe",
+    "start": 2.29,
+    "end": 2.49,
+    "id": "w5"
+  },
+  {
+    "text": "Welt",
+    "start": 2.57,
+    "end": 2.76,
+    "id": "w6"
+  },
+  {
+    "text": "hatte",
+    "start": 2.76,
+    "end": 3.02,
+    "id": "w7"
+  },
+  {
+    "text": "keinen",
+    "start": 3.02,
+    "end": 3.33,
+    "id": "w8"
+  },
+  {
+    "text": "Sommer.",
+    "start": 3.33,
+    "end": 3.68,
+    "id": "w9"
+  }
+]

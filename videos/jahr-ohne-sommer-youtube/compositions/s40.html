@@ -1,0 +1,85 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s40-cam { position: absolute; inset: 0; }
+    #s40-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s40-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s40-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s40-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s40-cam .wd { display: inline-block; }
+    #s40-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s40-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s40-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s40-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s40-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s40-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s40-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s40-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s40-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s40-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #e9e2d2; }
+  </style>
+  <div id="root" data-composition-id="s40" data-width="1920" data-height="1080">
+    <div id="s40-cam">
+      <svg id="s40-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s40-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s40-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s40-boil)">
+<g id="s40-paper"><path d="M1000,820 L1560,820 L1520,420 L1040,420 Z" fill="#fffdf6"/><line x1="1080" y1="480" x2="1460" y2="480" style="stroke-width:4;stroke:#9a948a"/><line x1="1086" y1="540" x2="1454" y2="540" style="stroke-width:4;stroke:#9a948a"/><line x1="1092" y1="600" x2="1448" y2="600" style="stroke-width:4;stroke:#9a948a"/><line x1="1098" y1="660" x2="1442" y2="660" style="stroke-width:4;stroke:#9a948a"/><line x1="1104" y1="720" x2="1436" y2="720" style="stroke-width:4;stroke:#9a948a"/></g>
+<g id="s40-candle"><rect x="1660" y="560" width="60" height="260" fill="#fffaf0"/><path d="M1690,560 q-24,-50 0,-90 q24,40 0,90 z" fill="#ffd34d"/></g>
+<g id="s40-ghost"><path d="M1200,640 Q1200,520 1280,520 Q1360,520 1360,640 L1360,720 L1330,700 L1300,720 L1270,700 L1240,720 L1200,700 Z" fill="#fff"/><circle cx="1255" cy="600" r="9" fill="#1f1d1a"/><circle cx="1305" cy="600" r="9" fill="#1f1d1a"/></g>
+        </g>
+
+      </svg>
+<div id="s40-ph" class="photo" style="left:200px;top:110px;width:520px;height:680px;"><div class="ph-clip"><img id="s40-ph-img" src="assets/img/byron.jpg" alt="" style="object-fit:cover;object-position:50% 25%"/></div><div class="tape" style="left:-28px;top:-18px;"></div><div class="tape" style="right:-28px;top:-18px;"></div><div class="credit">Lord Byron · Th. Phillips, 1813</div></div>
+<div id="s40-lw" class="label " style="left:900px;top:160px;font-size:72px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Wettbewerb:</span></div>
+<div id="s40-lg" class="label " style="left:900px;top:260px;font-size:60px;color:#e8483b;text-align:center;" data-rot="0"><span class="wd">die</span> <span class="wd">beste</span> <span class="wd">Gruselgeschichte</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s40-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 6.45, duration: 6.45, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s40-cam", { scale: 1.0 }, { scale: 1.03, duration: 6.45, ease: "sine.inOut" }, 0);
+      P("#s40-ph", 0.29, -3);
+      W("#s40-lw", 1.54, 0.08);
+      D("#s40-paper", 2.85, 0.5);
+      D("#s40-candle", 3.05, 0.4);
+      W("#s40-lg", 3.78, 0.08);
+      D("#s40-ghost", 4.69, 0.6);
+      window.__timelines["s40"] = tl;
+    })();
+  </script>
+</template>

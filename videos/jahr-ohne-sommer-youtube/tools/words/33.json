@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Menschen",
+    "start": 0,
+    "end": 0.44,
+    "id": "w0"
+  },
+  {
+    "text": "strecken",
+    "start": 0.49,
+    "end": 0.96,
+    "id": "w1"
+  },
+  {
+    "text": "ihr",
+    "start": 0.96,
+    "end": 1.14,
+    "id": "w2"
+  },
+  {
+    "text": "Brot",
+    "start": 1.14,
+    "end": 1.35,
+    "id": "w3"
+  },
+  {
+    "text": "mit",
+    "start": 1.44,
+    "end": 1.56,
+    "id": "w4"
+  },
+  {
+    "text": "Sägemehl",
+    "start": 1.56,
+    "end": 2.04,
+    "id": "w5"
+  },
+  {
+    "text": "und",
+    "start": 2.04,
+    "end": 2.22,
+    "id": "w6"
+  },
+  {
+    "text": "Baumrinde.",
+    "start": 2.22,
+    "end": 3.34,
+    "id": "w7"
+  },
+  {
+    "text": "Sie",
+    "start": 3.34,
+    "end": 3.53,
+    "id": "w8"
+  },
+  {
+    "text": "essen",
+    "start": 3.53,
+    "end": 3.85,
+    "id": "w9"
+  },
+  {
+    "text": "Gras,",
+    "start": 3.85,
+    "end": 4.22,
+    "id": "w10"
+  },
+  {
+    "text": "Moos",
+    "start": 4.22,
+    "end": 4.47,
+    "id": "w11"
+  },
+  {
+    "text": "und",
+    "start": 4.47,
+    "end": 4.66,
+    "id": "w12"
+  },
+  {
+    "text": "Brennnesseln.",
+    "start": 4.66,
+    "end": 5.67,
+    "id": "w13"
+  }
+]

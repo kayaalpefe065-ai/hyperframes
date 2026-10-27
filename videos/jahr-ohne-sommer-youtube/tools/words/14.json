@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Aber",
+    "start": 0.07,
+    "end": 0.29,
+    "id": "w0"
+  },
+  {
+    "text": "der",
+    "start": 0.29,
+    "end": 0.5,
+    "id": "w1"
+  },
+  {
+    "text": "Tambora",
+    "start": 0.5,
+    "end": 0.99,
+    "id": "w2"
+  },
+  {
+    "text": "schleudert",
+    "start": 0.99,
+    "end": 1.66,
+    "id": "w3"
+  },
+  {
+    "text": "nicht",
+    "start": 1.71,
+    "end": 2.07,
+    "id": "w4"
+  },
+  {
+    "text": "nur",
+    "start": 2.07,
+    "end": 2.28,
+    "id": "w5"
+  },
+  {
+    "text": "Asche",
+    "start": 2.28,
+    "end": 2.53,
+    "id": "w6"
+  },
+  {
+    "text": "hoch,",
+    "start": 3,
+    "end": 3.12,
+    "id": "w7"
+  },
+  {
+    "text": "sondern",
+    "start": 3.12,
+    "end": 3.55,
+    "id": "w8"
+  },
+  {
+    "text": "vor",
+    "start": 3.61,
+    "end": 3.75,
+    "id": "w9"
+  },
+  {
+    "text": "allem",
+    "start": 3.75,
+    "end": 4.05,
+    "id": "w10"
+  },
+  {
+    "text": "etwas",
+    "start": 4.05,
+    "end": 4.37,
+    "id": "w11"
+  },
+  {
+    "text": "Unsichtbares.",
+    "start": 4.37,
+    "end": 5.23,
+    "id": "w12"
+  },
+  {
+    "text": "Schwefel.",
+    "start": 5.39,
+    "end": 6.68,
+    "id": "w13"
+  }
+]

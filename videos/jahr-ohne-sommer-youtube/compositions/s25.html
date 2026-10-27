@@ -1,0 +1,86 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s25-cam { position: absolute; inset: 0; }
+    #s25-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s25-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s25-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s25-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s25-cam .wd { display: inline-block; }
+    #s25-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s25-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s25-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s25-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s25-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s25-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s25-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s25-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s25-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s25-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s25" data-width="1920" data-height="1080">
+    <div id="s25-cam">
+      <svg id="s25-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s25-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s25-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s25-boil)">
+<g id="s25-t1" transform="translate(700,780) scale(1.2)" ><g id="s25-t1-in"><rect x="-34" y="-460" width="68" height="460" rx="34" fill="#fff"/><g id="s25-t1-hg"><rect x="-16" y="-315" width="32" height="315" fill="#e8483b" style="stroke:none"/></g><circle cx="0" cy="20" r="56" fill="#e8483b"/><line x1="34" y1="-40" x2="64" y2="-40" style="stroke-width:5"/><line x1="34" y1="-100" x2="64" y2="-100" style="stroke-width:5"/><line x1="34" y1="-160" x2="64" y2="-160" style="stroke-width:5"/><line x1="34" y1="-220" x2="64" y2="-220" style="stroke-width:5"/><line x1="34" y1="-280" x2="64" y2="-280" style="stroke-width:5"/><line x1="34" y1="-340" x2="64" y2="-340" style="stroke-width:5"/><line x1="34" y1="-400" x2="64" y2="-400" style="stroke-width:5"/></g></g>
+<g id="s25-t2" transform="translate(1220,780) scale(1.2)" ><g id="s25-t2-in"><rect x="-34" y="-460" width="68" height="460" rx="34" fill="#fff"/><g id="s25-t2-hg"><rect x="-16" y="-315" width="32" height="315" fill="#e8483b" style="stroke:none"/></g><circle cx="0" cy="20" r="56" fill="#e8483b"/><line x1="34" y1="-40" x2="64" y2="-40" style="stroke-width:5"/><line x1="34" y1="-100" x2="64" y2="-100" style="stroke-width:5"/><line x1="34" y1="-160" x2="64" y2="-160" style="stroke-width:5"/><line x1="34" y1="-220" x2="64" y2="-220" style="stroke-width:5"/><line x1="34" y1="-280" x2="64" y2="-280" style="stroke-width:5"/><line x1="34" y1="-340" x2="64" y2="-340" style="stroke-width:5"/><line x1="34" y1="-400" x2="64" y2="-400" style="stroke-width:5"/></g></g>
+        </g>
+
+      </svg>
+<div id="s25-l1" class="label " style="left:540px;top:870px;font-size:48px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">normaler</span> <span class="wd">Sommer</span></div>
+<div id="s25-l2" class="label " style="left:1100px;top:870px;font-size:48px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Sommer</span> <span class="wd">1816</span></div>
+<div id="s25-ld" class="label " style="left:1340px;top:300px;font-size:84px;color:#3a6fb0;text-align:center;" data-rot="0"><span class="wd">−2</span> <span class="wd">bis</span> <span class="wd">−3</span> <span class="wd">°C</span></div>
+<div id="s25-ls" class="label " style="left:0px;top:70px;font-size:64px;color:#1f1d1a;text-align:center;width:1920px;" data-rot="0"><span class="wd">Süddeutschland</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s25-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 5.04, duration: 5.04, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s25-cam", { scale: 1.0 }, { scale: 1.03, duration: 5.04, ease: "sine.inOut" }, 0);
+      W("#s25-ls", 0.46, 0.08);
+      D("#s25-t1", 0.3, 0.5);
+      W("#s25-l1", 0.5, 0.08);
+      D("#s25-t2", 1.65, 0.5);
+      W("#s25-l2", 1.95, 0.08);
+      tl.to("#s25-t2-hg", { scaleY: 0.62, transformOrigin: "50% 100%", duration: 1.0, ease: "power2.inOut" }, 2.15);
+      W("#s25-ld", 3.01, 0.08);
+      window.__timelines["s25"] = tl;
+    })();
+  </script>
+</template>

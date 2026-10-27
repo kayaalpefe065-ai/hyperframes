@@ -1,0 +1,98 @@
+[
+  {
+    "text": "Mehr",
+    "start": 0,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "als",
+    "start": 0.26,
+    "end": 0.43,
+    "id": "w1"
+  },
+  {
+    "text": "10.000",
+    "start": 0.43,
+    "end": 1.58,
+    "id": "w2"
+  },
+  {
+    "text": "Menschen",
+    "start": 1.58,
+    "end": 2.09,
+    "id": "w3"
+  },
+  {
+    "text": "sterben",
+    "start": 2.09,
+    "end": 2.53,
+    "id": "w4"
+  },
+  {
+    "text": "sofort.",
+    "start": 2.53,
+    "end": 3.13,
+    "id": "w5"
+  },
+  {
+    "text": "Ganze",
+    "start": 3.14,
+    "end": 3.5,
+    "id": "w6"
+  },
+  {
+    "text": "Dörfer,",
+    "start": 3.5,
+    "end": 4.24,
+    "id": "w7"
+  },
+  {
+    "text": "sogar",
+    "start": 4.24,
+    "end": 4.61,
+    "id": "w8"
+  },
+  {
+    "text": "ein",
+    "start": 4.61,
+    "end": 4.81,
+    "id": "w9"
+  },
+  {
+    "text": "kleines",
+    "start": 4.87,
+    "end": 5.33,
+    "id": "w10"
+  },
+  {
+    "text": "Königreich,",
+    "start": 5.33,
+    "end": 6.19,
+    "id": "w11"
+  },
+  {
+    "text": "verschwinden",
+    "start": 6.48,
+    "end": 6.75,
+    "id": "w12"
+  },
+  {
+    "text": "unter",
+    "start": 6.76,
+    "end": 7,
+    "id": "w13"
+  },
+  {
+    "text": "der",
+    "start": 7,
+    "end": 7.14,
+    "id": "w14"
+  },
+  {
+    "text": "Asche.",
+    "start": 7.14,
+    "end": 7.56,
+    "id": "w15"
+  }
+]

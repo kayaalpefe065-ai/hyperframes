@@ -1,0 +1,88 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s05-cam { position: absolute; inset: 0; }
+    #s05-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s05-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s05-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s05-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s05-cam .wd { display: inline-block; }
+    #s05-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s05-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s05-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s05-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s05-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s05-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s05-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s05-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s05-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s05-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #6cb2dd; }
+  </style>
+  <div id="root" data-composition-id="s05" data-width="1920" data-height="1080">
+    <div id="s05-cam">
+      <svg id="s05-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s05-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s05-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s05-boil)">
+<g id="s05-sea"><path d="M-40,0 q60,-0 120,0 t120,0 q60,-0 120,0 t120,0 q60,-0 120,0 t120,0 q60,-0 120,0 t120,0 q60,-0 120,0 t120,0 q60,-0 120,0 t120,0 q60,-0 120,0 t120,0 q60,-0 120,0 t120,0 q60,-0 120,0 t120,0 L2000,1120 L-40,1120 Z" fill="#6cb2dd"/></g>
+<g id="s05-isl"><path d="M380,640 q80,-120 240,-90 q60,-90 200,-60 q100,-40 220,10 q130,-20 240,60 q120,10 200,90 q-60,90 -240,70 q-140,40 -300,0 q-160,30 -300,-10 q-200,10 -260,-70 z" fill="#c9b27a"/></g>
+<g id="s05-vol" transform="translate(1180,655) scale(0.22)" ><g id="s05-vol-in"><path d="M-450,0 L-90,-500 Q0,-540 90,-500 L450,0 Z" fill="#9b7653"/></g></g>
+<g id="s05-h"><defs><marker id="s05-h-hd" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10" fill="none" style="stroke:#1f1d1a;stroke-width:2"/></marker></defs><path d="M1290,660 L1290,555" fill="none" style="stroke:#1f1d1a;stroke-width:5" marker-end="url(#s05-h-hd)"/></g>
+        </g>
+
+      </svg>
+<div id="s05-lis" class="label " style="left:520px;top:760px;font-size:64px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Sumbawa</span></div>
+<div id="s05-lind" class="label box" style="left:80px;top:80px;font-size:56px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Indonesien</span></div>
+<div id="s05-lh" class="label box" style="left:1180px;top:470px;font-size:34px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">über</span> <span class="wd">4.000</span> <span class="wd">m</span></div>
+<div id="s05-lt" class="label " style="left:1060px;top:650px;font-size:34px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Tambora</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s05-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 7.24, duration: 7.24, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.set("#s05-cam", { transformOrigin: "1180px 560px" }, 0); tl.to("#s05-cam", { scale: 2.3, duration: 1.3, ease: "power2.inOut" }, 3.49);
+      W("#s05-lind", 0.36, 0.08);
+      D("#s05-isl", 1.24, 0.8);
+      W("#s05-lis", 1.8, 0.08);
+      D("#s05-vol", 3.39, 0.6);
+      W("#s05-lt", 4.23, 0.08);
+      D("#s05-h", 4.95, 0.4);
+      W("#s05-lh", 5.35, 0.08);
+      window.__timelines["s05"] = tl;
+    })();
+  </script>
+</template>

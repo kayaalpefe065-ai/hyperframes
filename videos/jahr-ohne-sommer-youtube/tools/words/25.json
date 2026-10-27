@@ -1,0 +1,86 @@
+[
+  {
+    "text": "In",
+    "start": 0.02,
+    "end": 0.11,
+    "id": "w0"
+  },
+  {
+    "text": "Süddeutschland",
+    "start": 0.11,
+    "end": 0.87,
+    "id": "w1"
+  },
+  {
+    "text": "ist",
+    "start": 0.88,
+    "end": 1.05,
+    "id": "w2"
+  },
+  {
+    "text": "es",
+    "start": 1.05,
+    "end": 1.12,
+    "id": "w3"
+  },
+  {
+    "text": "mitten",
+    "start": 1.16,
+    "end": 1.49,
+    "id": "w4"
+  },
+  {
+    "text": "im",
+    "start": 1.49,
+    "end": 1.6,
+    "id": "w5"
+  },
+  {
+    "text": "Sommer",
+    "start": 1.6,
+    "end": 2,
+    "id": "w6"
+  },
+  {
+    "text": "zwei",
+    "start": 2,
+    "end": 2.23,
+    "id": "w7"
+  },
+  {
+    "text": "bis",
+    "start": 2.25,
+    "end": 2.42,
+    "id": "w8"
+  },
+  {
+    "text": "drei",
+    "start": 2.42,
+    "end": 2.66,
+    "id": "w9"
+  },
+  {
+    "text": "Grad",
+    "start": 2.66,
+    "end": 2.89,
+    "id": "w10"
+  },
+  {
+    "text": "kälter",
+    "start": 2.9,
+    "end": 3.23,
+    "id": "w11"
+  },
+  {
+    "text": "als",
+    "start": 3.24,
+    "end": 3.42,
+    "id": "w12"
+  },
+  {
+    "text": "normal.",
+    "start": 3.42,
+    "end": 3.8,
+    "id": "w13"
+  }
+]

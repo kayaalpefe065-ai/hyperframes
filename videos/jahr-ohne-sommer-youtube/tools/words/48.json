@@ -1,0 +1,98 @@
+[
+  {
+    "text": "Heute",
+    "start": 0.03,
+    "end": 0.38,
+    "id": "w0"
+  },
+  {
+    "text": "wissen",
+    "start": 0.38,
+    "end": 0.84,
+    "id": "w1"
+  },
+  {
+    "text": "wir,",
+    "start": 0.84,
+    "end": 1.24,
+    "id": "w2"
+  },
+  {
+    "text": "ein",
+    "start": 1.28,
+    "end": 1.42,
+    "id": "w3"
+  },
+  {
+    "text": "einziger",
+    "start": 1.48,
+    "end": 1.94,
+    "id": "w4"
+  },
+  {
+    "text": "große",
+    "start": 1.94,
+    "end": 2.26,
+    "id": "w5"
+  },
+  {
+    "text": "Ausbruch",
+    "start": 2.26,
+    "end": 2.8,
+    "id": "w6"
+  },
+  {
+    "text": "kann",
+    "start": 2.8,
+    "end": 2.88,
+    "id": "w7"
+  },
+  {
+    "text": "das",
+    "start": 2.88,
+    "end": 3.03,
+    "id": "w8"
+  },
+  {
+    "text": "Klima",
+    "start": 3.09,
+    "end": 3.36,
+    "id": "w9"
+  },
+  {
+    "text": "der",
+    "start": 3.36,
+    "end": 3.53,
+    "id": "w10"
+  },
+  {
+    "text": "ganzen",
+    "start": 3.54,
+    "end": 3.9,
+    "id": "w11"
+  },
+  {
+    "text": "Welt",
+    "start": 3.9,
+    "end": 4.14,
+    "id": "w12"
+  },
+  {
+    "text": "für",
+    "start": 4.24,
+    "end": 4.34,
+    "id": "w13"
+  },
+  {
+    "text": "Jahre",
+    "start": 4.34,
+    "end": 4.64,
+    "id": "w14"
+  },
+  {
+    "text": "verändern.",
+    "start": 4.64,
+    "end": 5.2,
+    "id": "w15"
+  }
+]

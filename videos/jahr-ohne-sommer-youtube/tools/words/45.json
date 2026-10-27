@@ -1,0 +1,104 @@
+[
+  {
+    "text": "und",
+    "start": 0.02,
+    "end": 0.16,
+    "id": "w0"
+  },
+  {
+    "text": "in",
+    "start": 0.16,
+    "end": 0.27,
+    "id": "w1"
+  },
+  {
+    "text": "Württemberg",
+    "start": 0.27,
+    "end": 0.86,
+    "id": "w2"
+  },
+  {
+    "text": "gründet",
+    "start": 0.86,
+    "end": 1.24,
+    "id": "w3"
+  },
+  {
+    "text": "König",
+    "start": 1.24,
+    "end": 1.49,
+    "id": "w4"
+  },
+  {
+    "text": "Wilhelm",
+    "start": 1.56,
+    "end": 1.95,
+    "id": "w5"
+  },
+  {
+    "text": "der",
+    "start": 1.95,
+    "end": 2.17,
+    "id": "w6"
+  },
+  {
+    "text": "Erste",
+    "start": 2.17,
+    "end": 2.51,
+    "id": "w7"
+  },
+  {
+    "text": "eine",
+    "start": 2.52,
+    "end": 2.78,
+    "id": "w8"
+  },
+  {
+    "text": "Landwirtschaftsschule,",
+    "start": 2.78,
+    "end": 4.25,
+    "id": "w9"
+  },
+  {
+    "text": "damit",
+    "start": 4.25,
+    "end": 4.36,
+    "id": "w10"
+  },
+  {
+    "text": "so",
+    "start": 4.42,
+    "end": 4.5,
+    "id": "w11"
+  },
+  {
+    "text": "ein",
+    "start": 4.5,
+    "end": 4.66,
+    "id": "w12"
+  },
+  {
+    "text": "Hunger",
+    "start": 4.66,
+    "end": 4.97,
+    "id": "w13"
+  },
+  {
+    "text": "nie",
+    "start": 4.98,
+    "end": 5.14,
+    "id": "w14"
+  },
+  {
+    "text": "wieder",
+    "start": 5.14,
+    "end": 5.46,
+    "id": "w15"
+  },
+  {
+    "text": "passiert.",
+    "start": 5.46,
+    "end": 5.92,
+    "id": "w16"
+  }
+]

@@ -1,0 +1,99 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s09-cam { position: absolute; inset: 0; }
+    #s09-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s09-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s09-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s09-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s09-cam .wd { display: inline-block; }
+    #s09-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s09-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s09-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s09-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s09-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s09-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s09-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s09-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s09-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s09-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s09" data-width="1920" data-height="1080">
+    <div id="s09-cam">
+      <svg id="s09-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s09-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s09-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s09-boil)">
+<rect id="s09-sky" x="-40" y="-40" width="2000" height="1160" fill="#c9c2b8" style="stroke:none"/>
+<g id="s09-gr"><path d="M-40,860 Q480,820 960,850 T1960,840 L1960,1120 L-40,1120 Z" fill="#a9a08f"/></g>
+<g id="s09-vol" transform="translate(1500,870) scale(0.6)" ><g id="s09-vol-in"><path d="M-450,0 L-90,-500 Q0,-540 90,-500 L450,0 Z" fill="#9b7653"/></g></g>
+<g id="s09-h1" transform="translate(450,880) scale(0.9)" ><g id="s09-h1-in"><rect x="-110" y="-200" width="220" height="200" fill="#f1d9b5"/><path d="M-130,-200 L0,-300 L130,-200 Z" fill="#b5533c"/><rect x="-30" y="-100" width="60" height="100" fill="#8a5a3c"/><rect x="-90" y="-160" width="44" height="44" fill="#bfe1f3"/><rect x="46" y="-160" width="44" height="44" fill="#bfe1f3"/></g></g>
+<g id="s09-h2" transform="translate(800,880) scale(0.75)" ><g id="s09-h2-in"><rect x="-110" y="-200" width="220" height="200" fill="#f1d9b5"/><path d="M-130,-200 L0,-300 L130,-200 Z" fill="#b5533c"/><rect x="-30" y="-100" width="60" height="100" fill="#8a5a3c"/><rect x="-90" y="-160" width="44" height="44" fill="#bfe1f3"/><rect x="46" y="-160" width="44" height="44" fill="#bfe1f3"/></g></g>
+<g id="s09-fig" transform="translate(1050,880)" ><g id="s09-fig-in">
+      <line x1="0" y1="-158" x2="0" y2="-66"/>
+      <g id="s09-fig-legl"><line x1="0" y1="-66" x2="-30" y2="0"/></g>
+      <g id="s09-fig-legr"><line x1="0" y1="-66" x2="30" y2="0"/></g>
+      <g id="s09-fig-arml"><polyline points="0,-140 -46,-92" fill="none"/></g>
+      <g id="s09-fig-armr"><polyline points="0,-140 46,-92" fill="none"/><g id="s09-fig-lantern"><line x1="46" y1="-92" x2="46" y2="-70"/><rect x="30" y="-70" width="32" height="40" rx="6" fill="#ffd34d"/></g></g>
+      
+      <g id="s09-fig-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec"/>
+        <circle cx="-13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <circle cx="13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <g id="s09-fig-smile" style="opacity:0"><path d="M-14,-186 Q0,-174 14,-186" fill="none" style="stroke-width:5"/></g>
+        <g id="s09-fig-sad" style="opacity:0"><path d="M-13,-178 Q0,-190 13,-178" fill="none" style="stroke-width:5"/></g>
+        <g id="s09-fig-oh" style="opacity:1"><ellipse cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" style="stroke:none"/></g>
+        
+      </g></g></g>
+        </g>
+<rect id="s09-dark" x="-40" y="-40" width="2000" height="1160" fill="#2c3346" style="opacity:0"/>
+<g id="s09-lamp" style="opacity:0"><circle cx="1096" cy="752" r="70" fill="#ffd34d" style="opacity:0.35"/><rect x="1080" y="740" width="32" height="40" rx="6" fill="#ffd34d"/></g>
+      </svg>
+<div id="s09-eq" class="label" style="left:0;top:220px;width:1920px;text-align:center;font-size:110px;color:#fff;"><span class="wd">☀</span> <span class="wd">=</span> <span class="wd">☾</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s09-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 7.0, duration: 7.0, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s09-cam", { scale: 1.0 }, { scale: 1.04, duration: 7.0, ease: "sine.inOut" }, 0);
+      tl.to("#s09-dark", { opacity: 0.86, duration: 1.2, ease: "power2.inOut" }, 2.03);
+      tl.fromTo("#s09-lamp", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "none" }, 2.63);
+      W("#s09-eq", 3.75, 0.25);
+      window.__timelines["s09"] = tl;
+    })();
+  </script>
+</template>

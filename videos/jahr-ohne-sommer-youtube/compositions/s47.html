@@ -1,0 +1,144 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s47-cam { position: absolute; inset: 0; }
+    #s47-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s47-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s47-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s47-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s47-cam .wd { display: inline-block; }
+    #s47-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s47-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s47-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s47-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s47-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s47-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s47-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s47-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s47-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s47-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s47" data-width="1920" data-height="1080">
+    <div id="s47-cam">
+      <svg id="s47-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s47-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s47-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s47-boil)">
+<rect id="s47-sky" x="-40" y="-40" width="2000" height="1160" fill="#b6bac2" style="stroke:none"/>
+<g id="s47-sunb" style="opacity:0"><g id="s47-sun" transform="translate(1600,200)" ><g id="s47-sun-in"><circle cx="0" cy="0" r="100" fill="#ffd34d"/><path d="M130,0 L162,0 M92,92 L115,115 M0,130 L0,162 M-92,92 L-115,115 M-130,0 L-162,0 M-92,-92 L-115,-115 M0,-130 L0,-162 M92,-92 L115,-115"/></g></g></g>
+<g id="s47-gr"><path d="M-40,860 Q480,820 960,850 T1960,840 L1960,1120 L-40,1120 Z" fill="#a7d07a"/></g>
+<g id="s47-h1" transform="translate(260,870) scale(0.8)" ><g id="s47-h1-in"><rect x="-110" y="-200" width="220" height="200" fill="#f1d9b5"/><path d="M-130,-200 L0,-300 L130,-200 Z" fill="#b5533c"/><rect x="-30" y="-100" width="60" height="100" fill="#8a5a3c"/><rect x="-90" y="-160" width="44" height="44" fill="#bfe1f3"/><rect x="46" y="-160" width="44" height="44" fill="#bfe1f3"/></g></g>
+<g id="s47-ch" transform="translate(520,870) scale(0.7)" ><g id="s47-ch-in"><rect x="-60" y="-420" width="120" height="420" fill="#efe3cf"/><path d="M-70,-420 L0,-570 L70,-420 Z" fill="#6f7d8c"/><line x1="0" y1="-570" x2="0" y2="-630"/><line x1="-20" y1="-608" x2="20" y2="-608"/><path d="M-26,-300 L-26,-250 L26,-250 L26,-300 Q0,-330 -26,-300 Z" fill="#bfe1f3"/><path d="M-30,0 L-30,-90 Q0,-130 30,-90 L30,0 Z" fill="#8a5a3c"/></g></g>
+<g id="s47-wagon"><g transform="translate(0,870)"><path d="M-200,-260 Q0,-420 200,-260 Z" fill="#e8b84a"/><rect x="-220" y="-260" width="440" height="120" fill="#a8774f"/><circle cx="-130" cy="-70" r="70" fill="#fff"/><circle cx="130" cy="-70" r="70" fill="#fff"/></g></g>
+<g id="s47-p1" transform="translate(1250,900) scale(0.9)" ><g id="s47-p1-in">
+      <line x1="0" y1="-158" x2="0" y2="-66"/>
+      <g id="s47-p1-legl"><line x1="0" y1="-66" x2="-30" y2="0"/></g>
+      <g id="s47-p1-legr"><line x1="0" y1="-66" x2="30" y2="0"/></g>
+      <g id="s47-p1-arml"><polyline points="0,-140 -46,-92" fill="none"/></g>
+      <g id="s47-p1-armr"><polyline points="0,-140 46,-92" fill="none"/></g>
+      
+      <g id="s47-p1-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec"/>
+        <circle cx="-13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <circle cx="13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <g id="s47-p1-smile" style="opacity:1"><path d="M-14,-186 Q0,-174 14,-186" fill="none" style="stroke-width:5"/></g>
+        <g id="s47-p1-sad" style="opacity:0"><path d="M-13,-178 Q0,-190 13,-178" fill="none" style="stroke-width:5"/></g>
+        <g id="s47-p1-oh" style="opacity:0"><ellipse cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" style="stroke:none"/></g>
+        
+      </g></g></g>
+<g id="s47-p2" transform="translate(1420,900) scale(0.8)" ><g id="s47-p2-in">
+      <line x1="0" y1="-158" x2="0" y2="-66"/>
+      <g id="s47-p2-legl"><line x1="0" y1="-66" x2="-30" y2="0"/></g>
+      <g id="s47-p2-legr"><line x1="0" y1="-66" x2="30" y2="0"/></g>
+      <g id="s47-p2-arml"><polyline points="0,-140 -46,-92" fill="none"/></g>
+      <g id="s47-p2-armr"><polyline points="0,-140 46,-92" fill="none"/></g>
+      
+      <g id="s47-p2-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec"/>
+        <circle cx="-13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <circle cx="13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <g id="s47-p2-smile" style="opacity:1"><path d="M-14,-186 Q0,-174 14,-186" fill="none" style="stroke-width:5"/></g>
+        <g id="s47-p2-sad" style="opacity:0"><path d="M-13,-178 Q0,-190 13,-178" fill="none" style="stroke-width:5"/></g>
+        <g id="s47-p2-oh" style="opacity:0"><ellipse cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" style="stroke:none"/></g>
+        <path d="M-42,-206 Q0,-262 42,-206 Q0,-226 -42,-206 Z" fill="#8a6fb0"/>
+      </g></g></g>
+<g id="s47-p3" transform="translate(1580,900) scale(0.9)" ><g id="s47-p3-in">
+      <line x1="0" y1="-158" x2="0" y2="-66"/>
+      <g id="s47-p3-legl"><line x1="0" y1="-66" x2="-30" y2="0"/></g>
+      <g id="s47-p3-legr"><line x1="0" y1="-66" x2="30" y2="0"/></g>
+      <g id="s47-p3-arml"><polyline points="0,-140 -46,-92" fill="none"/></g>
+      <g id="s47-p3-armr"><polyline points="0,-140 46,-92" fill="none"/></g>
+      
+      <g id="s47-p3-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec"/>
+        <circle cx="-13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <circle cx="13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <g id="s47-p3-smile" style="opacity:1"><path d="M-14,-186 Q0,-174 14,-186" fill="none" style="stroke-width:5"/></g>
+        <g id="s47-p3-sad" style="opacity:0"><path d="M-13,-178 Q0,-190 13,-178" fill="none" style="stroke-width:5"/></g>
+        <g id="s47-p3-oh" style="opacity:0"><ellipse cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" style="stroke:none"/></g>
+        <path d="M-38,-226 Q0,-282 38,-226 Z" fill="#7d5a3a"/><line x1="30" y1="-228" x2="62" y2="-224"/>
+      </g></g></g>
+        </g>
+
+      </svg>
+<div id="s47-year" class="label box" style="left:120px;top:110px;font-size:72px;"><span class="wd">1817</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s47-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 8.52, duration: 8.52, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s47-cam", { scale: 1.0 }, { scale: 1.03, duration: 8.52, ease: "sine.inOut" }, 0);
+      W("#s47-year", 0.35, 0.08);
+      tl.to("#s47-sky", { fill: "#9fd3f0", duration: 1.0, ease: "power2.inOut" }, 2.54);
+      tl.fromTo("#s47-sunb", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "none" }, 2.84);
+      tl.fromTo("#s47-wagon", { x: -300 }, { x: 900, duration: 1.8, ease: "power2.out" }, 4.49);
+      tl.to("#s47-p1-arml", { rotation: 100, svgOrigin: "0 -140", duration: 0.2, ease: "power2.inOut" }, 6.45);
+      tl.to("#s47-p1-armr", { rotation: -100, svgOrigin: "0 -140", duration: 0.2, ease: "power2.inOut" }, 6.45);
+      tl.to("#s47-p1-in", { y: -45, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 6.450);
+      tl.to("#s47-p1-in", { y: -45, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 6.850);
+      tl.to("#s47-p2-arml", { rotation: 100, svgOrigin: "0 -140", duration: 0.2, ease: "power2.inOut" }, 6.45);
+      tl.to("#s47-p2-armr", { rotation: -100, svgOrigin: "0 -140", duration: 0.2, ease: "power2.inOut" }, 6.45);
+      tl.to("#s47-p2-in", { y: -45, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 6.570);
+      tl.to("#s47-p2-in", { y: -45, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 6.970);
+      tl.to("#s47-p3-arml", { rotation: 100, svgOrigin: "0 -140", duration: 0.2, ease: "power2.inOut" }, 6.45);
+      tl.to("#s47-p3-armr", { rotation: -100, svgOrigin: "0 -140", duration: 0.2, ease: "power2.inOut" }, 6.45);
+      tl.to("#s47-p3-in", { y: -45, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 6.690);
+      tl.to("#s47-p3-in", { y: -45, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 7.090);
+      window.__timelines["s47"] = tl;
+    })();
+  </script>
+</template>

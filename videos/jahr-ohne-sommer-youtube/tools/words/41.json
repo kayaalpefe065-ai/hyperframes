@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Die",
+    "start": 0.01,
+    "end": 0.17,
+    "id": "w0"
+  },
+  {
+    "text": "18-jährige",
+    "start": 0.17,
+    "end": 0.95,
+    "id": "w1"
+  },
+  {
+    "text": "Mary",
+    "start": 0.95,
+    "end": 1.17,
+    "id": "w2"
+  },
+  {
+    "text": "Shelley",
+    "start": 1.17,
+    "end": 1.6,
+    "id": "w3"
+  },
+  {
+    "text": "erfindet",
+    "start": 1.6,
+    "end": 1.88,
+    "id": "w4"
+  },
+  {
+    "text": "dabei",
+    "start": 1.96,
+    "end": 2.2,
+    "id": "w5"
+  },
+  {
+    "text": "eine",
+    "start": 2.2,
+    "end": 2.4,
+    "id": "w6"
+  },
+  {
+    "text": "Figur,",
+    "start": 2.45,
+    "end": 2.84,
+    "id": "w7"
+  },
+  {
+    "text": "die",
+    "start": 2.9,
+    "end": 3.08,
+    "id": "w8"
+  },
+  {
+    "text": "bis",
+    "start": 3.08,
+    "end": 3.28,
+    "id": "w9"
+  },
+  {
+    "text": "heute",
+    "start": 3.28,
+    "end": 3.64,
+    "id": "w10"
+  },
+  {
+    "text": "weltberühmt",
+    "start": 3.64,
+    "end": 4.2,
+    "id": "w11"
+  },
+  {
+    "text": "ist.",
+    "start": 4.2,
+    "end": 4.47,
+    "id": "w12"
+  },
+  {
+    "text": "Frankenstein.",
+    "start": 4.97,
+    "end": 5.88,
+    "id": "w13"
+  }
+]

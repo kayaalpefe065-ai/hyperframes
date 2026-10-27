@@ -1,0 +1,98 @@
+[
+  {
+    "text": "Am",
+    "start": 0.03,
+    "end": 0.14,
+    "id": "w0"
+  },
+  {
+    "text": "5.",
+    "start": 0.14,
+    "end": 0.57,
+    "id": "w1"
+  },
+  {
+    "text": "April,",
+    "start": 0.57,
+    "end": 1.07,
+    "id": "w2"
+  },
+  {
+    "text": "1815,",
+    "start": 1.07,
+    "end": 2.07,
+    "id": "w3"
+  },
+  {
+    "text": "rollt",
+    "start": 2.07,
+    "end": 2.43,
+    "id": "w4"
+  },
+  {
+    "text": "er",
+    "start": 2.43,
+    "end": 2.54,
+    "id": "w5"
+  },
+  {
+    "text": "zum",
+    "start": 2.57,
+    "end": 2.79,
+    "id": "w6"
+  },
+  {
+    "text": "ersten",
+    "start": 2.79,
+    "end": 3.21,
+    "id": "w7"
+  },
+  {
+    "text": "Mal.",
+    "start": 3.21,
+    "end": 3.56,
+    "id": "w8"
+  },
+  {
+    "text": "Am",
+    "start": 3.58,
+    "end": 3.7,
+    "id": "w9"
+  },
+  {
+    "text": "Abend",
+    "start": 3.7,
+    "end": 4.02,
+    "id": "w10"
+  },
+  {
+    "text": "des",
+    "start": 4.25,
+    "end": 4.33,
+    "id": "w11"
+  },
+  {
+    "text": "10.",
+    "start": 4.33,
+    "end": 5.03,
+    "id": "w12"
+  },
+  {
+    "text": "April",
+    "start": 5.03,
+    "end": 5.42,
+    "id": "w13"
+  },
+  {
+    "text": "explodiert",
+    "start": 5.42,
+    "end": 6.19,
+    "id": "w14"
+  },
+  {
+    "text": "er.",
+    "start": 6.19,
+    "end": 6.65,
+    "id": "w15"
+  }
+]

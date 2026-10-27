@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Es",
+    "start": 0,
+    "end": 0.12,
+    "id": "w0"
+  },
+  {
+    "text": "ist",
+    "start": 0.12,
+    "end": 0.3,
+    "id": "w1"
+  },
+  {
+    "text": "der",
+    "start": 0.3,
+    "end": 0.47,
+    "id": "w2"
+  },
+  {
+    "text": "stärkste",
+    "start": 0.53,
+    "end": 0.96,
+    "id": "w3"
+  },
+  {
+    "text": "Vulkanausbruch",
+    "start": 0.96,
+    "end": 1.8,
+    "id": "w4"
+  },
+  {
+    "text": "der",
+    "start": 1.8,
+    "end": 1.98,
+    "id": "w5"
+  },
+  {
+    "text": "überlieferten",
+    "start": 1.98,
+    "end": 2.75,
+    "id": "w6"
+  },
+  {
+    "text": "Geschichte.",
+    "start": 2.75,
+    "end": 3.56,
+    "id": "w7"
+  },
+  {
+    "text": "Viel",
+    "start": 3.56,
+    "end": 3.85,
+    "id": "w8"
+  },
+  {
+    "text": "stärker",
+    "start": 3.85,
+    "end": 4.35,
+    "id": "w9"
+  },
+  {
+    "text": "als",
+    "start": 4.35,
+    "end": 4.56,
+    "id": "w10"
+  },
+  {
+    "text": "der",
+    "start": 4.56,
+    "end": 4.77,
+    "id": "w11"
+  },
+  {
+    "text": "berühmte",
+    "start": 4.77,
+    "end": 5.32,
+    "id": "w12"
+  },
+  {
+    "text": "Krakatau.",
+    "start": 5.34,
+    "end": 6,
+    "id": "w13"
+  }
+]

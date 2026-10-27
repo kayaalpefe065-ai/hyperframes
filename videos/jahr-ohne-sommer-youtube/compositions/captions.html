@@ -1,0 +1,402 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    .capg { position: absolute; left: 0; right: 0; bottom: 64px; text-align: center; visibility: hidden; overflow: visible; }
+    .capg span { display: inline-block; font-family: "Patrick Hand", sans-serif; font-size: 54px; line-height: 1.15;
+      color: #1f1d1a; background: rgba(255, 252, 245, 0.92); border-radius: 12px; padding: 4px 22px 6px; }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1920" data-height="1080">
+    <div id="cap-0" class="capg"><span>Stell dir vor,</span></div>
+    <div id="cap-1" class="capg"><span>es ist Juni.</span></div>
+    <div id="cap-2" class="capg"><span>Du willst ins Freibad.</span></div>
+    <div id="cap-3" class="capg"><span>Und draußen</span></div>
+    <div id="cap-4" class="capg"><span>schneit es.</span></div>
+    <div id="cap-5" class="capg"><span>Genau das ist passiert.</span></div>
+    <div id="cap-6" class="capg"><span>Im Jahr 1816.</span></div>
+    <div id="cap-7" class="capg"><span>Man nennt es:</span></div>
+    <div id="cap-8" class="capg"><span>das Jahr ohne Sommer.</span></div>
+    <div id="cap-9" class="capg"><span>Ernten verfaulten, Brot wurde unbezahlbar,</span></div>
+    <div id="cap-10" class="capg"><span>Menschen wanderten aus.</span></div>
+    <div id="cap-11" class="capg"><span>Und am Ende entstand sogar ein</span></div>
+    <div id="cap-12" class="capg"><span>Monster.</span></div>
+    <div id="cap-13" class="capg"><span>Und alles begann mit einem einzigen</span></div>
+    <div id="cap-14" class="capg"><span>Berg.</span></div>
+    <div id="cap-15" class="capg"><span>Über 11.000 Kilometer entfernt.</span></div>
+    <div id="cap-16" class="capg"><span>Indonesien, die Insel Sumbawa.</span></div>
+    <div id="cap-17" class="capg"><span>Hier steht der Tambora,</span></div>
+    <div id="cap-18" class="capg"><span>ein Vulkan, über 4.000 Meter hoch.</span></div>
+    <div id="cap-19" class="capg"><span>Am 5. April 1815 grollt er</span></div>
+    <div id="cap-20" class="capg"><span>zum ersten Mal.</span></div>
+    <div id="cap-21" class="capg"><span>Am Abend des 10. April explodiert</span></div>
+    <div id="cap-22" class="capg"><span>er.</span></div>
+    <div id="cap-23" class="capg"><span>Feuersäulen schießen in den Himmel.</span></div>
+    <div id="cap-24" class="capg"><span>Glühende Lawinen aus Asche und Gas</span></div>
+    <div id="cap-25" class="capg"><span>rasen die Hänge hinunter,</span></div>
+    <div id="cap-26" class="capg"><span>bis ins Meer.</span></div>
+    <div id="cap-27" class="capg"><span>Den Knall hört man über 1.000</span></div>
+    <div id="cap-28" class="capg"><span>Kilometer weit.</span></div>
+    <div id="cap-29" class="capg"><span>Auf Java hält man ihn für</span></div>
+    <div id="cap-30" class="capg"><span>Kanonendonner und schickt Soldaten los.</span></div>
+    <div id="cap-31" class="capg"><span>Rund um den Berg wird es</span></div>
+    <div id="cap-32" class="capg"><span>tagelang stockdunkel.</span></div>
+    <div id="cap-33" class="capg"><span>Tag und Nacht sind nicht mehr</span></div>
+    <div id="cap-34" class="capg"><span>zu unterscheiden.</span></div>
+    <div id="cap-35" class="capg"><span>Danach ist der Tambora fast eineinhalb</span></div>
+    <div id="cap-36" class="capg"><span>Kilometer niedriger.</span></div>
+    <div id="cap-37" class="capg"><span>Wo der Gipfel war,</span></div>
+    <div id="cap-38" class="capg"><span>klafft ein riesiger Krater.</span></div>
+    <div id="cap-39" class="capg"><span>Es ist der stärkste Vulkanausbruch der</span></div>
+    <div id="cap-40" class="capg"><span>überlieferten Geschichte.</span></div>
+    <div id="cap-41" class="capg"><span>Viel stärker als der berühmte Krakatau.</span></div>
+    <div id="cap-42" class="capg"><span>Mehr als 10.000 Menschen sterben sofort.</span></div>
+    <div id="cap-43" class="capg"><span>Ganze Dörfer, sogar ein kleines Königreich,</span></div>
+    <div id="cap-44" class="capg"><span>verschwinden unter der Asche.</span></div>
+    <div id="cap-45" class="capg"><span>Und dann kommt der Hunger.</span></div>
+    <div id="cap-46" class="capg"><span>Die Asche hat Felder und Brunnen</span></div>
+    <div id="cap-47" class="capg"><span>begraben.</span></div>
+    <div id="cap-48" class="capg"><span>Zehntausende weitere sterben.</span></div>
+    <div id="cap-49" class="capg"><span>Aber der Tambora schleudert nicht nur</span></div>
+    <div id="cap-50" class="capg"><span>Asche</span></div>
+    <div id="cap-51" class="capg"><span>hoch.</span></div>
+    <div id="cap-52" class="capg"><span>Sondern vor allem etwas Unsichtbares:</span></div>
+    <div id="cap-53" class="capg"><span>Schwefel.</span></div>
+    <div id="cap-54" class="capg"><span>Rund 60 Millionen Tonnen Schwefeldioxid</span></div>
+    <div id="cap-55" class="capg"><span>steigen auf.</span></div>
+    <div id="cap-56" class="capg"><span>Bis in die Stratosphäre,</span></div>
+    <div id="cap-57" class="capg"><span>über 40 Kilometer hoch.</span></div>
+    <div id="cap-58" class="capg"><span>Dort oben gibt es keinen Regen,</span></div>
+    <div id="cap-59" class="capg"><span>der das Gas auswäscht.</span></div>
+    <div id="cap-60" class="capg"><span>Es wird zu winzigen Tröpfchen.</span></div>
+    <div id="cap-61" class="capg"><span>Die Winde tragen sie einmal um</span></div>
+    <div id="cap-62" class="capg"><span>die ganze Erde.</span></div>
+    <div id="cap-63" class="capg"><span>Wie ein dünner Schleier legen sie</span></div>
+    <div id="cap-64" class="capg"><span>sich um den Planeten.</span></div>
+    <div id="cap-65" class="capg"><span>Und dieser Schleier wirft einen Teil</span></div>
+    <div id="cap-66" class="capg"><span>des Sonnenlichts zurück ins All,</span></div>
+    <div id="cap-67" class="capg"><span>bevor es unten ankommt.</span></div>
+    <div id="cap-68" class="capg"><span>Im Durchschnitt wird es auf der</span></div>
+    <div id="cap-69" class="capg"><span>Erde etwa ein halbes bis ein</span></div>
+    <div id="cap-70" class="capg"><span>Grad kälter.</span></div>
+    <div id="cap-71" class="capg"><span>Klingt wenig.</span></div>
+    <div id="cap-72" class="capg"><span>Ist es aber nicht.</span></div>
+    <div id="cap-73" class="capg"><span>Denn ein Grad weniger im Durchschnitt</span></div>
+    <div id="cap-74" class="capg"><span>heißt:</span></div>
+    <div id="cap-75" class="capg"><span>kalte Tage, späte Fröste.</span></div>
+    <div id="cap-76" class="capg"><span>Und Regen, Regen,</span></div>
+    <div id="cap-77" class="capg"><span>Regen.</span></div>
+    <div id="cap-78" class="capg"><span>Das Erstaunliche:</span></div>
+    <div id="cap-79" class="capg"><span>Damals wusste niemand,</span></div>
+    <div id="cap-80" class="capg"><span>woher die Kälte kam.</span></div>
+    <div id="cap-81" class="capg"><span>Den</span></div>
+    <div id="cap-82" class="capg"><span>Zusammenhang erkannte man erst rund</span></div>
+    <div id="cap-83" class="capg"><span>100 Jahre später.</span></div>
+    <div id="cap-84" class="capg"><span>Europa, Frühjahr 1816.</span></div>
+    <div id="cap-85" class="capg"><span>Der Schnee will einfach nicht schmelzen.</span></div>
+    <div id="cap-86" class="capg"><span>Im Mai:</span></div>
+    <div id="cap-87" class="capg"><span>Frost.</span></div>
+    <div id="cap-88" class="capg"><span>Und in der Schweiz schneit es</span></div>
+    <div id="cap-89" class="capg"><span>in diesem Jahr in jedem einzelnen</span></div>
+    <div id="cap-90" class="capg"><span>Monat.</span></div>
+    <div id="cap-91" class="capg"><span>Dazu regnet es.</span></div>
+    <div id="cap-92" class="capg"><span>Wochenlang.</span></div>
+    <div id="cap-93" class="capg"><span>Flüsse und Seen treten über die</span></div>
+    <div id="cap-94" class="capg"><span>Ufer.</span></div>
+    <div id="cap-95" class="capg"><span>In Süddeutschland ist es mitten im</span></div>
+    <div id="cap-96" class="capg"><span>Sommer zwei bis drei Grad kälter</span></div>
+    <div id="cap-97" class="capg"><span>als normal.</span></div>
+    <div id="cap-98" class="capg"><span>Auch in Nordamerika.</span></div>
+    <div id="cap-99" class="capg"><span>In Neuengland schneit es im Juni,</span></div>
+    <div id="cap-100" class="capg"><span>und im Juli und August gibt</span></div>
+    <div id="cap-101" class="capg"><span>es Nachtfrost.</span></div>
+    <div id="cap-102" class="capg"><span>Die Amerikaner nennen das Jahr später:</span></div>
+    <div id="cap-103" class="capg"><span>Eighteen hundred and froze to death.</span></div>
+    <div id="cap-104" class="capg"><span>Achtzehnhundert und erfroren.</span></div>
+    <div id="cap-105" class="capg"><span>Und in Asien?</span></div>
+    <div id="cap-106" class="capg"><span>In China fallen Ernten aus.</span></div>
+    <div id="cap-107" class="capg"><span>In Indien gerät der Monsun durcheinander.</span></div>
+    <div id="cap-108" class="capg"><span>Für die Bauern ist es eine</span></div>
+    <div id="cap-109" class="capg"><span>Katastrophe.</span></div>
+    <div id="cap-110" class="capg"><span>Das Getreide wird nicht reif.</span></div>
+    <div id="cap-111" class="capg"><span>Es verfault auf den nassen Feldern.</span></div>
+    <div id="cap-112" class="capg"><span>Kartoffeln faulen in der</span></div>
+    <div id="cap-113" class="capg"><span>Erde.</span></div>
+    <div id="cap-114" class="capg"><span>Und der Wein wird so sauer,</span></div>
+    <div id="cap-115" class="capg"><span>dass man ihn kaum trinken kann.</span></div>
+    <div id="cap-116" class="capg"><span>Die Folge:</span></div>
+    <div id="cap-117" class="capg"><span>Die Preise explodieren.</span></div>
+    <div id="cap-118" class="capg"><span>Getreide kostet bald zwei-,</span></div>
+    <div id="cap-119" class="capg"><span>dreimal so viel wie vorher.</span></div>
+    <div id="cap-120" class="capg"><span>Im Winter und im Frühjahr 1817</span></div>
+    <div id="cap-121" class="capg"><span>wird der Hunger richtig schlimm.</span></div>
+    <div id="cap-122" class="capg"><span>Menschen strecken ihr Brot mit Sägemehl</span></div>
+    <div id="cap-123" class="capg"><span>und Baumrinde.</span></div>
+    <div id="cap-124" class="capg"><span>Sie essen Gras,</span></div>
+    <div id="cap-125" class="capg"><span>Moos und Brennnesseln.</span></div>
+    <div id="cap-126" class="capg"><span>Bettler ziehen von Dorf zu Dorf.</span></div>
+    <div id="cap-127" class="capg"><span>In der Schweiz und in Süddeutschland</span></div>
+    <div id="cap-128" class="capg"><span>sterben Tausende.</span></div>
+    <div id="cap-129" class="capg"><span>Wer kann, packt seine Sachen.</span></div>
+    <div id="cap-130" class="capg"><span>Aus Baden und Württemberg wandern Zehntausende</span></div>
+    <div id="cap-131" class="capg"><span>aus.</span></div>
+    <div id="cap-132" class="capg"><span>Die einen ziehen die Donau hinunter</span></div>
+    <div id="cap-133" class="capg"><span>nach Russland, bis in den Kaukasus.</span></div>
+    <div id="cap-134" class="capg"><span>Die anderen über Holland nach Amerika.</span></div>
+    <div id="cap-135" class="capg"><span>Viele erreichen ihr Ziel</span></div>
+    <div id="cap-136" class="capg"><span>nie.</span></div>
+    <div id="cap-137" class="capg"><span>Auf den überfüllten Schiffen sterben</span></div>
+    <div id="cap-138" class="capg"><span>unzählige an Krankheiten.</span></div>
+    <div id="cap-139" class="capg"><span>Doch das Jahr ohne Sommer hat</span></div>
+    <div id="cap-140" class="capg"><span>nicht nur Leid hinterlassen.</span></div>
+    <div id="cap-141" class="capg"><span>Sondern auch ein paar überraschende</span></div>
+    <div id="cap-142" class="capg"><span>Spuren.</span></div>
+    <div id="cap-143" class="capg"><span>Juni 1816, eine Villa am Genfer</span></div>
+    <div id="cap-144" class="capg"><span>See.</span></div>
+    <div id="cap-145" class="capg"><span>Wegen des Dauerregens sitzen ein paar</span></div>
+    <div id="cap-146" class="capg"><span>junge Engländer drinnen fest.</span></div>
+    <div id="cap-147" class="capg"><span>Lord Byron schlägt einen Wettbewerb</span></div>
+    <div id="cap-148" class="capg"><span>vor:</span></div>
+    <div id="cap-149" class="capg"><span>Jeder soll eine Gruselgeschichte schreiben.</span></div>
+    <div id="cap-150" class="capg"><span>Die achtzehnjährige Mary Shelley erfindet</span></div>
+    <div id="cap-151" class="capg"><span>dabei eine Figur,</span></div>
+    <div id="cap-152" class="capg"><span>die bis heute weltberühmt ist:</span></div>
+    <div id="cap-153" class="capg"><span>Frankenstein.</span></div>
+    <div id="cap-154" class="capg"><span>Zweite Spur:</span></div>
+    <div id="cap-155" class="capg"><span>Mannheim.</span></div>
+    <div id="cap-156" class="capg"><span>Hafer ist so teuer,</span></div>
+    <div id="cap-157" class="capg"><span>dass viele Pferde nicht mehr gefüttert</span></div>
+    <div id="cap-158" class="capg"><span>werden können.</span></div>
+    <div id="cap-159" class="capg"><span>1817 baut Karl Drais eine Laufmaschine.</span></div>
+    <div id="cap-160" class="capg"><span>Zwei Räder, ein Lenker,</span></div>
+    <div id="cap-161" class="capg"><span>kein Pferd.</span></div>
+    <div id="cap-162" class="capg"><span>Der Urahn des Fahrrads.</span></div>
+    <div id="cap-163" class="capg"><span>Ob der Hafermangel ihn wirklich darauf</span></div>
+    <div id="cap-164" class="capg"><span>brachte, ist nicht sicher.</span></div>
+    <div id="cap-165" class="capg"><span>Aber manche Forscher vermuten es.</span></div>
+    <div id="cap-166" class="capg"><span>Und in Württemberg gründet König Wilhelm</span></div>
+    <div id="cap-167" class="capg"><span>der Erste eine Landwirtschaftsschule.</span></div>
+    <div id="cap-168" class="capg"><span>Damit so ein Hunger nie wieder</span></div>
+    <div id="cap-169" class="capg"><span>passiert.</span></div>
+    <div id="cap-170" class="capg"><span>Dazu ein großes Landwirtschaftsfest</span></div>
+    <div id="cap-171" class="capg"><span>in Cannstatt.</span></div>
+    <div id="cap-172" class="capg"><span>Daraus wird später:</span></div>
+    <div id="cap-173" class="capg"><span>der Cannstatter Wasen.</span></div>
+    <div id="cap-174" class="capg"><span>1817 wird das Wetter endlich besser.</span></div>
+    <div id="cap-175" class="capg"><span>Als die ersten vollen Erntewagen in</span></div>
+    <div id="cap-176" class="capg"><span>die Dörfer rollen,</span></div>
+    <div id="cap-177" class="capg"><span>feiern die Menschen.</span></div>
+    <div id="cap-178" class="capg"><span>Heute wissen wir:</span></div>
+    <div id="cap-179" class="capg"><span>Ein einziger großer Ausbruch kann das</span></div>
+    <div id="cap-180" class="capg"><span>Klima der ganzen Welt für Jahre</span></div>
+    <div id="cap-181" class="capg"><span>verändern.</span></div>
+    <div id="cap-182" class="capg"><span>1991 zum Beispiel:</span></div>
+    <div id="cap-183" class="capg"><span>Der Pinatubo auf den Philippinen.</span></div>
+    <div id="cap-184" class="capg"><span>Danach war es weltweit messbar kühler.</span></div>
+    <div id="cap-185" class="capg"><span>Und der Tambora hat etwa dreimal</span></div>
+    <div id="cap-186" class="capg"><span>so viel Schwefel ausgestoßen.</span></div>
+    <div id="cap-187" class="capg"><span>Deshalb beobachten Forscher heute Vulkane</span></div>
+    <div id="cap-188" class="capg"><span>auf der ganzen Welt.</span></div>
+    <div id="cap-189" class="capg"><span>Ein einziger Vulkan.</span></div>
+    <div id="cap-190" class="capg"><span>Und die halbe Welt hatte keinen</span></div>
+    <div id="cap-191" class="capg"><span>Sommer.</span></div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      tl.set("#cap-0", { visibility: "visible" }, 0.310); tl.set("#cap-0", { visibility: "hidden" }, 1.250);
+      tl.set("#cap-1", { visibility: "visible" }, 1.270); tl.set("#cap-1", { visibility: "hidden" }, 2.140);
+      tl.set("#cap-2", { visibility: "visible" }, 2.160); tl.set("#cap-2", { visibility: "hidden" }, 3.450);
+      tl.set("#cap-3", { visibility: "visible" }, 3.470); tl.set("#cap-3", { visibility: "hidden" }, 4.460);
+      tl.set("#cap-4", { visibility: "visible" }, 4.760); tl.set("#cap-4", { visibility: "hidden" }, 5.850);
+      tl.set("#cap-5", { visibility: "visible" }, 6.680); tl.set("#cap-5", { visibility: "hidden" }, 9.080);
+      tl.set("#cap-6", { visibility: "visible" }, 9.100); tl.set("#cap-6", { visibility: "hidden" }, 11.740);
+      tl.set("#cap-7", { visibility: "visible" }, 11.760); tl.set("#cap-7", { visibility: "hidden" }, 12.880);
+      tl.set("#cap-8", { visibility: "visible" }, 12.900); tl.set("#cap-8", { visibility: "hidden" }, 14.870);
+      tl.set("#cap-9", { visibility: "visible" }, 15.710); tl.set("#cap-9", { visibility: "hidden" }, 18.820);
+      tl.set("#cap-10", { visibility: "visible" }, 18.840); tl.set("#cap-10", { visibility: "hidden" }, 20.540);
+      tl.set("#cap-11", { visibility: "visible" }, 20.590); tl.set("#cap-11", { visibility: "hidden" }, 22.010);
+      tl.set("#cap-12", { visibility: "visible" }, 22.030); tl.set("#cap-12", { visibility: "hidden" }, 23.070);
+      tl.set("#cap-13", { visibility: "visible" }, 23.940); tl.set("#cap-13", { visibility: "hidden" }, 26.030);
+      tl.set("#cap-14", { visibility: "visible" }, 26.050); tl.set("#cap-14", { visibility: "hidden" }, 26.530);
+      tl.set("#cap-15", { visibility: "visible" }, 26.550); tl.set("#cap-15", { visibility: "hidden" }, 29.130);
+      tl.set("#cap-16", { visibility: "visible" }, 32.930); tl.set("#cap-16", { visibility: "hidden" }, 35.450);
+      tl.set("#cap-17", { visibility: "visible" }, 35.470); tl.set("#cap-17", { visibility: "hidden" }, 36.780);
+      tl.set("#cap-18", { visibility: "visible" }, 36.800); tl.set("#cap-18", { visibility: "hidden" }, 39.360);
+      tl.set("#cap-19", { visibility: "visible" }, 40.190); tl.set("#cap-19", { visibility: "hidden" }, 42.710);
+      tl.set("#cap-20", { visibility: "visible" }, 42.730); tl.set("#cap-20", { visibility: "hidden" }, 43.720);
+      tl.set("#cap-21", { visibility: "visible" }, 43.740); tl.set("#cap-21", { visibility: "hidden" }, 46.330);
+      tl.set("#cap-22", { visibility: "visible" }, 46.350); tl.set("#cap-22", { visibility: "hidden" }, 47.210);
+      tl.set("#cap-23", { visibility: "visible" }, 48.840); tl.set("#cap-23", { visibility: "hidden" }, 50.820);
+      tl.set("#cap-24", { visibility: "visible" }, 50.840); tl.set("#cap-24", { visibility: "hidden" }, 52.760);
+      tl.set("#cap-25", { visibility: "visible" }, 52.780); tl.set("#cap-25", { visibility: "hidden" }, 54.060);
+      tl.set("#cap-26", { visibility: "visible" }, 54.080); tl.set("#cap-26", { visibility: "hidden" }, 55.150);
+      tl.set("#cap-27", { visibility: "visible" }, 55.970); tl.set("#cap-27", { visibility: "hidden" }, 57.680);
+      tl.set("#cap-28", { visibility: "visible" }, 57.700); tl.set("#cap-28", { visibility: "hidden" }, 58.590);
+      tl.set("#cap-29", { visibility: "visible" }, 58.610); tl.set("#cap-29", { visibility: "hidden" }, 59.860);
+      tl.set("#cap-30", { visibility: "visible" }, 59.880); tl.set("#cap-30", { visibility: "hidden" }, 62.280);
+      tl.set("#cap-31", { visibility: "visible" }, 63.100); tl.set("#cap-31", { visibility: "hidden" }, 64.440);
+      tl.set("#cap-32", { visibility: "visible" }, 64.460); tl.set("#cap-32", { visibility: "hidden" }, 66.470);
+      tl.set("#cap-33", { visibility: "visible" }, 66.490); tl.set("#cap-33", { visibility: "hidden" }, 67.870);
+      tl.set("#cap-34", { visibility: "visible" }, 67.890); tl.set("#cap-34", { visibility: "hidden" }, 69.290);
+      tl.set("#cap-35", { visibility: "visible" }, 70.090); tl.set("#cap-35", { visibility: "hidden" }, 72.060);
+      tl.set("#cap-36", { visibility: "visible" }, 72.080); tl.set("#cap-36", { visibility: "hidden" }, 73.870);
+      tl.set("#cap-37", { visibility: "visible" }, 73.890); tl.set("#cap-37", { visibility: "hidden" }, 75.260);
+      tl.set("#cap-38", { visibility: "visible" }, 75.280); tl.set("#cap-38", { visibility: "hidden" }, 77.350);
+      tl.set("#cap-39", { visibility: "visible" }, 78.290); tl.set("#cap-39", { visibility: "hidden" }, 80.250);
+      tl.set("#cap-40", { visibility: "visible" }, 80.270); tl.set("#cap-40", { visibility: "hidden" }, 81.830);
+      tl.set("#cap-41", { visibility: "visible" }, 81.850); tl.set("#cap-41", { visibility: "hidden" }, 84.690);
+      tl.set("#cap-42", { visibility: "visible" }, 85.500); tl.set("#cap-42", { visibility: "hidden" }, 88.620);
+      tl.set("#cap-43", { visibility: "visible" }, 88.640); tl.set("#cap-43", { visibility: "hidden" }, 91.960);
+      tl.set("#cap-44", { visibility: "visible" }, 91.980); tl.set("#cap-44", { visibility: "hidden" }, 93.460);
+      tl.set("#cap-45", { visibility: "visible" }, 94.300); tl.set("#cap-45", { visibility: "hidden" }, 96.280);
+      tl.set("#cap-46", { visibility: "visible" }, 96.300); tl.set("#cap-46", { visibility: "hidden" }, 98.280);
+      tl.set("#cap-47", { visibility: "visible" }, 98.300); tl.set("#cap-47", { visibility: "hidden" }, 98.840);
+      tl.set("#cap-48", { visibility: "visible" }, 98.860); tl.set("#cap-48", { visibility: "hidden" }, 100.960);
+      tl.set("#cap-49", { visibility: "visible" }, 104.850); tl.set("#cap-49", { visibility: "hidden" }, 107.040);
+      tl.set("#cap-50", { visibility: "visible" }, 107.060); tl.set("#cap-50", { visibility: "hidden" }, 107.710);
+      tl.set("#cap-51", { visibility: "visible" }, 107.780); tl.set("#cap-51", { visibility: "hidden" }, 107.880);
+      tl.set("#cap-52", { visibility: "visible" }, 107.900); tl.set("#cap-52", { visibility: "hidden" }, 110.150);
+      tl.set("#cap-53", { visibility: "visible" }, 110.170); tl.set("#cap-53", { visibility: "hidden" }, 111.860);
+      tl.set("#cap-54", { visibility: "visible" }, 112.760); tl.set("#cap-54", { visibility: "hidden" }, 115.180);
+      tl.set("#cap-55", { visibility: "visible" }, 115.200); tl.set("#cap-55", { visibility: "hidden" }, 116.550);
+      tl.set("#cap-56", { visibility: "visible" }, 116.570); tl.set("#cap-56", { visibility: "hidden" }, 117.940);
+      tl.set("#cap-57", { visibility: "visible" }, 117.960); tl.set("#cap-57", { visibility: "hidden" }, 119.720);
+      tl.set("#cap-58", { visibility: "visible" }, 120.560); tl.set("#cap-58", { visibility: "hidden" }, 122.020);
+      tl.set("#cap-59", { visibility: "visible" }, 122.040); tl.set("#cap-59", { visibility: "hidden" }, 123.300);
+      tl.set("#cap-60", { visibility: "visible" }, 123.320); tl.set("#cap-60", { visibility: "hidden" }, 125.340);
+      tl.set("#cap-61", { visibility: "visible" }, 126.170); tl.set("#cap-61", { visibility: "hidden" }, 127.910);
+      tl.set("#cap-62", { visibility: "visible" }, 127.930); tl.set("#cap-62", { visibility: "hidden" }, 129.590);
+      tl.set("#cap-63", { visibility: "visible" }, 129.610); tl.set("#cap-63", { visibility: "hidden" }, 131.150);
+      tl.set("#cap-64", { visibility: "visible" }, 131.170); tl.set("#cap-64", { visibility: "hidden" }, 132.630);
+      tl.set("#cap-65", { visibility: "visible" }, 133.650); tl.set("#cap-65", { visibility: "hidden" }, 135.330);
+      tl.set("#cap-66", { visibility: "visible" }, 135.350); tl.set("#cap-66", { visibility: "hidden" }, 136.840);
+      tl.set("#cap-67", { visibility: "visible" }, 136.860); tl.set("#cap-67", { visibility: "hidden" }, 138.340);
+      tl.set("#cap-68", { visibility: "visible" }, 139.160); tl.set("#cap-68", { visibility: "hidden" }, 140.840);
+      tl.set("#cap-69", { visibility: "visible" }, 140.860); tl.set("#cap-69", { visibility: "hidden" }, 142.280);
+      tl.set("#cap-70", { visibility: "visible" }, 142.300); tl.set("#cap-70", { visibility: "hidden" }, 143.700);
+      tl.set("#cap-71", { visibility: "visible" }, 143.720); tl.set("#cap-71", { visibility: "hidden" }, 145.460);
+      tl.set("#cap-72", { visibility: "visible" }, 145.480); tl.set("#cap-72", { visibility: "hidden" }, 146.800);
+      tl.set("#cap-73", { visibility: "visible" }, 147.610); tl.set("#cap-73", { visibility: "hidden" }, 149.510);
+      tl.set("#cap-74", { visibility: "visible" }, 149.530); tl.set("#cap-74", { visibility: "hidden" }, 150.150);
+      tl.set("#cap-75", { visibility: "visible" }, 150.500); tl.set("#cap-75", { visibility: "hidden" }, 154.000);
+      tl.set("#cap-76", { visibility: "visible" }, 154.020); tl.set("#cap-76", { visibility: "hidden" }, 155.730);
+      tl.set("#cap-77", { visibility: "visible" }, 155.750); tl.set("#cap-77", { visibility: "hidden" }, 156.630);
+      tl.set("#cap-78", { visibility: "visible" }, 157.430); tl.set("#cap-78", { visibility: "hidden" }, 159.040);
+      tl.set("#cap-79", { visibility: "visible" }, 159.060); tl.set("#cap-79", { visibility: "hidden" }, 160.290);
+      tl.set("#cap-80", { visibility: "visible" }, 160.310); tl.set("#cap-80", { visibility: "hidden" }, 161.520);
+      tl.set("#cap-81", { visibility: "visible" }, 161.540); tl.set("#cap-81", { visibility: "hidden" }, 161.970);
+      tl.set("#cap-82", { visibility: "visible" }, 162.170); tl.set("#cap-82", { visibility: "hidden" }, 163.960);
+      tl.set("#cap-83", { visibility: "visible" }, 163.980); tl.set("#cap-83", { visibility: "hidden" }, 165.610);
+      tl.set("#cap-84", { visibility: "visible" }, 169.430); tl.set("#cap-84", { visibility: "hidden" }, 172.950);
+      tl.set("#cap-85", { visibility: "visible" }, 172.970); tl.set("#cap-85", { visibility: "hidden" }, 175.680);
+      tl.set("#cap-86", { visibility: "visible" }, 176.560); tl.set("#cap-86", { visibility: "hidden" }, 177.810);
+      tl.set("#cap-87", { visibility: "visible" }, 177.830); tl.set("#cap-87", { visibility: "hidden" }, 178.720);
+      tl.set("#cap-88", { visibility: "visible" }, 178.740); tl.set("#cap-88", { visibility: "hidden" }, 180.300);
+      tl.set("#cap-89", { visibility: "visible" }, 180.320); tl.set("#cap-89", { visibility: "hidden" }, 182.120);
+      tl.set("#cap-90", { visibility: "visible" }, 182.140); tl.set("#cap-90", { visibility: "hidden" }, 183.050);
+      tl.set("#cap-91", { visibility: "visible" }, 183.850); tl.set("#cap-91", { visibility: "hidden" }, 185.080);
+      tl.set("#cap-92", { visibility: "visible" }, 185.100); tl.set("#cap-92", { visibility: "hidden" }, 186.650);
+      tl.set("#cap-93", { visibility: "visible" }, 186.670); tl.set("#cap-93", { visibility: "hidden" }, 188.460);
+      tl.set("#cap-94", { visibility: "visible" }, 188.480); tl.set("#cap-94", { visibility: "hidden" }, 189.250);
+      tl.set("#cap-95", { visibility: "visible" }, 190.110); tl.set("#cap-95", { visibility: "hidden" }, 191.670);
+      tl.set("#cap-96", { visibility: "visible" }, 191.690); tl.set("#cap-96", { visibility: "hidden" }, 193.310);
+      tl.set("#cap-97", { visibility: "visible" }, 193.330); tl.set("#cap-97", { visibility: "hidden" }, 194.290);
+      tl.set("#cap-98", { visibility: "visible" }, 195.130); tl.set("#cap-98", { visibility: "hidden" }, 197.240);
+      tl.set("#cap-99", { visibility: "visible" }, 197.260); tl.set("#cap-99", { visibility: "hidden" }, 198.550);
+      tl.set("#cap-100", { visibility: "visible" }, 198.570); tl.set("#cap-100", { visibility: "hidden" }, 200.110);
+      tl.set("#cap-101", { visibility: "visible" }, 200.130); tl.set("#cap-101", { visibility: "hidden" }, 201.130);
+      tl.set("#cap-102", { visibility: "visible" }, 202.090); tl.set("#cap-102", { visibility: "hidden" }, 204.360);
+      tl.set("#cap-103", { visibility: "visible" }, 204.570); tl.set("#cap-103", { visibility: "hidden" }, 206.810);
+      tl.set("#cap-104", { visibility: "visible" }, 207.020); tl.set("#cap-104", { visibility: "hidden" }, 209.040);
+      tl.set("#cap-105", { visibility: "visible" }, 209.870); tl.set("#cap-105", { visibility: "hidden" }, 211.330);
+      tl.set("#cap-106", { visibility: "visible" }, 211.350); tl.set("#cap-106", { visibility: "hidden" }, 213.000);
+      tl.set("#cap-107", { visibility: "visible" }, 213.020); tl.set("#cap-107", { visibility: "hidden" }, 215.460);
+      tl.set("#cap-108", { visibility: "visible" }, 219.360); tl.set("#cap-108", { visibility: "hidden" }, 220.550);
+      tl.set("#cap-109", { visibility: "visible" }, 220.570); tl.set("#cap-109", { visibility: "hidden" }, 221.340);
+      tl.set("#cap-110", { visibility: "visible" }, 221.360); tl.set("#cap-110", { visibility: "hidden" }, 223.340);
+      tl.set("#cap-111", { visibility: "visible" }, 223.360); tl.set("#cap-111", { visibility: "hidden" }, 225.700);
+      tl.set("#cap-112", { visibility: "visible" }, 226.800); tl.set("#cap-112", { visibility: "hidden" }, 228.730);
+      tl.set("#cap-113", { visibility: "visible" }, 228.770); tl.set("#cap-113", { visibility: "hidden" }, 228.780);
+      tl.set("#cap-114", { visibility: "visible" }, 228.800); tl.set("#cap-114", { visibility: "hidden" }, 230.020);
+      tl.set("#cap-115", { visibility: "visible" }, 230.040); tl.set("#cap-115", { visibility: "hidden" }, 231.780);
+      tl.set("#cap-116", { visibility: "visible" }, 232.740); tl.set("#cap-116", { visibility: "hidden" }, 233.430);
+      tl.set("#cap-117", { visibility: "visible" }, 233.450); tl.set("#cap-117", { visibility: "hidden" }, 235.360);
+      tl.set("#cap-118", { visibility: "visible" }, 235.380); tl.set("#cap-118", { visibility: "hidden" }, 236.900);
+      tl.set("#cap-119", { visibility: "visible" }, 236.920); tl.set("#cap-119", { visibility: "hidden" }, 239.030);
+      tl.set("#cap-120", { visibility: "visible" }, 239.860); tl.set("#cap-120", { visibility: "hidden" }, 241.910);
+      tl.set("#cap-121", { visibility: "visible" }, 241.930); tl.set("#cap-121", { visibility: "hidden" }, 244.310);
+      tl.set("#cap-122", { visibility: "visible" }, 245.160); tl.set("#cap-122", { visibility: "hidden" }, 247.180);
+      tl.set("#cap-123", { visibility: "visible" }, 247.200); tl.set("#cap-123", { visibility: "hidden" }, 248.480);
+      tl.set("#cap-124", { visibility: "visible" }, 248.500); tl.set("#cap-124", { visibility: "hidden" }, 249.360);
+      tl.set("#cap-125", { visibility: "visible" }, 249.380); tl.set("#cap-125", { visibility: "hidden" }, 251.230);
+      tl.set("#cap-126", { visibility: "visible" }, 252.080); tl.set("#cap-126", { visibility: "hidden" }, 254.320);
+      tl.set("#cap-127", { visibility: "visible" }, 254.340); tl.set("#cap-127", { visibility: "hidden" }, 256.440);
+      tl.set("#cap-128", { visibility: "visible" }, 256.460); tl.set("#cap-128", { visibility: "hidden" }, 257.760);
+      tl.set("#cap-129", { visibility: "visible" }, 258.570); tl.set("#cap-129", { visibility: "hidden" }, 260.750);
+      tl.set("#cap-130", { visibility: "visible" }, 260.770); tl.set("#cap-130", { visibility: "hidden" }, 263.280);
+      tl.set("#cap-131", { visibility: "visible" }, 263.300); tl.set("#cap-131", { visibility: "hidden" }, 264.020);
+      tl.set("#cap-132", { visibility: "visible" }, 264.860); tl.set("#cap-132", { visibility: "hidden" }, 266.380);
+      tl.set("#cap-133", { visibility: "visible" }, 266.400); tl.set("#cap-133", { visibility: "hidden" }, 268.570);
+      tl.set("#cap-134", { visibility: "visible" }, 268.590); tl.set("#cap-134", { visibility: "hidden" }, 270.930);
+      tl.set("#cap-135", { visibility: "visible" }, 271.800); tl.set("#cap-135", { visibility: "hidden" }, 273.540);
+      tl.set("#cap-136", { visibility: "visible" }, 273.560); tl.set("#cap-136", { visibility: "hidden" }, 273.860);
+      tl.set("#cap-137", { visibility: "visible" }, 273.880); tl.set("#cap-137", { visibility: "hidden" }, 275.410);
+      tl.set("#cap-138", { visibility: "visible" }, 275.430); tl.set("#cap-138", { visibility: "hidden" }, 277.270);
+      tl.set("#cap-139", { visibility: "visible" }, 281.110); tl.set("#cap-139", { visibility: "hidden" }, 282.740);
+      tl.set("#cap-140", { visibility: "visible" }, 282.760); tl.set("#cap-140", { visibility: "hidden" }, 284.450);
+      tl.set("#cap-141", { visibility: "visible" }, 284.470); tl.set("#cap-141", { visibility: "hidden" }, 285.880);
+      tl.set("#cap-142", { visibility: "visible" }, 285.900); tl.set("#cap-142", { visibility: "hidden" }, 286.840);
+      tl.set("#cap-143", { visibility: "visible" }, 287.630); tl.set("#cap-143", { visibility: "hidden" }, 290.920);
+      tl.set("#cap-144", { visibility: "visible" }, 290.940); tl.set("#cap-144", { visibility: "hidden" }, 291.710);
+      tl.set("#cap-145", { visibility: "visible" }, 291.760); tl.set("#cap-145", { visibility: "hidden" }, 293.520);
+      tl.set("#cap-146", { visibility: "visible" }, 293.540); tl.set("#cap-146", { visibility: "hidden" }, 295.310);
+      tl.set("#cap-147", { visibility: "visible" }, 296.090); tl.set("#cap-147", { visibility: "hidden" }, 297.810);
+      tl.set("#cap-148", { visibility: "visible" }, 297.830); tl.set("#cap-148", { visibility: "hidden" }, 298.570);
+      tl.set("#cap-149", { visibility: "visible" }, 298.590); tl.set("#cap-149", { visibility: "hidden" }, 301.690);
+      tl.set("#cap-150", { visibility: "visible" }, 302.550); tl.set("#cap-150", { visibility: "hidden" }, 304.480);
+      tl.set("#cap-151", { visibility: "visible" }, 304.500); tl.set("#cap-151", { visibility: "hidden" }, 305.420);
+      tl.set("#cap-152", { visibility: "visible" }, 305.440); tl.set("#cap-152", { visibility: "hidden" }, 307.410);
+      tl.set("#cap-153", { visibility: "visible" }, 307.510); tl.set("#cap-153", { visibility: "hidden" }, 308.820);
+      tl.set("#cap-154", { visibility: "visible" }, 310.450); tl.set("#cap-154", { visibility: "hidden" }, 311.710);
+      tl.set("#cap-155", { visibility: "visible" }, 311.730); tl.set("#cap-155", { visibility: "hidden" }, 312.740);
+      tl.set("#cap-156", { visibility: "visible" }, 312.760); tl.set("#cap-156", { visibility: "hidden" }, 313.770);
+      tl.set("#cap-157", { visibility: "visible" }, 313.790); tl.set("#cap-157", { visibility: "hidden" }, 315.440);
+      tl.set("#cap-158", { visibility: "visible" }, 315.460); tl.set("#cap-158", { visibility: "hidden" }, 316.430);
+      tl.set("#cap-159", { visibility: "visible" }, 317.340); tl.set("#cap-159", { visibility: "hidden" }, 320.580);
+      tl.set("#cap-160", { visibility: "visible" }, 320.600); tl.set("#cap-160", { visibility: "hidden" }, 321.960);
+      tl.set("#cap-161", { visibility: "visible" }, 321.980); tl.set("#cap-161", { visibility: "hidden" }, 323.080);
+      tl.set("#cap-162", { visibility: "visible" }, 323.100); tl.set("#cap-162", { visibility: "hidden" }, 324.880);
+      tl.set("#cap-163", { visibility: "visible" }, 325.710); tl.set("#cap-163", { visibility: "hidden" }, 327.380);
+      tl.set("#cap-164", { visibility: "visible" }, 327.400); tl.set("#cap-164", { visibility: "hidden" }, 328.690);
+      tl.set("#cap-165", { visibility: "visible" }, 328.710); tl.set("#cap-165", { visibility: "hidden" }, 331.060);
+      tl.set("#cap-166", { visibility: "visible" }, 332.080); tl.set("#cap-166", { visibility: "hidden" }, 333.990);
+      tl.set("#cap-167", { visibility: "visible" }, 334.010); tl.set("#cap-167", { visibility: "hidden" }, 336.290);
+      tl.set("#cap-168", { visibility: "visible" }, 336.310); tl.set("#cap-168", { visibility: "hidden" }, 337.500);
+      tl.set("#cap-169", { visibility: "visible" }, 337.520); tl.set("#cap-169", { visibility: "hidden" }, 338.380);
+      tl.set("#cap-170", { visibility: "visible" }, 339.170); tl.set("#cap-170", { visibility: "hidden" }, 341.400);
+      tl.set("#cap-171", { visibility: "visible" }, 341.420); tl.set("#cap-171", { visibility: "hidden" }, 342.790);
+      tl.set("#cap-172", { visibility: "visible" }, 342.810); tl.set("#cap-172", { visibility: "hidden" }, 344.550);
+      tl.set("#cap-173", { visibility: "visible" }, 344.570); tl.set("#cap-173", { visibility: "hidden" }, 346.480);
+      tl.set("#cap-174", { visibility: "visible" }, 351.030); tl.set("#cap-174", { visibility: "hidden" }, 354.730);
+      tl.set("#cap-175", { visibility: "visible" }, 354.750); tl.set("#cap-175", { visibility: "hidden" }, 356.430);
+      tl.set("#cap-176", { visibility: "visible" }, 356.450); tl.set("#cap-176", { visibility: "hidden" }, 357.210);
+      tl.set("#cap-177", { visibility: "visible" }, 357.230); tl.set("#cap-177", { visibility: "hidden" }, 358.750);
+      tl.set("#cap-178", { visibility: "visible" }, 359.580); tl.set("#cap-178", { visibility: "hidden" }, 360.810);
+      tl.set("#cap-179", { visibility: "visible" }, 360.830); tl.set("#cap-179", { visibility: "hidden" }, 362.620);
+      tl.set("#cap-180", { visibility: "visible" }, 362.640); tl.set("#cap-180", { visibility: "hidden" }, 364.170);
+      tl.set("#cap-181", { visibility: "visible" }, 364.190); tl.set("#cap-181", { visibility: "hidden" }, 365.150);
+      tl.set("#cap-182", { visibility: "visible" }, 366.600); tl.set("#cap-182", { visibility: "hidden" }, 368.830);
+      tl.set("#cap-183", { visibility: "visible" }, 368.850); tl.set("#cap-183", { visibility: "hidden" }, 371.750);
+      tl.set("#cap-184", { visibility: "visible" }, 371.770); tl.set("#cap-184", { visibility: "hidden" }, 374.210);
+      tl.set("#cap-185", { visibility: "visible" }, 375.120); tl.set("#cap-185", { visibility: "hidden" }, 376.870);
+      tl.set("#cap-186", { visibility: "visible" }, 376.890); tl.set("#cap-186", { visibility: "hidden" }, 378.750);
+      tl.set("#cap-187", { visibility: "visible" }, 378.770); tl.set("#cap-187", { visibility: "hidden" }, 380.780);
+      tl.set("#cap-188", { visibility: "visible" }, 380.800); tl.set("#cap-188", { visibility: "hidden" }, 382.180);
+      tl.set("#cap-189", { visibility: "visible" }, 383.640); tl.set("#cap-189", { visibility: "hidden" }, 385.620);
+      tl.set("#cap-190", { visibility: "visible" }, 385.640); tl.set("#cap-190", { visibility: "hidden" }, 386.950);
+      tl.set("#cap-191", { visibility: "visible" }, 386.970); tl.set("#cap-191", { visibility: "hidden" }, 387.720);
+      tl.set({}, {}, 390.83);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>

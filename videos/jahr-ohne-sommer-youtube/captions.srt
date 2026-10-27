@@ -1,0 +1,768 @@
+1
+00:00:00,310 --> 00:00:01,250
+Stell dir vor,
+
+2
+00:00:01,270 --> 00:00:02,140
+es ist Juni.
+
+3
+00:00:02,160 --> 00:00:03,450
+Du willst ins Freibad.
+
+4
+00:00:03,470 --> 00:00:04,460
+Und draußen
+
+5
+00:00:04,760 --> 00:00:05,850
+schneit es.
+
+6
+00:00:06,680 --> 00:00:09,080
+Genau das ist passiert.
+
+7
+00:00:09,100 --> 00:00:11,740
+Im Jahr 1816.
+
+8
+00:00:11,760 --> 00:00:12,880
+Man nennt es:
+
+9
+00:00:12,900 --> 00:00:14,870
+das Jahr ohne Sommer.
+
+10
+00:00:15,710 --> 00:00:18,820
+Ernten verfaulten, Brot wurde unbezahlbar,
+
+11
+00:00:18,840 --> 00:00:20,540
+Menschen wanderten aus.
+
+12
+00:00:20,590 --> 00:00:22,010
+Und am Ende entstand sogar ein
+
+13
+00:00:22,030 --> 00:00:23,070
+Monster.
+
+14
+00:00:23,940 --> 00:00:26,030
+Und alles begann mit einem einzigen
+
+15
+00:00:26,050 --> 00:00:26,530
+Berg.
+
+16
+00:00:26,550 --> 00:00:29,130
+Über 11.000 Kilometer entfernt.
+
+17
+00:00:32,930 --> 00:00:35,450
+Indonesien, die Insel Sumbawa.
+
+18
+00:00:35,470 --> 00:00:36,780
+Hier steht der Tambora,
+
+19
+00:00:36,800 --> 00:00:39,360
+ein Vulkan, über 4.000 Meter hoch.
+
+20
+00:00:40,190 --> 00:00:42,710
+Am 5. April 1815 grollt er
+
+21
+00:00:42,730 --> 00:00:43,720
+zum ersten Mal.
+
+22
+00:00:43,740 --> 00:00:46,330
+Am Abend des 10. April explodiert
+
+23
+00:00:46,350 --> 00:00:47,210
+er.
+
+24
+00:00:48,840 --> 00:00:50,820
+Feuersäulen schießen in den Himmel.
+
+25
+00:00:50,840 --> 00:00:52,760
+Glühende Lawinen aus Asche und Gas
+
+26
+00:00:52,780 --> 00:00:54,060
+rasen die Hänge hinunter,
+
+27
+00:00:54,080 --> 00:00:55,150
+bis ins Meer.
+
+28
+00:00:55,970 --> 00:00:57,680
+Den Knall hört man über 1.000
+
+29
+00:00:57,700 --> 00:00:58,590
+Kilometer weit.
+
+30
+00:00:58,610 --> 00:00:59,860
+Auf Java hält man ihn für
+
+31
+00:00:59,880 --> 00:01:02,280
+Kanonendonner und schickt Soldaten los.
+
+32
+00:01:03,100 --> 00:01:04,440
+Rund um den Berg wird es
+
+33
+00:01:04,460 --> 00:01:06,470
+tagelang stockdunkel.
+
+34
+00:01:06,490 --> 00:01:07,870
+Tag und Nacht sind nicht mehr
+
+35
+00:01:07,890 --> 00:01:09,290
+zu unterscheiden.
+
+36
+00:01:10,090 --> 00:01:12,060
+Danach ist der Tambora fast eineinhalb
+
+37
+00:01:12,080 --> 00:01:13,870
+Kilometer niedriger.
+
+38
+00:01:13,890 --> 00:01:15,260
+Wo der Gipfel war,
+
+39
+00:01:15,280 --> 00:01:17,350
+klafft ein riesiger Krater.
+
+40
+00:01:18,290 --> 00:01:20,250
+Es ist der stärkste Vulkanausbruch der
+
+41
+00:01:20,270 --> 00:01:21,830
+überlieferten Geschichte.
+
+42
+00:01:21,850 --> 00:01:24,690
+Viel stärker als der berühmte Krakatau.
+
+43
+00:01:25,500 --> 00:01:28,620
+Mehr als 10.000 Menschen sterben sofort.
+
+44
+00:01:28,640 --> 00:01:31,960
+Ganze Dörfer, sogar ein kleines Königreich,
+
+45
+00:01:31,980 --> 00:01:33,460
+verschwinden unter der Asche.
+
+46
+00:01:34,300 --> 00:01:36,280
+Und dann kommt der Hunger.
+
+47
+00:01:36,300 --> 00:01:38,280
+Die Asche hat Felder und Brunnen
+
+48
+00:01:38,300 --> 00:01:38,840
+begraben.
+
+49
+00:01:38,860 --> 00:01:40,960
+Zehntausende weitere sterben.
+
+50
+00:01:44,850 --> 00:01:47,040
+Aber der Tambora schleudert nicht nur
+
+51
+00:01:47,060 --> 00:01:47,710
+Asche
+
+52
+00:01:47,780 --> 00:01:47,880
+hoch.
+
+53
+00:01:47,900 --> 00:01:50,150
+Sondern vor allem etwas Unsichtbares:
+
+54
+00:01:50,170 --> 00:01:51,860
+Schwefel.
+
+55
+00:01:52,760 --> 00:01:55,180
+Rund 60 Millionen Tonnen Schwefeldioxid
+
+56
+00:01:55,200 --> 00:01:56,550
+steigen auf.
+
+57
+00:01:56,570 --> 00:01:57,940
+Bis in die Stratosphäre,
+
+58
+00:01:57,960 --> 00:01:59,720
+über 40 Kilometer hoch.
+
+59
+00:02:00,560 --> 00:02:02,020
+Dort oben gibt es keinen Regen,
+
+60
+00:02:02,040 --> 00:02:03,300
+der das Gas auswäscht.
+
+61
+00:02:03,320 --> 00:02:05,340
+Es wird zu winzigen Tröpfchen.
+
+62
+00:02:06,170 --> 00:02:07,910
+Die Winde tragen sie einmal um
+
+63
+00:02:07,930 --> 00:02:09,590
+die ganze Erde.
+
+64
+00:02:09,610 --> 00:02:11,150
+Wie ein dünner Schleier legen sie
+
+65
+00:02:11,170 --> 00:02:12,630
+sich um den Planeten.
+
+66
+00:02:13,650 --> 00:02:15,330
+Und dieser Schleier wirft einen Teil
+
+67
+00:02:15,350 --> 00:02:16,840
+des Sonnenlichts zurück ins All,
+
+68
+00:02:16,860 --> 00:02:18,340
+bevor es unten ankommt.
+
+69
+00:02:19,160 --> 00:02:20,840
+Im Durchschnitt wird es auf der
+
+70
+00:02:20,860 --> 00:02:22,280
+Erde etwa ein halbes bis ein
+
+71
+00:02:22,300 --> 00:02:23,700
+Grad kälter.
+
+72
+00:02:23,720 --> 00:02:25,460
+Klingt wenig.
+
+73
+00:02:25,480 --> 00:02:26,800
+Ist es aber nicht.
+
+74
+00:02:27,610 --> 00:02:29,510
+Denn ein Grad weniger im Durchschnitt
+
+75
+00:02:29,530 --> 00:02:30,150
+heißt:
+
+76
+00:02:30,500 --> 00:02:34,000
+kalte Tage, späte Fröste.
+
+77
+00:02:34,020 --> 00:02:35,730
+Und Regen, Regen,
+
+78
+00:02:35,750 --> 00:02:36,630
+Regen.
+
+79
+00:02:37,430 --> 00:02:39,040
+Das Erstaunliche:
+
+80
+00:02:39,060 --> 00:02:40,290
+Damals wusste niemand,
+
+81
+00:02:40,310 --> 00:02:41,520
+woher die Kälte kam.
+
+82
+00:02:41,540 --> 00:02:41,970
+Den
+
+83
+00:02:42,170 --> 00:02:43,960
+Zusammenhang erkannte man erst rund
+
+84
+00:02:43,980 --> 00:02:45,610
+100 Jahre später.
+
+85
+00:02:49,430 --> 00:02:52,950
+Europa, Frühjahr 1816.
+
+86
+00:02:52,970 --> 00:02:55,680
+Der Schnee will einfach nicht schmelzen.
+
+87
+00:02:56,560 --> 00:02:57,810
+Im Mai:
+
+88
+00:02:57,830 --> 00:02:58,720
+Frost.
+
+89
+00:02:58,740 --> 00:03:00,300
+Und in der Schweiz schneit es
+
+90
+00:03:00,320 --> 00:03:02,120
+in diesem Jahr in jedem einzelnen
+
+91
+00:03:02,140 --> 00:03:03,050
+Monat.
+
+92
+00:03:03,850 --> 00:03:05,080
+Dazu regnet es.
+
+93
+00:03:05,100 --> 00:03:06,650
+Wochenlang.
+
+94
+00:03:06,670 --> 00:03:08,460
+Flüsse und Seen treten über die
+
+95
+00:03:08,480 --> 00:03:09,250
+Ufer.
+
+96
+00:03:10,110 --> 00:03:11,670
+In Süddeutschland ist es mitten im
+
+97
+00:03:11,690 --> 00:03:13,310
+Sommer zwei bis drei Grad kälter
+
+98
+00:03:13,330 --> 00:03:14,290
+als normal.
+
+99
+00:03:15,130 --> 00:03:17,240
+Auch in Nordamerika.
+
+100
+00:03:17,260 --> 00:03:18,550
+In Neuengland schneit es im Juni,
+
+101
+00:03:18,570 --> 00:03:20,110
+und im Juli und August gibt
+
+102
+00:03:20,130 --> 00:03:21,130
+es Nachtfrost.
+
+103
+00:03:22,090 --> 00:03:24,360
+Die Amerikaner nennen das Jahr später:
+
+104
+00:03:24,570 --> 00:03:26,810
+Eighteen hundred and froze to death.
+
+105
+00:03:27,020 --> 00:03:29,040
+Achtzehnhundert und erfroren.
+
+106
+00:03:29,870 --> 00:03:31,330
+Und in Asien?
+
+107
+00:03:31,350 --> 00:03:33,000
+In China fallen Ernten aus.
+
+108
+00:03:33,020 --> 00:03:35,460
+In Indien gerät der Monsun durcheinander.
+
+109
+00:03:39,360 --> 00:03:40,550
+Für die Bauern ist es eine
+
+110
+00:03:40,570 --> 00:03:41,340
+Katastrophe.
+
+111
+00:03:41,360 --> 00:03:43,340
+Das Getreide wird nicht reif.
+
+112
+00:03:43,360 --> 00:03:45,700
+Es verfault auf den nassen Feldern.
+
+113
+00:03:46,800 --> 00:03:48,730
+Kartoffeln faulen in der
+
+114
+00:03:48,770 --> 00:03:48,780
+Erde.
+
+115
+00:03:48,800 --> 00:03:50,020
+Und der Wein wird so sauer,
+
+116
+00:03:50,040 --> 00:03:51,780
+dass man ihn kaum trinken kann.
+
+117
+00:03:52,740 --> 00:03:53,430
+Die Folge:
+
+118
+00:03:53,450 --> 00:03:55,360
+Die Preise explodieren.
+
+119
+00:03:55,380 --> 00:03:56,900
+Getreide kostet bald zwei-,
+
+120
+00:03:56,920 --> 00:03:59,030
+dreimal so viel wie vorher.
+
+121
+00:03:59,860 --> 00:04:01,910
+Im Winter und im Frühjahr 1817
+
+122
+00:04:01,930 --> 00:04:04,310
+wird der Hunger richtig schlimm.
+
+123
+00:04:05,160 --> 00:04:07,180
+Menschen strecken ihr Brot mit Sägemehl
+
+124
+00:04:07,200 --> 00:04:08,480
+und Baumrinde.
+
+125
+00:04:08,500 --> 00:04:09,360
+Sie essen Gras,
+
+126
+00:04:09,380 --> 00:04:11,230
+Moos und Brennnesseln.
+
+127
+00:04:12,080 --> 00:04:14,320
+Bettler ziehen von Dorf zu Dorf.
+
+128
+00:04:14,340 --> 00:04:16,440
+In der Schweiz und in Süddeutschland
+
+129
+00:04:16,460 --> 00:04:17,760
+sterben Tausende.
+
+130
+00:04:18,570 --> 00:04:20,750
+Wer kann, packt seine Sachen.
+
+131
+00:04:20,770 --> 00:04:23,280
+Aus Baden und Württemberg wandern Zehntausende
+
+132
+00:04:23,300 --> 00:04:24,020
+aus.
+
+133
+00:04:24,860 --> 00:04:26,380
+Die einen ziehen die Donau hinunter
+
+134
+00:04:26,400 --> 00:04:28,570
+nach Russland, bis in den Kaukasus.
+
+135
+00:04:28,590 --> 00:04:30,930
+Die anderen über Holland nach Amerika.
+
+136
+00:04:31,800 --> 00:04:33,540
+Viele erreichen ihr Ziel
+
+137
+00:04:33,560 --> 00:04:33,860
+nie.
+
+138
+00:04:33,880 --> 00:04:35,410
+Auf den überfüllten Schiffen sterben
+
+139
+00:04:35,430 --> 00:04:37,270
+unzählige an Krankheiten.
+
+140
+00:04:41,110 --> 00:04:42,740
+Doch das Jahr ohne Sommer hat
+
+141
+00:04:42,760 --> 00:04:44,450
+nicht nur Leid hinterlassen.
+
+142
+00:04:44,470 --> 00:04:45,880
+Sondern auch ein paar überraschende
+
+143
+00:04:45,900 --> 00:04:46,840
+Spuren.
+
+144
+00:04:47,630 --> 00:04:50,920
+Juni 1816, eine Villa am Genfer
+
+145
+00:04:50,940 --> 00:04:51,710
+See.
+
+146
+00:04:51,760 --> 00:04:53,520
+Wegen des Dauerregens sitzen ein paar
+
+147
+00:04:53,540 --> 00:04:55,310
+junge Engländer drinnen fest.
+
+148
+00:04:56,090 --> 00:04:57,810
+Lord Byron schlägt einen Wettbewerb
+
+149
+00:04:57,830 --> 00:04:58,570
+vor:
+
+150
+00:04:58,590 --> 00:05:01,690
+Jeder soll eine Gruselgeschichte schreiben.
+
+151
+00:05:02,550 --> 00:05:04,480
+Die achtzehnjährige Mary Shelley erfindet
+
+152
+00:05:04,500 --> 00:05:05,420
+dabei eine Figur,
+
+153
+00:05:05,440 --> 00:05:07,410
+die bis heute weltberühmt ist:
+
+154
+00:05:07,510 --> 00:05:08,820
+Frankenstein.
+
+155
+00:05:10,450 --> 00:05:11,710
+Zweite Spur:
+
+156
+00:05:11,730 --> 00:05:12,740
+Mannheim.
+
+157
+00:05:12,760 --> 00:05:13,770
+Hafer ist so teuer,
+
+158
+00:05:13,790 --> 00:05:15,440
+dass viele Pferde nicht mehr gefüttert
+
+159
+00:05:15,460 --> 00:05:16,430
+werden können.
+
+160
+00:05:17,340 --> 00:05:20,580
+1817 baut Karl Drais eine Laufmaschine.
+
+161
+00:05:20,600 --> 00:05:21,960
+Zwei Räder, ein Lenker,
+
+162
+00:05:21,980 --> 00:05:23,080
+kein Pferd.
+
+163
+00:05:23,100 --> 00:05:24,880
+Der Urahn des Fahrrads.
+
+164
+00:05:25,710 --> 00:05:27,380
+Ob der Hafermangel ihn wirklich darauf
+
+165
+00:05:27,400 --> 00:05:28,690
+brachte, ist nicht sicher.
+
+166
+00:05:28,710 --> 00:05:31,060
+Aber manche Forscher vermuten es.
+
+167
+00:05:32,080 --> 00:05:33,990
+Und in Württemberg gründet König Wilhelm
+
+168
+00:05:34,010 --> 00:05:36,290
+der Erste eine Landwirtschaftsschule.
+
+169
+00:05:36,310 --> 00:05:37,500
+Damit so ein Hunger nie wieder
+
+170
+00:05:37,520 --> 00:05:38,380
+passiert.
+
+171
+00:05:39,170 --> 00:05:41,400
+Dazu ein großes Landwirtschaftsfest
+
+172
+00:05:41,420 --> 00:05:42,790
+in Cannstatt.
+
+173
+00:05:42,810 --> 00:05:44,550
+Daraus wird später:
+
+174
+00:05:44,570 --> 00:05:46,480
+der Cannstatter Wasen.
+
+175
+00:05:51,030 --> 00:05:54,730
+1817 wird das Wetter endlich besser.
+
+176
+00:05:54,750 --> 00:05:56,430
+Als die ersten vollen Erntewagen in
+
+177
+00:05:56,450 --> 00:05:57,210
+die Dörfer rollen,
+
+178
+00:05:57,230 --> 00:05:58,750
+feiern die Menschen.
+
+179
+00:05:59,580 --> 00:06:00,810
+Heute wissen wir:
+
+180
+00:06:00,830 --> 00:06:02,620
+Ein einziger großer Ausbruch kann das
+
+181
+00:06:02,640 --> 00:06:04,170
+Klima der ganzen Welt für Jahre
+
+182
+00:06:04,190 --> 00:06:05,150
+verändern.
+
+183
+00:06:06,600 --> 00:06:08,830
+1991 zum Beispiel:
+
+184
+00:06:08,850 --> 00:06:11,750
+Der Pinatubo auf den Philippinen.
+
+185
+00:06:11,770 --> 00:06:14,210
+Danach war es weltweit messbar kühler.
+
+186
+00:06:15,120 --> 00:06:16,870
+Und der Tambora hat etwa dreimal
+
+187
+00:06:16,890 --> 00:06:18,750
+so viel Schwefel ausgestoßen.
+
+188
+00:06:18,770 --> 00:06:20,780
+Deshalb beobachten Forscher heute Vulkane
+
+189
+00:06:20,800 --> 00:06:22,180
+auf der ganzen Welt.
+
+190
+00:06:23,640 --> 00:06:25,620
+Ein einziger Vulkan.
+
+191
+00:06:25,640 --> 00:06:26,950
+Und die halbe Welt hatte keinen
+
+192
+00:06:26,970 --> 00:06:27,720
+Sommer.
+

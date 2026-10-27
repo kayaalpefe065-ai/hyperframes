@@ -1,0 +1,153 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s23-cam { position: absolute; inset: 0; }
+    #s23-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s23-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s23-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s23-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s23-cam .wd { display: inline-block; }
+    #s23-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s23-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s23-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s23-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s23-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s23-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s23-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s23-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s23-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s23-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s23" data-width="1920" data-height="1080">
+    <div id="s23-cam">
+      <svg id="s23-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s23-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s23-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s23-boil)">
+<g id="s23-frost"><path d="M250,560 L250,420 M190,455 L310,525 M190,525 L310,455" fill="none" style="stroke:#3a6fb0;stroke-width:10"/></g>
+<g id="s23-alps"><path d="M560,560 L760,250 L860,380 L980,200 L1180,560 Z" fill="#b8c2cc"/><path d="M930,277 L980,200 L1030,277 L1000,262 L980,280 L955,262 Z" fill="#fff"/><rect x="1100" y="340" width="70" height="70" fill="#e8483b"/><path d="M1135,355 L1135,395 M1115,375 L1155,375" fill="none" style="stroke:#fff;stroke-width:10"/><line x1="1100" y1="340" x2="1100" y2="450"/></g>
+<g id="s23-m0"><rect x="1270" y="180" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f0"><path d="M1335,250 l0,50 M1313,262 l44,26 M1313,288 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m1"><rect x="1420" y="180" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f1"><path d="M1485,250 l0,50 M1463,262 l44,26 M1463,288 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m2"><rect x="1570" y="180" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f2"><path d="M1635,250 l0,50 M1613,262 l44,26 M1613,288 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m3"><rect x="1720" y="180" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f3"><path d="M1785,250 l0,50 M1763,262 l44,26 M1763,288 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m4"><rect x="1270" y="350" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f4"><path d="M1335,420 l0,50 M1313,432 l44,26 M1313,458 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m5"><rect x="1420" y="350" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f5"><path d="M1485,420 l0,50 M1463,432 l44,26 M1463,458 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m6"><rect x="1570" y="350" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f6"><path d="M1635,420 l0,50 M1613,432 l44,26 M1613,458 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m7"><rect x="1720" y="350" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f7"><path d="M1785,420 l0,50 M1763,432 l44,26 M1763,458 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m8"><rect x="1270" y="520" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f8"><path d="M1335,590 l0,50 M1313,602 l44,26 M1313,628 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m9"><rect x="1420" y="520" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f9"><path d="M1485,590 l0,50 M1463,602 l44,26 M1463,628 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m10"><rect x="1570" y="520" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f10"><path d="M1635,590 l0,50 M1613,602 l44,26 M1613,628 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+<g id="s23-m11"><rect x="1720" y="520" width="130" height="140" rx="14" fill="#fff"/></g>
+<g id="s23-f11"><path d="M1785,590 l0,50 M1763,602 l44,26 M1763,628 l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>
+        </g>
+
+      </svg>
+<div id="s23-cal" class="cal" style="left:120px;top:120px;width:260px;"><div class="cal-top" style="background:#3a6fb0">1816</div><div class="cal-big">Mai</div></div>
+<div id="s23-t0" class="label " style="left:1270px;top:186px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Jan</span></div>
+<div id="s23-t1" class="label " style="left:1420px;top:186px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Feb</span></div>
+<div id="s23-t2" class="label " style="left:1570px;top:186px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Mär</span></div>
+<div id="s23-t3" class="label " style="left:1720px;top:186px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Apr</span></div>
+<div id="s23-t4" class="label " style="left:1270px;top:356px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Mai</span></div>
+<div id="s23-t5" class="label " style="left:1420px;top:356px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Jun</span></div>
+<div id="s23-t6" class="label " style="left:1570px;top:356px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Jul</span></div>
+<div id="s23-t7" class="label " style="left:1720px;top:356px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Aug</span></div>
+<div id="s23-t8" class="label " style="left:1270px;top:526px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Sep</span></div>
+<div id="s23-t9" class="label " style="left:1420px;top:526px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Okt</span></div>
+<div id="s23-t10" class="label " style="left:1570px;top:526px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Nov</span></div>
+<div id="s23-t11" class="label " style="left:1720px;top:526px;font-size:40px;color:#1f1d1a;text-align:center;width:130px;" data-rot="0"><span class="wd">Dez</span></div>
+<div id="s23-ls" class="label " style="left:700px;top:600px;font-size:60px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Schweiz</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s23-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 7.29, duration: 7.29, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s23-cam", { scale: 1.0 }, { scale: 1.03, duration: 7.29, ease: "sine.inOut" }, 0);
+      tl.from("#s23-cal", { scale: 0, transformOrigin: "50% 50%", duration: 0.5, ease: "back.out(2.2)" }, 0.7);
+      D("#s23-frost", 1.62, 0.4);
+      D("#s23-alps", 2.84, 0.6);
+      W("#s23-ls", 3.04, 0.08);
+      D("#s23-m0", 4.43, 0.3);
+      W("#s23-t0", 4.529999999999999, 0.08);
+      D("#s23-m1", 4.4799999999999995, 0.3);
+      W("#s23-t1", 4.579999999999999, 0.08);
+      D("#s23-m2", 4.529999999999999, 0.3);
+      W("#s23-t2", 4.629999999999999, 0.08);
+      D("#s23-m3", 4.58, 0.3);
+      W("#s23-t3", 4.68, 0.08);
+      D("#s23-m4", 4.63, 0.3);
+      W("#s23-t4", 4.7299999999999995, 0.08);
+      D("#s23-m5", 4.68, 0.3);
+      W("#s23-t5", 4.779999999999999, 0.08);
+      D("#s23-m6", 4.7299999999999995, 0.3);
+      W("#s23-t6", 4.829999999999999, 0.08);
+      D("#s23-m7", 4.779999999999999, 0.3);
+      W("#s23-t7", 4.879999999999999, 0.08);
+      D("#s23-m8", 4.83, 0.3);
+      W("#s23-t8", 4.93, 0.08);
+      D("#s23-m9", 4.88, 0.3);
+      W("#s23-t9", 4.9799999999999995, 0.08);
+      D("#s23-m10", 4.93, 0.3);
+      W("#s23-t10", 5.029999999999999, 0.08);
+      D("#s23-m11", 4.9799999999999995, 0.3);
+      W("#s23-t11", 5.079999999999999, 0.08);
+      D("#s23-f0", 4.93, 0.25);
+      D("#s23-f1", 5.02, 0.25);
+      D("#s23-f2", 5.109999999999999, 0.25);
+      D("#s23-f3", 5.199999999999999, 0.25);
+      D("#s23-f4", 5.29, 0.25);
+      D("#s23-f5", 5.38, 0.25);
+      D("#s23-f6", 5.47, 0.25);
+      D("#s23-f7", 5.56, 0.25);
+      D("#s23-f8", 5.6499999999999995, 0.25);
+      D("#s23-f9", 5.739999999999999, 0.25);
+      D("#f10", 5.83, 0.25);
+      D("#f11", 5.92, 0.25);
+      window.__timelines["s23"] = tl;
+    })();
+  </script>
+</template>

@@ -1,0 +1,144 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s08-cam { position: absolute; inset: 0; }
+    #s08-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s08-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s08-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s08-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s08-cam .wd { display: inline-block; }
+    #s08-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s08-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s08-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s08-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s08-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s08-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s08-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s08-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s08-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s08-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s08" data-width="1920" data-height="1080">
+    <div id="s08-cam">
+      <svg id="s08-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s08-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s08-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s08-boil)">
+<g id="s08-gr"><path d="M-40,860 Q480,820 960,850 T1960,840 L1960,1120 L-40,1120 Z" fill="#c9b27a"/></g>
+<g id="s08-vol" transform="translate(260,870) scale(0.35)" ><g id="s08-vol-in"><path d="M-450,0 L-90,-500 Q0,-540 90,-500 L450,0 Z" fill="#9b7653"/></g></g>
+<g id="s08-waves"><g id="s08-wv0"><path d="M300,560 Q360,700 300,840" fill="none" style="stroke-width:8"/></g><g id="s08-wv1"><path d="M450,520 Q520,700 450,850" fill="none" style="stroke-width:8"/></g><g id="s08-wv2"><path d="M600,480 Q680,700 600,860" fill="none" style="stroke-width:8"/></g><g id="s08-wv3"><path d="M750,440 Q840,700 750,870" fill="none" style="stroke-width:8"/></g><g id="s08-wv4"><path d="M900,400 Q1000,700 900,880" fill="none" style="stroke-width:8"/></g></g>
+<g id="s08-cannon" transform="translate(1180,860)"><rect x="-10" y="-120" width="220" height="70" rx="30" fill="#555" transform="rotate(-14)"/><circle cx="40" cy="-40" r="40" fill="#8a5a3c"/><circle cx="40" cy="-40" r="10" fill="#1f1d1a"/></g>
+<g id="s08-sol"><g id="s08-so1" transform="translate(1460,860) scale(0.8)" ><g id="s08-so1-in">
+      <line x1="0" y1="-158" x2="0" y2="-66"/>
+      <g id="s08-so1-legl"><line x1="0" y1="-66" x2="-30" y2="0"/></g>
+      <g id="s08-so1-legr"><line x1="0" y1="-66" x2="30" y2="0"/></g>
+      <g id="s08-so1-arml"><polyline points="0,-140 -46,-92" fill="none"/></g>
+      <g id="s08-so1-armr"><polyline points="0,-140 46,-92" fill="none"/></g>
+      
+      <g id="s08-so1-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec"/>
+        <circle cx="-13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <circle cx="13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <g id="s08-so1-smile" style="opacity:0"><path d="M-14,-186 Q0,-174 14,-186" fill="none" style="stroke-width:5"/></g>
+        <g id="s08-so1-sad" style="opacity:0"><path d="M-13,-178 Q0,-190 13,-178" fill="none" style="stroke-width:5"/></g>
+        <g id="s08-so1-oh" style="opacity:1"><ellipse cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" style="stroke:none"/></g>
+        <rect x="-26" y="-296" width="52" height="58" fill="#2b4a8b"/><line x1="-34" y1="-238" x2="34" y2="-238"/><circle cx="0" cy="-282" r="6" fill="#ffd34d" style="stroke:none"/>
+      </g></g></g><g id="s08-so2" transform="translate(1620,860) scale(0.8)" ><g id="s08-so2-in">
+      <line x1="0" y1="-158" x2="0" y2="-66"/>
+      <g id="s08-so2-legl"><line x1="0" y1="-66" x2="-30" y2="0"/></g>
+      <g id="s08-so2-legr"><line x1="0" y1="-66" x2="30" y2="0"/></g>
+      <g id="s08-so2-arml"><polyline points="0,-140 -46,-92" fill="none"/></g>
+      <g id="s08-so2-armr"><polyline points="0,-140 46,-92" fill="none"/></g>
+      
+      <g id="s08-so2-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec"/>
+        <circle cx="-13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <circle cx="13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <g id="s08-so2-smile" style="opacity:0"><path d="M-14,-186 Q0,-174 14,-186" fill="none" style="stroke-width:5"/></g>
+        <g id="s08-so2-sad" style="opacity:0"><path d="M-13,-178 Q0,-190 13,-178" fill="none" style="stroke-width:5"/></g>
+        <g id="s08-so2-oh" style="opacity:1"><ellipse cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" style="stroke:none"/></g>
+        <rect x="-26" y="-296" width="52" height="58" fill="#2b4a8b"/><line x1="-34" y1="-238" x2="34" y2="-238"/><circle cx="0" cy="-282" r="6" fill="#ffd34d" style="stroke:none"/>
+      </g></g></g></g>
+        </g>
+
+      </svg>
+<div id="s08-lk" class="label box" style="left:700px;top:420px;font-size:64px;color:#1f1d1a;text-align:center;" data-rot="-2"><span class="wd">über</span> <span class="wd">1.000</span> <span class="wd">km</span></div>
+<div id="s08-lq" class="label " style="left:1300px;top:560px;font-size:72px;color:#e8483b;text-align:center;" data-rot="-4"><span class="wd">Kanonen?</span></div>
+<div id="s08-lj" class="label box" style="left:1500px;top:160px;font-size:56px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Java</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s08-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 7.13, duration: 7.13, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s08-cam", { scale: 1.0 }, { scale: 1.03, duration: 7.13, ease: "sine.inOut" }, 0);
+      D("#s08-wv0", 0.5, 0.4);
+      D("#s08-wv1", 0.65, 0.4);
+      D("#s08-wv2", 0.8, 0.4);
+      D("#s08-wv3", 0.95, 0.4);
+      D("#s08-wv4", 1.1, 0.4);
+      W("#s08-lk", 1.32, 0.08);
+      W("#s08-lj", 3.18, 0.08);
+      D("#s08-cannon", 4.07, 0.5);
+      W("#s08-lq", 5.12, 0.08);
+      D("#s08-sol", 5.49, 0.5);
+      tl.to("#s08-sol", { x: -420, duration: 1.6, ease: "power1.inOut" }, 5.97);
+      tl.to("#s08-so1-legl", { rotation: 22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 5.970);
+      tl.to("#s08-so1-legr", { rotation: -22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 5.970);
+      tl.to("#s08-so1-legl", { rotation: -22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.290);
+      tl.to("#s08-so1-legr", { rotation: 22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.290);
+      tl.to("#s08-so1-legl", { rotation: 22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.610);
+      tl.to("#s08-so1-legr", { rotation: -22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.610);
+      tl.to("#s08-so1-legl", { rotation: -22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.930);
+      tl.to("#s08-so1-legr", { rotation: 22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.930);
+      tl.to("#s08-so1-legl", { rotation: 22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 7.250);
+      tl.to("#s08-so1-legr", { rotation: -22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 7.250);
+      tl.to(["#s08-so1-legl", "#s08-so1-legr"], { rotation: 0, svgOrigin: "0 -66", duration: 0.15 }, 7.570);
+      tl.to("#s08-so2-legl", { rotation: 22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 5.970);
+      tl.to("#s08-so2-legr", { rotation: -22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 5.970);
+      tl.to("#s08-so2-legl", { rotation: -22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.290);
+      tl.to("#s08-so2-legr", { rotation: 22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.290);
+      tl.to("#s08-so2-legl", { rotation: 22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.610);
+      tl.to("#s08-so2-legr", { rotation: -22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.610);
+      tl.to("#s08-so2-legl", { rotation: -22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.930);
+      tl.to("#s08-so2-legr", { rotation: 22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 6.930);
+      tl.to("#s08-so2-legl", { rotation: 22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 7.250);
+      tl.to("#s08-so2-legr", { rotation: -22, svgOrigin: "0 -66", duration: 0.320, ease: "sine.inOut" }, 7.250);
+      tl.to(["#s08-so2-legl", "#s08-so2-legr"], { rotation: 0, svgOrigin: "0 -66", duration: 0.15 }, 7.570);
+      window.__timelines["s08"] = tl;
+    })();
+  </script>
+</template>

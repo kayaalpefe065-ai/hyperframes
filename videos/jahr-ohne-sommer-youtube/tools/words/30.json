@@ -1,0 +1,104 @@
+[
+  {
+    "text": "Kartoffeln",
+    "start": 0,
+    "end": 0.78,
+    "id": "w0"
+  },
+  {
+    "text": "faulen",
+    "start": 0.78,
+    "end": 1.24,
+    "id": "w1"
+  },
+  {
+    "text": "in",
+    "start": 1.24,
+    "end": 1.41,
+    "id": "w2"
+  },
+  {
+    "text": "der",
+    "start": 1.41,
+    "end": 1.53,
+    "id": "w3"
+  },
+  {
+    "text": "Erde",
+    "start": 1.97,
+    "end": 2,
+    "id": "w4"
+  },
+  {
+    "text": "und",
+    "start": 2,
+    "end": 2.16,
+    "id": "w5"
+  },
+  {
+    "text": "der",
+    "start": 2.16,
+    "end": 2.32,
+    "id": "w6"
+  },
+  {
+    "text": "Wein",
+    "start": 2.32,
+    "end": 2.52,
+    "id": "w7"
+  },
+  {
+    "text": "wird",
+    "start": 2.52,
+    "end": 2.68,
+    "id": "w8"
+  },
+  {
+    "text": "so",
+    "start": 2.74,
+    "end": 2.84,
+    "id": "w9"
+  },
+  {
+    "text": "sauer,",
+    "start": 2.84,
+    "end": 3.24,
+    "id": "w10"
+  },
+  {
+    "text": "dass",
+    "start": 3.24,
+    "end": 3.43,
+    "id": "w11"
+  },
+  {
+    "text": "man",
+    "start": 3.43,
+    "end": 3.57,
+    "id": "w12"
+  },
+  {
+    "text": "ihn",
+    "start": 3.57,
+    "end": 3.71,
+    "id": "w13"
+  },
+  {
+    "text": "kaum",
+    "start": 3.71,
+    "end": 3.92,
+    "id": "w14"
+  },
+  {
+    "text": "trinken",
+    "start": 3.92,
+    "end": 4.39,
+    "id": "w15"
+  },
+  {
+    "text": "kann.",
+    "start": 4.4,
+    "end": 4.58,
+    "id": "w16"
+  }
+]

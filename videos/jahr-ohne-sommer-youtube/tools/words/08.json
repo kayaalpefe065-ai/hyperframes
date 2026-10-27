@@ -1,0 +1,116 @@
+[
+  {
+    "text": "Den",
+    "start": 0.01,
+    "end": 0.15,
+    "id": "w0"
+  },
+  {
+    "text": "Knall",
+    "start": 0.15,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "hört",
+    "start": 0.4,
+    "end": 0.57,
+    "id": "w2"
+  },
+  {
+    "text": "man",
+    "start": 0.64,
+    "end": 0.75,
+    "id": "w3"
+  },
+  {
+    "text": "über",
+    "start": 0.82,
+    "end": 0.97,
+    "id": "w4"
+  },
+  {
+    "text": "1.000",
+    "start": 0.97,
+    "end": 1.74,
+    "id": "w5"
+  },
+  {
+    "text": "Kilometer",
+    "start": 1.74,
+    "end": 2.2,
+    "id": "w6"
+  },
+  {
+    "text": "weit.",
+    "start": 2.2,
+    "end": 2.64,
+    "id": "w7"
+  },
+  {
+    "text": "Auf",
+    "start": 2.65,
+    "end": 2.83,
+    "id": "w8"
+  },
+  {
+    "text": "Java",
+    "start": 2.83,
+    "end": 3.09,
+    "id": "w9"
+  },
+  {
+    "text": "hält",
+    "start": 3.09,
+    "end": 3.35,
+    "id": "w10"
+  },
+  {
+    "text": "man",
+    "start": 3.35,
+    "end": 3.53,
+    "id": "w11"
+  },
+  {
+    "text": "ihn",
+    "start": 3.55,
+    "end": 3.73,
+    "id": "w12"
+  },
+  {
+    "text": "für",
+    "start": 3.73,
+    "end": 3.92,
+    "id": "w13"
+  },
+  {
+    "text": "Kanonendonner",
+    "start": 3.92,
+    "end": 4.77,
+    "id": "w14"
+  },
+  {
+    "text": "und",
+    "start": 4.79,
+    "end": 4.85,
+    "id": "w15"
+  },
+  {
+    "text": "schickt",
+    "start": 5.08,
+    "end": 5.26,
+    "id": "w16"
+  },
+  {
+    "text": "Soldaten",
+    "start": 5.44,
+    "end": 5.62,
+    "id": "w17"
+  },
+  {
+    "text": "los.",
+    "start": 5.62,
+    "end": 5.92,
+    "id": "w18"
+  }
+]

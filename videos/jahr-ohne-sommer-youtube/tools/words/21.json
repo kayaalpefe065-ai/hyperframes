@@ -1,0 +1,110 @@
+[
+  {
+    "text": "Das",
+    "start": 0.01,
+    "end": 0.26,
+    "id": "w0"
+  },
+  {
+    "text": "Erstaunliche.",
+    "start": 0.26,
+    "end": 1.56,
+    "id": "w1"
+  },
+  {
+    "text": "Damals",
+    "start": 1.64,
+    "end": 1.92,
+    "id": "w2"
+  },
+  {
+    "text": "wusste",
+    "start": 1.92,
+    "end": 2.22,
+    "id": "w3"
+  },
+  {
+    "text": "niemand,",
+    "start": 2.3,
+    "end": 2.78,
+    "id": "w4"
+  },
+  {
+    "text": "woher",
+    "start": 2.89,
+    "end": 3.13,
+    "id": "w5"
+  },
+  {
+    "text": "die",
+    "start": 3.14,
+    "end": 3.3,
+    "id": "w6"
+  },
+  {
+    "text": "Kälte",
+    "start": 3.32,
+    "end": 3.58,
+    "id": "w7"
+  },
+  {
+    "text": "kam.",
+    "start": 3.62,
+    "end": 3.94,
+    "id": "w8"
+  },
+  {
+    "text": "Den",
+    "start": 4.12,
+    "end": 4.15,
+    "id": "w9"
+  },
+  {
+    "text": "Zusammenhang",
+    "start": 4.75,
+    "end": 5.44,
+    "id": "w10"
+  },
+  {
+    "text": "erkannte",
+    "start": 5.44,
+    "end": 5.92,
+    "id": "w11"
+  },
+  {
+    "text": "man",
+    "start": 5.92,
+    "end": 6.08,
+    "id": "w12"
+  },
+  {
+    "text": "erst",
+    "start": 6.08,
+    "end": 6.29,
+    "id": "w13"
+  },
+  {
+    "text": "rund",
+    "start": 6.36,
+    "end": 6.56,
+    "id": "w14"
+  },
+  {
+    "text": "100",
+    "start": 6.56,
+    "end": 7.04,
+    "id": "w15"
+  },
+  {
+    "text": "Jahre",
+    "start": 7.04,
+    "end": 7.3,
+    "id": "w16"
+  },
+  {
+    "text": "später.",
+    "start": 7.3,
+    "end": 7.79,
+    "id": "w17"
+  }
+]

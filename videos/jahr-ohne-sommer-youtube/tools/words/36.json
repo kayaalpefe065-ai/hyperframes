@@ -1,0 +1,110 @@
+[
+  {
+    "text": "Die",
+    "start": 0.03,
+    "end": 0.16,
+    "id": "w0"
+  },
+  {
+    "text": "einen",
+    "start": 0.16,
+    "end": 0.42,
+    "id": "w1"
+  },
+  {
+    "text": "ziehen",
+    "start": 0.42,
+    "end": 0.72,
+    "id": "w2"
+  },
+  {
+    "text": "die",
+    "start": 0.74,
+    "end": 0.89,
+    "id": "w3"
+  },
+  {
+    "text": "Donau",
+    "start": 0.89,
+    "end": 1.15,
+    "id": "w4"
+  },
+  {
+    "text": "hinunter",
+    "start": 1.15,
+    "end": 1.57,
+    "id": "w5"
+  },
+  {
+    "text": "nach",
+    "start": 1.57,
+    "end": 1.78,
+    "id": "w6"
+  },
+  {
+    "text": "Russland",
+    "start": 1.78,
+    "end": 2.13,
+    "id": "w7"
+  },
+  {
+    "text": "bis",
+    "start": 2.24,
+    "end": 2.46,
+    "id": "w8"
+  },
+  {
+    "text": "in",
+    "start": 2.46,
+    "end": 2.61,
+    "id": "w9"
+  },
+  {
+    "text": "den",
+    "start": 2.61,
+    "end": 2.79,
+    "id": "w10"
+  },
+  {
+    "text": "Kaukasus,",
+    "start": 2.83,
+    "end": 3.5,
+    "id": "w11"
+  },
+  {
+    "text": "die",
+    "start": 3.76,
+    "end": 3.83,
+    "id": "w12"
+  },
+  {
+    "text": "anderen",
+    "start": 3.83,
+    "end": 4.28,
+    "id": "w13"
+  },
+  {
+    "text": "über",
+    "start": 4.28,
+    "end": 4.5,
+    "id": "w14"
+  },
+  {
+    "text": "Holland",
+    "start": 4.5,
+    "end": 4.81,
+    "id": "w15"
+  },
+  {
+    "text": "nach",
+    "start": 4.87,
+    "end": 5.13,
+    "id": "w16"
+  },
+  {
+    "text": "Amerika.",
+    "start": 5.13,
+    "end": 5.7,
+    "id": "w17"
+  }
+]

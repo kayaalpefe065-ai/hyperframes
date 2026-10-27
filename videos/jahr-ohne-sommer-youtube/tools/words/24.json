@@ -1,0 +1,68 @@
+[
+  {
+    "text": "Dazu",
+    "start": 0,
+    "end": 0.28,
+    "id": "w0"
+  },
+  {
+    "text": "regnet",
+    "start": 0.28,
+    "end": 0.7,
+    "id": "w1"
+  },
+  {
+    "text": "es,",
+    "start": 0.7,
+    "end": 0.92,
+    "id": "w2"
+  },
+  {
+    "text": "wochenlang.",
+    "start": 1.25,
+    "end": 2.76,
+    "id": "w3"
+  },
+  {
+    "text": "Flüsse",
+    "start": 2.82,
+    "end": 3.18,
+    "id": "w4"
+  },
+  {
+    "text": "und",
+    "start": 3.18,
+    "end": 3.4,
+    "id": "w5"
+  },
+  {
+    "text": "Seen",
+    "start": 3.4,
+    "end": 3.68,
+    "id": "w6"
+  },
+  {
+    "text": "treten",
+    "start": 3.68,
+    "end": 4.12,
+    "id": "w7"
+  },
+  {
+    "text": "über",
+    "start": 4.12,
+    "end": 4.39,
+    "id": "w8"
+  },
+  {
+    "text": "die",
+    "start": 4.41,
+    "end": 4.62,
+    "id": "w9"
+  },
+  {
+    "text": "Ufer.",
+    "start": 4.63,
+    "end": 5,
+    "id": "w10"
+  }
+]

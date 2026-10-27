@@ -1,0 +1,116 @@
+[
+  {
+    "text": "Die",
+    "start": 0.02,
+    "end": 0.21,
+    "id": "w0"
+  },
+  {
+    "text": "Winde",
+    "start": 0.21,
+    "end": 0.56,
+    "id": "w1"
+  },
+  {
+    "text": "tragen",
+    "start": 0.56,
+    "end": 0.92,
+    "id": "w2"
+  },
+  {
+    "text": "sie",
+    "start": 1,
+    "end": 1.2,
+    "id": "w3"
+  },
+  {
+    "text": "einmal",
+    "start": 1.2,
+    "end": 1.63,
+    "id": "w4"
+  },
+  {
+    "text": "um",
+    "start": 1.63,
+    "end": 1.71,
+    "id": "w5"
+  },
+  {
+    "text": "die",
+    "start": 1.78,
+    "end": 1.98,
+    "id": "w6"
+  },
+  {
+    "text": "ganze",
+    "start": 1.98,
+    "end": 2.34,
+    "id": "w7"
+  },
+  {
+    "text": "Erde.",
+    "start": 2.34,
+    "end": 3.44,
+    "id": "w8"
+  },
+  {
+    "text": "Wie",
+    "start": 3.46,
+    "end": 3.61,
+    "id": "w9"
+  },
+  {
+    "text": "ein",
+    "start": 3.61,
+    "end": 3.77,
+    "id": "w10"
+  },
+  {
+    "text": "dünner",
+    "start": 3.77,
+    "end": 4.11,
+    "id": "w11"
+  },
+  {
+    "text": "Schleier",
+    "start": 4.11,
+    "end": 4.56,
+    "id": "w12"
+  },
+  {
+    "text": "legen",
+    "start": 4.56,
+    "end": 4.85,
+    "id": "w13"
+  },
+  {
+    "text": "sie",
+    "start": 4.85,
+    "end": 5.02,
+    "id": "w14"
+  },
+  {
+    "text": "sich",
+    "start": 5.02,
+    "end": 5.25,
+    "id": "w15"
+  },
+  {
+    "text": "um",
+    "start": 5.25,
+    "end": 5.36,
+    "id": "w16"
+  },
+  {
+    "text": "den",
+    "start": 5.36,
+    "end": 5.53,
+    "id": "w17"
+  },
+  {
+    "text": "Planeten.",
+    "start": 5.53,
+    "end": 6.08,
+    "id": "w18"
+  }
+]

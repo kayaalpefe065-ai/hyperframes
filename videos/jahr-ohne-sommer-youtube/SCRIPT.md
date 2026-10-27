@@ -1,4 +1,4 @@
-# 1816 – Das Jahr ohne Sommer (YouTube-Fassung, Entwurf)
+# 1816 – Das Jahr ohne Sommer (YouTube-Fassung)
 
 Storyline A „Die Kette“. 51 Szenen, ca. 830 Wörter → mit Wills Tempo und Pausen ca. 7 Minuten.
 Zahlen werden für die Stimme ausgeschrieben.

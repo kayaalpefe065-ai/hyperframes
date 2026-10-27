@@ -1,0 +1,128 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s26-cam { position: absolute; inset: 0; }
+    #s26-art { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: visible; }
+    #s26-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s26-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s26-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s26-cam .wd { display: inline-block; }
+    #s26-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s26-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s26-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s26-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s26-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s26-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s26-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 28px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s26-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s26-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s26-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #cfd5dc; }
+  </style>
+  <div id="root" data-composition-id="s26" data-width="1920" data-height="1080">
+    <div id="s26-cam">
+      <svg id="s26-art" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s26-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s26-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s26-boil)">
+<rect id="s26-sky" x="-40" y="-40" width="2000" height="1160" fill="#b6bac2" style="stroke:none"/>
+<g id="s26-gr"><path d="M-40,860 Q480,820 960,850 T1960,840 L1960,1120 L-40,1120 Z" fill="#ffffff"/></g>
+<g id="s26-farm" transform="translate(760,870)"><rect x="-200" y="-260" width="400" height="260" fill="#b5533c"/><path d="M-230,-260 L0,-420 L230,-260 Z" fill="#7a3426"/><path d="M-60,0 L-60,-150 L60,-150 L60,0" fill="#f1e3c8"/><path d="M-60,-150 L60,0 M60,-150 L-60,0" fill="none"/></g>
+<g id="s26-fl"><circle id="s26-fl-0" cx="1435" cy="-718" r="6.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-1" cx="1153" cy="-849" r="9.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-2" cx="1468" cy="-862" r="9.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-3" cx="965" cy="-328" r="10.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-4" cx="1895" cy="-532" r="10.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-5" cx="1510" cy="-25" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-6" cx="1801" cy="-700" r="5.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-7" cx="1147" cy="-145" r="10.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-8" cx="699" cy="-155" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-9" cx="1860" cy="-636" r="8.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-10" cx="239" cy="-861" r="5.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-11" cx="1152" cy="-395" r="9.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-12" cx="1634" cy="-519" r="10.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-13" cx="385" cy="-107" r="6.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-14" cx="1804" cy="-554" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-15" cx="995" cy="-847" r="5.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-16" cx="1046" cy="-257" r="5.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-17" cx="781" cy="-567" r="9.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-18" cx="1902" cy="-818" r="8.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-19" cx="200" cy="-195" r="10.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-20" cx="1356" cy="-377" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-21" cx="185" cy="-684" r="5.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-22" cx="257" cy="-37" r="7.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-23" cx="1741" cy="-215" r="9.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-24" cx="1753" cy="-272" r="7.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-25" cx="902" cy="-549" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-26" cx="85" cy="-389" r="8.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-27" cx="1867" cy="-341" r="9.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-28" cx="915" cy="-376" r="9.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-29" cx="65" cy="-883" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-30" cx="561" cy="-515" r="5.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-31" cx="324" cy="-811" r="8.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-32" cx="63" cy="-882" r="9.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-33" cx="813" cy="-880" r="10.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-34" cx="942" cy="-57" r="8.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-35" cx="1050" cy="-544" r="5.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-36" cx="1854" cy="-504" r="6.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-37" cx="279" cy="-364" r="10.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-38" cx="772" cy="-174" r="9.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s26-fl-39" cx="989" cy="-312" r="9.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/></g>
+<g id="s26-night" style="opacity:0"><g id="s26-mo" transform="translate(1640,180)" ><g id="s26-mo-in"><path d="M20,-70 A70,70 0 1,0 20,70 A52.5,52.5 0 1,1 20,-70 Z" fill="#f3e9b8"/></g></g></g>
+        </g>
+
+      </svg>
+<div id="s26-ln" class="label box" style="left:100px;top:80px;font-size:60px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Neuengland</span> <span class="wd">(USA)</span></div>
+<div id="s26-c1" class="cal" style="left:1100px;top:300px;width:210px;"><div class="cal-top" style="background:#3a6fb0">1816</div><div class="cal-big">Juni</div></div>
+<div id="s26-c2" class="cal" style="left:1330px;top:420px;width:210px;"><div class="cal-top" style="background:#3a6fb0">1816</div><div class="cal-big">Juli</div></div>
+<div id="s26-c3" class="cal" style="left:1530px;top:560px;width:250px;"><div class="cal-top" style="background:#3a6fb0">1816</div><div class="cal-big">August</div></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s26-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 6.95, duration: 6.95, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s26-cam", { x: -30, scale: 1.06 }, { x: 30, scale: 1.06, duration: 6.95, ease: "sine.inOut" }, 0);
+      W("#s26-ln", 2.56, 0.08);
+      tl.fromTo("#s26-fl-0", { x: 0, y: 0 }, { x: 20, y: 641, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-1", { x: 0, y: 0 }, { x: -24, y: 800, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-2", { x: 0, y: 0 }, { x: -35, y: 871, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-3", { x: 0, y: 0 }, { x: 21, y: 577, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-4", { x: 0, y: 0 }, { x: 15, y: 761, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-5", { x: 0, y: 0 }, { x: 11, y: 941, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-6", { x: 0, y: 0 }, { x: 39, y: 724, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-7", { x: 0, y: 0 }, { x: 28, y: 875, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-8", { x: 0, y: 0 }, { x: 38, y: 572, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-9", { x: 0, y: 0 }, { x: 35, y: 649, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-10", { x: 0, y: 0 }, { x: -30, y: 799, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-11", { x: 0, y: 0 }, { x: 27, y: 943, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-12", { x: 0, y: 0 }, { x: -11, y: 891, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-13", { x: 0, y: 0 }, { x: -38, y: 947, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-14", { x: 0, y: 0 }, { x: -17, y: 777, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-15", { x: 0, y: 0 }, { x: -30, y: 578, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-16", { x: 0, y: 0 }, { x: -39, y: 800, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-17", { x: 0, y: 0 }, { x: 5, y: 886, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-18", { x: 0, y: 0 }, { x: 28, y: 729, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-19", { x: 0, y: 0 }, { x: 28, y: 640, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-20", { x: 0, y: 0 }, { x: 30, y: 660, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-21", { x: 0, y: 0 }, { x: 35, y: 714, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-22", { x: 0, y: 0 }, { x: -6, y: 767, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-23", { x: 0, y: 0 }, { x: -35, y: 590, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-24", { x: 0, y: 0 }, { x: 4, y: 846, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-25", { x: 0, y: 0 }, { x: -36, y: 723, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-26", { x: 0, y: 0 }, { x: -10, y: 872, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-27", { x: 0, y: 0 }, { x: 39, y: 596, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-28", { x: 0, y: 0 }, { x: 3, y: 602, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-29", { x: 0, y: 0 }, { x: 23, y: 937, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-30", { x: 0, y: 0 }, { x: 17, y: 793, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-31", { x: 0, y: 0 }, { x: -37, y: 599, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-32", { x: 0, y: 0 }, { x: -21, y: 593, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-33", { x: 0, y: 0 }, { x: -29, y: 944, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-34", { x: 0, y: 0 }, { x: -12, y: 923, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-35", { x: 0, y: 0 }, { x: 21, y: 870, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-36", { x: 0, y: 0 }, { x: 33, y: 839, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-37", { x: 0, y: 0 }, { x: -12, y: 748, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-38", { x: 0, y: 0 }, { x: -9, y: 573, duration: 3.0, ease: "none" }, 2.72);
+      tl.fromTo("#s26-fl-39", { x: 0, y: 0 }, { x: -36, y: 787, duration: 3.0, ease: "none" }, 2.72);
+      tl.from("#s26-c1", { scale: 0, transformOrigin: "50% 50%", duration: 0.5, ease: "back.out(2.2)" }, 3.56);
+      tl.from("#s26-c2", { scale: 0, transformOrigin: "50% 50%", duration: 0.5, ease: "back.out(2.2)" }, 4.28);
+      tl.from("#s26-c3", { scale: 0, transformOrigin: "50% 50%", duration: 0.5, ease: "back.out(2.2)" }, 4.71);
+      tl.fromTo("#s26-night", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "none" }, 5.23);
+      tl.to("#s26-sky", { fill: "#2c3346", duration: 0.6, ease: "power2.inOut" }, 5.23);
+      window.__timelines["s26"] = tl;
+    })();
+  </script>
+</template>

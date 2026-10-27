@@ -1,0 +1,92 @@
+[
+  {
+    "text": "Denn",
+    "start": 0.01,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "1",
+    "start": 0.24,
+    "end": 0.41,
+    "id": "w1"
+  },
+  {
+    "text": "Grad",
+    "start": 0.41,
+    "end": 0.65,
+    "id": "w2"
+  },
+  {
+    "text": "weniger",
+    "start": 0.66,
+    "end": 1.09,
+    "id": "w3"
+  },
+  {
+    "text": "im",
+    "start": 1.09,
+    "end": 1.2,
+    "id": "w4"
+  },
+  {
+    "text": "Durchschnitt",
+    "start": 1.23,
+    "end": 1.93,
+    "id": "w5"
+  },
+  {
+    "text": "heißt",
+    "start": 1.93,
+    "end": 2.15,
+    "id": "w6"
+  },
+  {
+    "text": "kalte",
+    "start": 2.9,
+    "end": 3.28,
+    "id": "w7"
+  },
+  {
+    "text": "Tage,",
+    "start": 3.3,
+    "end": 4.56,
+    "id": "w8"
+  },
+  {
+    "text": "späte",
+    "start": 4.6,
+    "end": 5.38,
+    "id": "w9"
+  },
+  {
+    "text": "Fröste",
+    "start": 5.38,
+    "end": 6.4,
+    "id": "w10"
+  },
+  {
+    "text": "und",
+    "start": 6.42,
+    "end": 6.7,
+    "id": "w11"
+  },
+  {
+    "text": "Regen,",
+    "start": 6.7,
+    "end": 7.4,
+    "id": "w12"
+  },
+  {
+    "text": "Regen,",
+    "start": 7.4,
+    "end": 7.93,
+    "id": "w13"
+  },
+  {
+    "text": "Regen.",
+    "start": 8.15,
+    "end": 8.63,
+    "id": "w14"
+  }
+]

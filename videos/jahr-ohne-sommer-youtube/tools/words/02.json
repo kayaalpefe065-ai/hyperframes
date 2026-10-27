@@ -1,0 +1,86 @@
+[
+  {
+    "text": "Genau",
+    "start": 0.01,
+    "end": 0.39,
+    "id": "w0"
+  },
+  {
+    "text": "das",
+    "start": 0.52,
+    "end": 0.8,
+    "id": "w1"
+  },
+  {
+    "text": "ist",
+    "start": 0.83,
+    "end": 1.14,
+    "id": "w2"
+  },
+  {
+    "text": "passiert.",
+    "start": 1.14,
+    "end": 2.37,
+    "id": "w3"
+  },
+  {
+    "text": "Im",
+    "start": 2.43,
+    "end": 2.61,
+    "id": "w4"
+  },
+  {
+    "text": "Jahr",
+    "start": 2.61,
+    "end": 3.1,
+    "id": "w5"
+  },
+  {
+    "text": "1816.",
+    "start": 3.1,
+    "end": 4.95,
+    "id": "w6"
+  },
+  {
+    "text": "Man",
+    "start": 5.09,
+    "end": 5.31,
+    "id": "w7"
+  },
+  {
+    "text": "nennt",
+    "start": 5.31,
+    "end": 5.84,
+    "id": "w8"
+  },
+  {
+    "text": "es",
+    "start": 5.84,
+    "end": 6.23,
+    "id": "w9"
+  },
+  {
+    "text": "das",
+    "start": 6.23,
+    "end": 6.44,
+    "id": "w10"
+  },
+  {
+    "text": "Jahr",
+    "start": 6.44,
+    "end": 6.81,
+    "id": "w11"
+  },
+  {
+    "text": "ohne",
+    "start": 6.81,
+    "end": 7.18,
+    "id": "w12"
+  },
+  {
+    "text": "Sommer.",
+    "start": 7.18,
+    "end": 7.8,
+    "id": "w13"
+  }
+]

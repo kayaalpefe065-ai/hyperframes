@@ -1,0 +1,98 @@
+[
+  {
+    "text": "Doch",
+    "start": 0.01,
+    "end": 0.27,
+    "id": "w0"
+  },
+  {
+    "text": "das",
+    "start": 0.27,
+    "end": 0.47,
+    "id": "w1"
+  },
+  {
+    "text": "Jahr",
+    "start": 0.47,
+    "end": 0.74,
+    "id": "w2"
+  },
+  {
+    "text": "ohne",
+    "start": 0.74,
+    "end": 1,
+    "id": "w3"
+  },
+  {
+    "text": "Sommer",
+    "start": 1.01,
+    "end": 1.38,
+    "id": "w4"
+  },
+  {
+    "text": "hat",
+    "start": 1.47,
+    "end": 1.6,
+    "id": "w5"
+  },
+  {
+    "text": "nicht",
+    "start": 1.66,
+    "end": 1.95,
+    "id": "w6"
+  },
+  {
+    "text": "nur",
+    "start": 1.95,
+    "end": 2.14,
+    "id": "w7"
+  },
+  {
+    "text": "Leid",
+    "start": 2.16,
+    "end": 2.41,
+    "id": "w8"
+  },
+  {
+    "text": "hinterlassen,",
+    "start": 2.41,
+    "end": 3.32,
+    "id": "w9"
+  },
+  {
+    "text": "sondern",
+    "start": 3.37,
+    "end": 3.65,
+    "id": "w10"
+  },
+  {
+    "text": "auch",
+    "start": 3.65,
+    "end": 3.84,
+    "id": "w11"
+  },
+  {
+    "text": "ein",
+    "start": 3.84,
+    "end": 3.98,
+    "id": "w12"
+  },
+  {
+    "text": "paar",
+    "start": 3.98,
+    "end": 4.18,
+    "id": "w13"
+  },
+  {
+    "text": "überraschende",
+    "start": 4.18,
+    "end": 4.8,
+    "id": "w14"
+  },
+  {
+    "text": "Spuren.",
+    "start": 4.8,
+    "end": 5.34,
+    "id": "w15"
+  }
+]

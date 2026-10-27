@@ -1,0 +1,56 @@
+[
+  {
+    "text": "Europa,",
+    "start": 0,
+    "end": 0.95,
+    "id": "w0"
+  },
+  {
+    "text": "Frühjahr",
+    "start": 1.19,
+    "end": 1.88,
+    "id": "w1"
+  },
+  {
+    "text": "1816.",
+    "start": 1.89,
+    "end": 3.54,
+    "id": "w2"
+  },
+  {
+    "text": "Der",
+    "start": 3.54,
+    "end": 3.71,
+    "id": "w3"
+  },
+  {
+    "text": "Schnee",
+    "start": 3.92,
+    "end": 4.09,
+    "id": "w4"
+  },
+  {
+    "text": "will",
+    "start": 4.09,
+    "end": 4.34,
+    "id": "w5"
+  },
+  {
+    "text": "einfach",
+    "start": 4.34,
+    "end": 4.77,
+    "id": "w6"
+  },
+  {
+    "text": "nicht",
+    "start": 4.77,
+    "end": 5.08,
+    "id": "w7"
+  },
+  {
+    "text": "schmelzen.",
+    "start": 5.08,
+    "end": 5.85,
+    "id": "w8"
+  }
+]
