@@ -23,6 +23,12 @@ SUN, LAVA, ASH, SULFUR, SNOW = "#ffd34d", "#f26b2a", "#8d8b88", "#e9d84a", "#fff
 SKIN, WHEAT, ROT = "#fff8ec", "#e8b84a", "#7d6b3a"
 
 
+def has_img(name):
+    """True when assets/img/<name> was downloaded (scenes draw a stand-in otherwise)."""
+    p = os.path.join(ROOT, "assets", "img", name)
+    return os.path.exists(p) and os.path.getsize(p) > 0
+
+
 def _dur(path):
     out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
                          capture_output=True, text=True).stdout

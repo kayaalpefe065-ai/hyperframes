@@ -38,11 +38,21 @@ def scenes():
 
     # 49 — Neunzehnhunderteinundneunzig zum Beispiel: Der Pinatubo auf den Philippinen. Danach war es weltweit messbar kühler.
     s = Scene("s49", cam=("push", 1.0, 1.03))
-    s.photo("ph", "assets/img/pinatubo.jpg", 180, 130, 960, 640, "Pinatubo, 15. Juni 1991 · Foto: USGS, gemeinfrei", rot=-2)
+    if has_img("pinatubo.jpg"):
+        s.photo("ph", "assets/img/pinatubo.jpg", 180, 130, 960, 640, "Pinatubo, 15. Juni 1991 · Foto: USGS, gemeinfrei", rot=-2)
+    else:
+        s.add(ground("gr", 880, "#9fb48a"), volcano("ph", 620, 890, s=0.8, crater=True),
+              '<g id="plume">' + "".join(f'<circle cx="{620 + dx}" cy="{420 + dy}" r="{r}" fill="#9a958e"/>' for dx, dy, r in
+                                          [(0, 0, 120), (-130, -90, 100), (120, -110, 110), (-30, -250, 120), (90, -300, 90)]) + "</g>")
+        s.label("lp", "Pinatubo, Philippinen", 260, 900 - 140, size=56, cls="box")
     s.add(thermometer("th", 1560, 820, 1.0, level=0.7))
     s.label("ly", "1991", 1300, 110, size=96, cls="box", rot=4)
     s.label("lk", "messbar kühler", 1180, 560, size=52, color="#3a6fb0")
-    s.write("#ly", s.w("Neunzehnhunderteinundneunzig")).slap("#ph", s.w("Pinatubo", off=-0.3))
+    s.write("#ly", s.w("Neunzehnhunderteinundneunzig"))
+    if has_img("pinatubo.jpg"):
+        s.slap("#ph", s.w("Pinatubo", off=-0.3))
+    else:
+        s.draw("#ph", s.w("Pinatubo", off=-0.4), 0.5).draw("#plume", s.w("Pinatubo"), 0.7).write("#lp", s.w("Philippinen"))
     s.draw("#th", s.w("Danach", off=-0.2), 0.5).to("#th-hg", s.w("kühler", off=-0.5), 1.0, scaleY=0.82, transformOrigin="50% 100%").write("#lk", s.w("messbar"))
     s.save()
 

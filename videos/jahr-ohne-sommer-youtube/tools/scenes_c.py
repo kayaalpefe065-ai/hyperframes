@@ -202,11 +202,26 @@ def scenes():
 
     # 41 — Die achtzehnjährige Mary Shelley erfindet dabei eine Figur, die bis heute weltberühmt ist: Frankenstein.
     s = Scene("s41", bg="#e9e2d2", cam=("push", 1.0, 1.03))
-    s.photo("ph", "assets/img/shelley.jpg", 180, 110, 540, 700, "Mary Shelley · R. Rothwell, 1840", rot=-2, pos="50% 22%")
-    s.photo("fr", "assets/img/frankenstein.jpg", 1120, 100, 560, 720, "„Frankenstein“, Ausgabe 1831", rot=3, pos="50% 35%")
+    if has_img("shelley.jpg"):
+        s.photo("ph", "assets/img/shelley.jpg", 180, 110, 540, 700, "Mary Shelley · R. Rothwell, 1840", rot=-2, pos="50% 22%")
+    else:
+        s.add(figure("ph", 450, 860, 1.6, hat="scarf"), '<g id="quill"><path d="M560,600 L660,420 Q690,470 580,610 Z" fill="#fff"/></g>')
+        s.label("lm", "Mary Shelley", 300, 120, size=64, cls="box")
+    if has_img("frankenstein.jpg"):
+        s.photo("fr", "assets/img/frankenstein.jpg", 1120, 100, 560, 720, "„Frankenstein“, Ausgabe 1831", rot=3, pos="50% 35%")
+    else:
+        s.add('<g id="fr" transform="translate(1400,760) scale(2)"><rect x="-90" y="-250" width="180" height="210" rx="16" fill="#9fc48a"/><rect x="-96" y="-270" width="192" height="44" fill="#1f1d1a"/><line x1="-120" y1="-120" x2="-90" y2="-120" style="stroke-width:12"/><line x1="90" y1="-120" x2="120" y2="-120" style="stroke-width:12"/><circle cx="-38" cy="-160" r="10" fill="#1f1d1a" style="stroke:none"/><circle cx="38" cy="-160" r="10" fill="#1f1d1a" style="stroke:none"/><path d="M-50,-90 L50,-90" /></g>')
+        s.label("lf", "Frankenstein (1818)", 1180, 120, size=64, color=RED)
     s.label("la", "18 Jahre alt", 760, 260, size=60, cls="box", rot=-4)
-    s.slap("#ph", s.w("Mary", off=-0.4)).write("#la", s.w("achtzehnjährige"))
-    s.slap("#fr", s.w("Frankenstein", off=-0.2))
+    if has_img("shelley.jpg"):
+        s.slap("#ph", s.w("Mary", off=-0.4))
+    else:
+        s.draw("#ph", s.w("Mary", off=-0.4), 0.6).write("#lm", s.w("Shelley")).draw("#quill", s.w("erfindet"), 0.4)
+    s.write("#la", s.w("achtzehnjährige"))
+    if has_img("frankenstein.jpg"):
+        s.slap("#fr", s.w("Frankenstein", off=-0.2))
+    else:
+        s.draw("#fr", s.w("Frankenstein", off=-0.3), 0.6).write("#lf", s.w("Frankenstein", end=True))
     s.save()
 
     # 42 — Zweite Spur: Mannheim. Hafer ist so teuer, dass viele Pferde nicht mehr gefüttert werden können.
@@ -222,7 +237,8 @@ def scenes():
 
     # 43 — Achtzehnhundertsiebzehn baut Karl Drais eine Laufmaschine. Zwei Räder, ein Lenker, kein Pferd. Der Urahn des Fahrrads.
     s = Scene("s43", cam=("none",))
-    s.photo("ph", "assets/img/drais.jpg", 120, 90, 640, 480, "Drais-Laufmaschine 1817 · gemeinfrei", rot=-3)
+    if has_img("drais.jpg"):
+        s.photo("ph", "assets/img/drais.jpg", 120, 90, 640, 480, "Drais-Laufmaschine 1817 · gemeinfrei", rot=-3)
     s.add(ground("gr", 900, "#c9b98f"),
           '<g id="rider">' + laufmaschine("lm", 0, 0, 1.0) + figure("dr", 0, -130, 0.95, hat="top") + "</g>",
           f'<g id="nohorse"><circle cx="1650" cy="230" r="90" fill="#fff"/><path d="M1590,250 L1700,250 L1700,210 L1640,210 L1610,180 Z" fill="#a8774f" style="stroke-width:4"/>'
@@ -231,7 +247,9 @@ def scenes():
     s.label("lr", "2 Räder", 640, 740, size=52).label("ll", "Lenker", 1230, 560, size=52)
     s.label("lu", "Urahn des Fahrrads", 820, 140, size=68, cls="box", rot=-2)
     s.raw_html('<div id="year" class="label" style="left:860px;top:300px;font-size:90px;"><span class="wd">1817</span></div>')
-    s.write("#year", s.w("Achtzehnhundertsiebzehn")).slap("#ph", s.w("Drais", off=-0.2))
+    s.write("#year", s.w("Achtzehnhundertsiebzehn"))
+    if has_img("drais.jpg"):
+        s.slap("#ph", s.w("Drais", off=-0.2))
     s.draw("#lm", s.w("Laufmaschine", off=-0.2), 0.7).draw("#dr", s.w("Laufmaschine", off=0.2), 0.5)
     s.write("#lr", s.w("Räder")).write("#ll", s.w("Lenker")).draw("#nohorse", s.w("kein"), 0.5)
     t = s.w("Urahn", off=-0.3)
@@ -252,13 +270,21 @@ def scenes():
 
     # 45 — Und in Württemberg gründet König Wilhelm der Erste eine Landwirtschaftsschule. Damit so ein Hunger nie wieder passiert.
     s = Scene("s45", cam=("push", 1.0, 1.03))
-    s.photo("ph", "assets/img/wilhelm.jpg", 160, 100, 500, 720, "König Wilhelm I. von Württemberg", rot=-2, pos="50% 18%")
+    if has_img("wilhelm.jpg"):
+        s.photo("ph", "assets/img/wilhelm.jpg", 160, 100, 500, 720, "König Wilhelm I. von Württemberg", rot=-2, pos="50% 18%")
+    else:
+        s.add(figure("ph", 420, 860, 1.7, hat="crown"))
+        s.label("lk", "König Wilhelm I.", 200, 140, size=60, cls="box")
     s.add('<g id="school" transform="translate(1260,830)"><rect x="-380" y="-300" width="760" height="300" fill="#efe3cf"/>'
           '<path d="M-420,-300 L0,-460 L420,-300 Z" fill="#9d6b4f"/>'
           + "".join(f'<rect x="{-330 + k * 140}" y="-240" width="80" height="100" fill="#bfe1f3"/>' for k in range(5))
           + '<rect x="-50" y="-120" width="100" height="120" fill="#8a5a3c"/></g>', wheat("wh", 1260, 900, 0.5, n=12, gap=60))
     s.label("ls", "Landwirtschaftsschule Hohenheim (1818)", 820, 170, size=56, cls="box")
-    s.slap("#ph", s.w("König", off=-0.3)).draw("#school", s.w("Landwirtschaftsschule", off=-0.5), 0.8).write("#ls", s.w("Landwirtschaftsschule", end=True))
+    if has_img("wilhelm.jpg"):
+        s.slap("#ph", s.w("König", off=-0.3))
+    else:
+        s.draw("#ph", s.w("König", off=-0.3), 0.6).write("#lk", s.w("Wilhelm"))
+    s.draw("#school", s.w("Landwirtschaftsschule", off=-0.5), 0.8).write("#ls", s.w("Landwirtschaftsschule", end=True))
     s.draw("#wh", s.w("Hunger", off=-0.2), 0.6)
     s.save()
 
