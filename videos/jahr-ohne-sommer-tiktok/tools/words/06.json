@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Das",
+    "start": 0.01,
+    "end": 0.13,
+    "id": "w0"
+  },
+  {
+    "text": "ganze",
+    "start": 0.21,
+    "end": 0.49,
+    "id": "w1"
+  },
+  {
+    "text": "Video",
+    "start": 0.49,
+    "end": 0.8,
+    "id": "w2"
+  },
+  {
+    "text": "findest",
+    "start": 0.8,
+    "end": 1.23,
+    "id": "w3"
+  },
+  {
+    "text": "du",
+    "start": 1.23,
+    "end": 1.31,
+    "id": "w4"
+  },
+  {
+    "text": "auf",
+    "start": 1.38,
+    "end": 1.52,
+    "id": "w5"
+  },
+  {
+    "text": "YouTube.",
+    "start": 1.52,
+    "end": 2.15,
+    "id": "w6"
+  },
+  {
+    "text": "Link",
+    "start": 2.15,
+    "end": 2.36,
+    "id": "w7"
+  },
+  {
+    "text": "im",
+    "start": 2.36,
+    "end": 2.46,
+    "id": "w8"
+  },
+  {
+    "text": "Profil.",
+    "start": 2.46,
+    "end": 2.83,
+    "id": "w9"
+  }
+]

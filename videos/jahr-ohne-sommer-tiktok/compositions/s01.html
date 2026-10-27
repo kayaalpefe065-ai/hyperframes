@@ -1,0 +1,167 @@
+<template>
+  <style>
+    @font-face { font-family: "Patrick Hand"; src: url("assets/fonts/patrick-hand.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Patrick Hand", sans-serif; color: #1f1d1a; }
+    #s01-cam { position: absolute; inset: 0; }
+    #s01-art { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: visible; }
+    #s01-art :is(line, path, circle, rect, ellipse, polygon, polyline) { stroke: #1f1d1a; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+    #s01-cam .label { position: absolute; line-height: 1.05; white-space: nowrap; }
+    #s01-cam .label.box { background: #fffcf5; border: 6px solid #1f1d1a; border-radius: 18px; padding: 6px 22px; }
+    #s01-cam .wd { display: inline-block; }
+    #s01-cam .photo { position: absolute; background: #fffdf8; padding: 16px 16px 52px; box-shadow: 0 10px 22px rgba(40, 30, 20, 0.28); }
+    #s01-cam .ph-clip { width: 100%; height: 100%; overflow: hidden; background: #ddd; }
+    #s01-cam .ph-clip img { width: 100%; height: 100%; display: block; }
+    #s01-cam .tape { position: absolute; width: 120px; height: 40px; background: rgba(236, 222, 170, 0.82); }
+    #s01-cam .tape:first-of-type { transform: rotate(-24deg); }
+    #s01-cam .tape:last-of-type { transform: rotate(24deg); }
+    #s01-cam .credit { position: absolute; left: 16px; right: 16px; bottom: 8px; font-size: 30px; color: #4a453e; white-space: nowrap; overflow: hidden; }
+    #s01-cam .cal { position: absolute; background: #fff; border: 7px solid #1f1d1a; border-radius: 22px; text-align: center; overflow: hidden; }
+    #s01-cam .cal-top { color: #fff; font-size: 44px; padding: 8px 0; border-bottom: 7px solid #1f1d1a; }
+    #s01-cam .cal-big { font-size: 80px; padding: 10px 0 14px; }
+
+    #root { background: #f4efe4; }
+  </style>
+  <div id="root" data-composition-id="s01" data-width="1080" data-height="1920">
+    <div id="s01-cam">
+      <svg id="s01-art" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="s01-boil" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence id="s01-turb" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1" />
+            <feDisplacementMap in="SourceGraphic" scale="4" />
+          </filter>
+        </defs>
+        <g filter="url(#s01-boil)">
+<rect id="s01-sky" x="-40" y="-40" width="2000" height="2000" fill="#b6bac2" style="stroke:none"/>
+<g id="s01-gr"><path d="M-40,1120 Q480,1080 960,1110 T1960,1100 L1960,2000 L-40,2000 Z" fill="#ffffff"/></g>
+<g id="s01-fl"><circle id="s01-fl-0" cx="145" cy="1320" r="9.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-1" cx="275" cy="-17" r="7.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-2" cx="704" cy="1097" r="5.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-3" cx="31" cy="1276" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-4" cx="823" cy="-1892" r="7.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-5" cx="779" cy="-1031" r="10.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-6" cx="974" cy="-1784" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-7" cx="585" cy="1669" r="7.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-8" cx="234" cy="-296" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-9" cx="239" cy="-236" r="8.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-10" cx="252" cy="-1023" r="6.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-11" cx="496" cy="-799" r="5.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-12" cx="905" cy="215" r="8.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-13" cx="201" cy="1872" r="10.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-14" cx="131" cy="-636" r="9.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-15" cx="768" cy="1658" r="7.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-16" cx="896" cy="647" r="6.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-17" cx="635" cy="1453" r="10.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-18" cx="546" cy="338" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-19" cx="262" cy="1130" r="7.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-20" cx="187" cy="185" r="9.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-21" cx="728" cy="-476" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-22" cx="549" cy="1058" r="8.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-23" cx="425" cy="-39" r="5.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-24" cx="47" cy="773" r="10.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-25" cx="641" cy="-404" r="6.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-26" cx="542" cy="1832" r="9.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-27" cx="583" cy="1369" r="6.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-28" cx="555" cy="1719" r="8.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-29" cx="496" cy="-877" r="8.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-30" cx="1034" cy="-1878" r="9.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-31" cx="886" cy="1467" r="9.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-32" cx="874" cy="71" r="8.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-33" cx="460" cy="-1687" r="10.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-34" cx="616" cy="-1141" r="8.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-35" cx="524" cy="-544" r="7.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-36" cx="582" cy="469" r="8.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-37" cx="495" cy="-1794" r="6.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-38" cx="191" cy="321" r="10.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-39" cx="862" cy="1129" r="9.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-40" cx="276" cy="1299" r="9.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-41" cx="90" cy="-1837" r="5.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-42" cx="816" cy="-952" r="5.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-43" cx="675" cy="-591" r="5.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-44" cx="172" cy="104" r="6.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-45" cx="295" cy="804" r="7.7" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-46" cx="348" cy="-100" r="5.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-47" cx="417" cy="-301" r="6.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-48" cx="117" cy="1519" r="8.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-49" cx="226" cy="401" r="9.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-50" cx="22" cy="-1832" r="5.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-51" cx="776" cy="-1291" r="9.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-52" cx="732" cy="170" r="6.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-53" cx="1054" cy="1132" r="8.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-54" cx="241" cy="564" r="7.4" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-55" cx="622" cy="-679" r="8.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-56" cx="63" cy="-765" r="10.8" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-57" cx="946" cy="-736" r="10.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-58" cx="335" cy="1669" r="9.5" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-59" cx="449" cy="-941" r="5.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-60" cx="949" cy="-1756" r="9.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-61" cx="1039" cy="267" r="6.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-62" cx="937" cy="1800" r="9.2" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-63" cx="550" cy="-464" r="7.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-64" cx="222" cy="662" r="7.6" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-65" cx="210" cy="-1503" r="9.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-66" cx="320" cy="-1" r="7.0" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-67" cx="941" cy="1519" r="5.1" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-68" cx="217" cy="-655" r="10.9" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/><circle id="s01-fl-69" cx="845" cy="-611" r="6.3" fill="#fff" style="stroke:#a7afb8;stroke-width:2.5"/></g>
+<g id="s01-fz" transform="translate(540,1110) scale(1.6)" ><g id="s01-fz-in">
+      <line x1="0" y1="-158" x2="0" y2="-66"/>
+      <g id="s01-fz-legl"><line x1="0" y1="-66" x2="-30" y2="0"/></g>
+      <g id="s01-fz-legr"><line x1="0" y1="-66" x2="30" y2="0"/></g>
+      <g id="s01-fz-arml"><polyline points="0,-140 -46,-92" fill="none"/></g>
+      <g id="s01-fz-armr"><polyline points="0,-140 46,-92" fill="none"/></g>
+      <ellipse cx="0" cy="-92" rx="62" ry="22" fill="#e8483b"/><path d="M-40,-108 L-36,-76 M36,-108 L40,-76" stroke="#fff"/>
+      <g id="s01-fz-head">
+        <circle cx="0" cy="-200" r="40" fill="#fff8ec"/>
+        <circle cx="-13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <circle cx="13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
+        <g id="s01-fz-smile" style="opacity:0"><path d="M-14,-186 Q0,-174 14,-186" fill="none" style="stroke-width:5"/></g>
+        <g id="s01-fz-sad" style="opacity:0"><path d="M-13,-178 Q0,-190 13,-178" fill="none" style="stroke-width:5"/></g>
+        <g id="s01-fz-oh" style="opacity:1"><ellipse cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" style="stroke:none"/></g>
+        
+      </g></g></g>
+        </g>
+
+      </svg>
+<div id="s01-cal" class="cal" style="left:360px;top:180px;width:360px;"><div class="cal-top" style="background:#e8483b">1816</div><div class="cal-big">Juni</div></div>
+<div id="s01-ls" class="label " style="left:0px;top:450px;font-size:150px;color:#e8483b;text-align:center;width:1080px;" data-rot="0"><span class="wd">Schnee?!</span></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const SHAPES = "path, line, circle, rect, ellipse, polygon, polyline";
+      // Draw ink on: every stroke of the selection is drawn from its start, then its fill washes in.
+      const D = (sel, at, dur) => {
+        const els = [];
+        document.querySelectorAll(sel).forEach((n) => (n.matches(SHAPES) ? els.push(n) : els.push(...n.querySelectorAll(SHAPES))));
+        const shapes = els.filter((e) => !e.closest("marker, clipPath"));
+        shapes.forEach((e) => e.setAttribute("pathLength", "1"));
+        tl.fromTo(shapes, { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, at);
+        tl.fromTo(shapes, { strokeDasharray: "1 1", strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: dur, ease: "power1.inOut", stagger: Math.min(0.05, (dur * 0.5) / shapes.length) }, at);
+        tl.fromTo(shapes, { fillOpacity: 0 }, { fillOpacity: 1, duration: dur * 0.6, ease: "none" }, at + dur * 0.45);
+      };
+      // Write a hand-lettered label: its words appear one after another out of a slight blur.
+      const W = (sel, at, gap) => {
+        const el = document.querySelector(sel);
+        const rot = Number(el.dataset.rot || 0);
+        if (rot) tl.set(el, { rotation: rot }, 0);
+        if (el.classList.contains("box")) tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none" }, at);
+        tl.fromTo(el.querySelectorAll(".wd"), { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: gap, ease: "none" }, at);
+      };
+      // Slap a photo onto the paper: it drops in slightly large and turned, lands, then drifts in close.
+      const P = (sel, at, rot) => {
+        tl.fromTo(sel, { opacity: 0, scale: 1.18, rotation: rot + 7 }, { opacity: 1, scale: 1, rotation: rot, duration: 0.45, ease: "expo.out" }, at);
+        tl.fromTo(sel + "-img", { scale: 1 }, { scale: 1.08, duration: 6, ease: "none" }, at);
+      };
+      const turb = document.querySelector("#s01-turb");
+      const clock = { t: 0 };
+      tl.to(clock, { t: 4.62, duration: 4.62, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
+      tl.fromTo("#s01-cam", { scale: 1.0 }, { scale: 1.05, duration: 4.62, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s01-fl-0", { x: 0, y: 0 }, { x: -29, y: 839, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-1", { x: 0, y: 0 }, { x: 21, y: 602, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-2", { x: 0, y: 0 }, { x: -0, y: 680, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-3", { x: 0, y: 0 }, { x: 12, y: 815, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-4", { x: 0, y: 0 }, { x: -32, y: 511, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-5", { x: 0, y: 0 }, { x: 27, y: 673, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-6", { x: 0, y: 0 }, { x: 21, y: 501, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-7", { x: 0, y: 0 }, { x: -4, y: 789, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-8", { x: 0, y: 0 }, { x: -22, y: 878, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-9", { x: 0, y: 0 }, { x: 32, y: 512, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-10", { x: 0, y: 0 }, { x: -38, y: 717, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-11", { x: 0, y: 0 }, { x: 35, y: 652, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-12", { x: 0, y: 0 }, { x: -23, y: 669, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-13", { x: 0, y: 0 }, { x: -38, y: 589, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-14", { x: 0, y: 0 }, { x: -5, y: 698, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-15", { x: 0, y: 0 }, { x: -21, y: 592, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-16", { x: 0, y: 0 }, { x: -22, y: 684, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-17", { x: 0, y: 0 }, { x: -17, y: 509, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-18", { x: 0, y: 0 }, { x: 27, y: 723, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-19", { x: 0, y: 0 }, { x: 11, y: 574, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-20", { x: 0, y: 0 }, { x: 39, y: 844, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-21", { x: 0, y: 0 }, { x: -30, y: 633, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-22", { x: 0, y: 0 }, { x: 18, y: 784, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-23", { x: 0, y: 0 }, { x: 35, y: 669, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-24", { x: 0, y: 0 }, { x: 26, y: 768, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-25", { x: 0, y: 0 }, { x: -16, y: 735, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-26", { x: 0, y: 0 }, { x: 31, y: 838, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-27", { x: 0, y: 0 }, { x: 0, y: 736, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-28", { x: 0, y: 0 }, { x: -37, y: 597, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-29", { x: 0, y: 0 }, { x: 24, y: 666, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-30", { x: 0, y: 0 }, { x: -26, y: 720, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-31", { x: 0, y: 0 }, { x: 16, y: 770, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-32", { x: 0, y: 0 }, { x: -10, y: 676, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-33", { x: 0, y: 0 }, { x: 1, y: 811, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-34", { x: 0, y: 0 }, { x: 2, y: 657, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-35", { x: 0, y: 0 }, { x: -1, y: 512, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-36", { x: 0, y: 0 }, { x: -37, y: 781, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-37", { x: 0, y: 0 }, { x: 39, y: 737, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-38", { x: 0, y: 0 }, { x: -9, y: 568, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-39", { x: 0, y: 0 }, { x: 0, y: 893, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-40", { x: 0, y: 0 }, { x: 22, y: 716, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-41", { x: 0, y: 0 }, { x: 29, y: 593, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-42", { x: 0, y: 0 }, { x: 1, y: 881, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-43", { x: 0, y: 0 }, { x: 6, y: 684, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-44", { x: 0, y: 0 }, { x: -18, y: 719, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-45", { x: 0, y: 0 }, { x: 37, y: 502, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-46", { x: 0, y: 0 }, { x: 23, y: 828, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-47", { x: 0, y: 0 }, { x: 31, y: 796, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-48", { x: 0, y: 0 }, { x: 25, y: 707, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-49", { x: 0, y: 0 }, { x: 5, y: 670, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-50", { x: 0, y: 0 }, { x: -36, y: 848, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-51", { x: 0, y: 0 }, { x: 6, y: 580, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-52", { x: 0, y: 0 }, { x: 0, y: 694, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-53", { x: 0, y: 0 }, { x: -11, y: 638, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-54", { x: 0, y: 0 }, { x: 3, y: 749, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-55", { x: 0, y: 0 }, { x: 9, y: 683, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-56", { x: 0, y: 0 }, { x: -38, y: 592, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-57", { x: 0, y: 0 }, { x: -26, y: 734, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-58", { x: 0, y: 0 }, { x: 29, y: 819, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-59", { x: 0, y: 0 }, { x: 24, y: 827, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-60", { x: 0, y: 0 }, { x: -20, y: 837, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-61", { x: 0, y: 0 }, { x: 14, y: 533, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-62", { x: 0, y: 0 }, { x: -39, y: 506, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-63", { x: 0, y: 0 }, { x: 20, y: 600, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-64", { x: 0, y: 0 }, { x: -31, y: 750, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-65", { x: 0, y: 0 }, { x: -12, y: 528, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-66", { x: 0, y: 0 }, { x: -27, y: 711, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-67", { x: 0, y: 0 }, { x: -27, y: 609, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-68", { x: 0, y: 0 }, { x: 17, y: 682, duration: 4.62, ease: "none" }, 0);
+      tl.fromTo("#s01-fl-69", { x: 0, y: 0 }, { x: -14, y: 690, duration: 4.62, ease: "none" }, 0);
+      W("#s01-ls", 2.75, 0.08);
+      tl.to("#s01-fz-in", { x: 5, duration: 0.06, repeat: 8, yoyo: true, ease: "none" }, 3.83);
+      tl.set("#s01-fz-in", { x: 0 }, 4.400);
+      window.__timelines["s01"] = tl;
+    })();
+  </script>
+</template>

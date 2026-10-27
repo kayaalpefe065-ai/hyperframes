@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Was",
+    "start": 0,
+    "end": 0.16,
+    "id": "w0"
+  },
+  {
+    "text": "das",
+    "start": 0.16,
+    "end": 0.34,
+    "id": "w1"
+  },
+  {
+    "text": "mit",
+    "start": 0.34,
+    "end": 0.47,
+    "id": "w2"
+  },
+  {
+    "text": "Frankenstein",
+    "start": 0.52,
+    "end": 1.19,
+    "id": "w3"
+  },
+  {
+    "text": "und",
+    "start": 1.19,
+    "end": 1.36,
+    "id": "w4"
+  },
+  {
+    "text": "dem",
+    "start": 1.36,
+    "end": 1.51,
+    "id": "w5"
+  },
+  {
+    "text": "Fahrrad",
+    "start": 1.57,
+    "end": 1.93,
+    "id": "w6"
+  },
+  {
+    "text": "zu",
+    "start": 1.93,
+    "end": 2.02,
+    "id": "w7"
+  },
+  {
+    "text": "tun",
+    "start": 2.04,
+    "end": 2.21,
+    "id": "w8"
+  },
+  {
+    "text": "hat?",
+    "start": 2.21,
+    "end": 2.41,
+    "id": "w9"
+  }
+]

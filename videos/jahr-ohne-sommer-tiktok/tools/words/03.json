@@ -1,0 +1,56 @@
+[
+  {
+    "text": "Schuld",
+    "start": 0.02,
+    "end": 0.38,
+    "id": "w0"
+  },
+  {
+    "text": "ist",
+    "start": 0.45,
+    "end": 0.69,
+    "id": "w1"
+  },
+  {
+    "text": "ein",
+    "start": 0.69,
+    "end": 0.92,
+    "id": "w2"
+  },
+  {
+    "text": "einziger",
+    "start": 0.92,
+    "end": 1.52,
+    "id": "w3"
+  },
+  {
+    "text": "Vulkan.",
+    "start": 1.52,
+    "end": 2.02,
+    "id": "w4"
+  },
+  {
+    "text": "Über",
+    "start": 2.2,
+    "end": 2.59,
+    "id": "w5"
+  },
+  {
+    "text": "11.000",
+    "start": 2.77,
+    "end": 4.12,
+    "id": "w6"
+  },
+  {
+    "text": "km",
+    "start": 4.12,
+    "end": 4.28,
+    "id": "w7"
+  },
+  {
+    "text": "entfernt.",
+    "start": 4.29,
+    "end": 5,
+    "id": "w8"
+  }
+]

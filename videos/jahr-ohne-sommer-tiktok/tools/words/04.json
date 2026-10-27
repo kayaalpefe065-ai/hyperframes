@@ -1,0 +1,68 @@
+[
+  {
+    "text": "Sein",
+    "start": 0,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "Ausbruch",
+    "start": 0.24,
+    "end": 0.73,
+    "id": "w1"
+  },
+  {
+    "text": "kühlt",
+    "start": 0.75,
+    "end": 1.04,
+    "id": "w2"
+  },
+  {
+    "text": "die",
+    "start": 1.04,
+    "end": 1.23,
+    "id": "w3"
+  },
+  {
+    "text": "halbe",
+    "start": 1.23,
+    "end": 1.54,
+    "id": "w4"
+  },
+  {
+    "text": "Welt",
+    "start": 1.54,
+    "end": 1.78,
+    "id": "w5"
+  },
+  {
+    "text": "ab,",
+    "start": 1.79,
+    "end": 2.01,
+    "id": "w6"
+  },
+  {
+    "text": "und",
+    "start": 2.73,
+    "end": 2.84,
+    "id": "w7"
+  },
+  {
+    "text": "niemand",
+    "start": 2.84,
+    "end": 3.32,
+    "id": "w8"
+  },
+  {
+    "text": "weiß",
+    "start": 3.32,
+    "end": 3.59,
+    "id": "w9"
+  },
+  {
+    "text": "warum.",
+    "start": 3.59,
+    "end": 4.05,
+    "id": "w10"
+  }
+]

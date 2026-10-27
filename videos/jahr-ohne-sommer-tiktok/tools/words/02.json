@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Das",
+    "start": 0,
+    "end": 0.12,
+    "id": "w0"
+  },
+  {
+    "text": "Getreide",
+    "start": 0.15,
+    "end": 0.5,
+    "id": "w1"
+  },
+  {
+    "text": "verfault,",
+    "start": 0.51,
+    "end": 1,
+    "id": "w2"
+  },
+  {
+    "text": "Brot",
+    "start": 1,
+    "end": 1.32,
+    "id": "w3"
+  },
+  {
+    "text": "wird",
+    "start": 1.32,
+    "end": 1.64,
+    "id": "w4"
+  },
+  {
+    "text": "unbezahlbar",
+    "start": 1.64,
+    "end": 2.55,
+    "id": "w5"
+  },
+  {
+    "text": "und",
+    "start": 2.56,
+    "end": 2.69,
+    "id": "w6"
+  },
+  {
+    "text": "die",
+    "start": 2.69,
+    "end": 2.82,
+    "id": "w7"
+  },
+  {
+    "text": "Menschen",
+    "start": 2.82,
+    "end": 3.16,
+    "id": "w8"
+  },
+  {
+    "text": "hungern.",
+    "start": 3.16,
+    "end": 3.6,
+    "id": "w9"
+  }
+]
