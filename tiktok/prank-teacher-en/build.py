@@ -1,4 +1,4 @@
-"""Builds "POV: when you prank your teacher" (blocky 3D, no narration, sound effects only).
+"""Builds "POV: when you prank your teacher" v2 (blocky 3D, absurd, meme sound effects, no narration).
 
 Outputs: assets/timing.js, compositions/overlay.html, index.html
 Run: python3 build.py
@@ -14,21 +14,27 @@ TITLE = "POV: when you prank your teacher"
 # beats in seconds
 B = {
     "b0": 0.0,
-    "b1": 3.2,
-    "splash1": 4.5,
-    "b2": 5.1,
-    "b3": 7.6,
-    "b4": 9.6,
-    "b5": 11.6,
-    "b6": 13.0,
-    "gavel1": 13.6,
-    "b7": 16.0,
-    "b8": 17.6,
-    "splash2": 18.7,
-    "b9": 20.4,
-    "end": 22.6,
+    "b1": 1.8,
+    "splash1": 3.0,
+    "boom1": 3.5,
+    "poof": 4.6,
+    "b3": 6.2,
+    "bruh": 7.0,
+    "b4": 8.0,
+    "b5": 9.8,
+    "crash": 10.4,
+    "b6": 12.0,
+    "b7": 13.4,
+    "gavel1": 15.0,
+    "b8": 16.8,
+    "b9": 18.2,
+    "launch": 18.8,
+    "b10": 20.6,
+    "land": 21.4,
+    "b11": 24.0,
+    "end": 25.4,
 }
-TOTAL = 25.5
+TOTAL = 28.0
 
 
 def overlay():
@@ -169,24 +175,26 @@ def overlay():
   </style>
   <div id="root" data-composition-id="overlay" data-width="{W}" data-height="{H}" data-duration="{TOTAL}">
     <div id="title" class="clip" data-start="0" data-duration="{B['end']:.2f}">{TITLE}</div>
-    <div id="phone" class="clip" data-start="{B['b3']:.2f}" data-duration="{B['b4'] - B['b3']:.2f}">
+    <div id="phone" class="clip" data-start="{B['b4']:.2f}" data-duration="{B['b5'] - B['b4']:.2f}">
       <div id="phone-screen">
         <div class="ph-name">PRINCIPAL</div>
-        <div class="ph-sub">calling...</div>
+        <div class="ph-sub">calling on banana...</div>
         <div class="ph-btns"><div class="ph-btn" style="background: #e8432e"></div><div class="ph-btn" style="background: #3fbf5a"></div></div>
       </div>
     </div>
-    <div id="stamp" class="clip" data-start="{B['gavel1']:.2f}" data-duration="{B['b7'] - B['gavel1']:.2f}">
+    <div id="stamp" class="clip" data-start="{B['gavel1']:.2f}" data-duration="{B['b8'] - B['gavel1']:.2f}">
       <div id="stamp-in">DETENTION<br />FOR LIFE</div>
     </div>
-    <div id="bubble-wrap" class="clip" data-start="{B['b7'] + 0.3:.2f}" data-duration="{B['b8'] - B['b7'] - 0.3:.2f}">
+    <div id="bubble-wrap" class="clip" data-start="{B['b8'] + 0.3:.2f}" data-duration="{B['b9'] - B['b8'] - 0.3:.2f}">
       <div id="bubble-tail"></div>
       <div id="bubble">
         <svg viewBox="0 0 360 300" width="360" height="300">
-          <path d="M 120 110 L 240 110 L 225 220 L 135 220 Z" fill="#8a8f9c" stroke="#1d1a26" stroke-width="8" stroke-linejoin="round"/>
-          <ellipse cx="180" cy="110" rx="60" ry="14" fill="#7be04a" stroke="#1d1a26" stroke-width="8"/>
-          <path d="M 150 120 C 150 160 170 160 168 190 M 205 120 C 205 150 192 165 196 182" stroke="#7be04a" stroke-width="16" stroke-linecap="round" fill="none"/>
-          <text x="270" y="90" font-family="Montserrat" font-weight="900" font-size="64" fill="#e8432e">?</text>
+          <path d="M 180 40 C 220 80 225 150 215 210 L 145 210 C 135 150 140 80 180 40 Z" fill="#f4f1ea" stroke="#1d1a26" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 180 40 C 200 58 210 80 214 96 L 146 96 C 150 80 160 58 180 40 Z" fill="#e8432e" stroke="#1d1a26" stroke-width="8" stroke-linejoin="round"/>
+          <circle cx="180" cy="135" r="20" fill="#9fdcff" stroke="#1d1a26" stroke-width="7"/>
+          <path d="M 145 170 L 112 225 L 148 210 Z M 215 170 L 248 225 L 212 210 Z" fill="#e8432e" stroke="#1d1a26" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 155 214 L 180 270 L 205 214 Z" fill="#ffb43a"/>
+          <text x="262" y="96" font-family="Montserrat" font-weight="900" font-size="64" fill="#e8432e">!</text>
         </svg>
       </div>
     </div>
@@ -198,10 +206,10 @@ def overlay():
   <script>
     const tl = gsap.timeline({{ paused: true }});
     tl.fromTo("#title", {{ opacity: 0, y: -20 }}, {{ opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }}, 0.05);
-    tl.fromTo("#phone-screen", {{ y: 900 }}, {{ y: 0, duration: 0.35, ease: "back.out(1.4)" }}, {B['b3']:.2f});
-    tl.fromTo("#phone", {{ rotation: -4 }}, {{ rotation: 4, duration: 0.08, ease: "none", yoyo: true, repeat: 15 }}, {B['b3'] + 0.4:.2f});
+    tl.fromTo("#phone-screen", {{ y: 900 }}, {{ y: 0, duration: 0.35, ease: "back.out(1.4)" }}, {B['b4']:.2f});
+    tl.fromTo("#phone", {{ rotation: -4 }}, {{ rotation: 4, duration: 0.08, ease: "none", yoyo: true, repeat: 15 }}, {B['b4'] + 0.4:.2f});
     tl.fromTo("#stamp-in", {{ scale: 2.6, opacity: 0, rotation: -14 }}, {{ scale: 1, opacity: 1, rotation: -8, duration: 0.22, ease: "power4.in" }}, {B['gavel1']:.2f});
-    tl.fromTo("#bubble", {{ scale: 0 }}, {{ scale: 1, duration: 0.25, ease: "back.out(2)" }}, {B['b7'] + 0.3:.2f});
+    tl.fromTo("#bubble", {{ scale: 0 }}, {{ scale: 1, duration: 0.25, ease: "back.out(2)" }}, {B['b8'] + 0.3:.2f});
     tl.fromTo("#end-bg", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.4 }}, {B['end']:.2f});
     tl.fromTo("#end-text", {{ opacity: 0, scale: 1.3 }}, {{ opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }}, {B['end'] + 0.15:.2f});
     window.__timelines["overlay"] = tl;
@@ -211,18 +219,29 @@ def overlay():
 
 
 SFX = [
-    ("sfx-sneak", "assets/pop.mp3", 1.8, 0.35),
-    ("sfx-splash1", "assets/impact-bass-1.mp3", B["splash1"], 0.6),
-    ("sfx-splash1b", "assets/pop.mp3", B["splash1"] + 0.05, 0.5),
-    ("sfx-laugh1", "assets/applause.wav", B["b2"] + 1.3, 0.35),
-    ("sfx-ring1", "assets/ping.mp3", B["b3"] + 0.1, 0.45),
-    ("sfx-ring2", "assets/ping.mp3", B["b3"] + 0.9, 0.45),
-    ("sfx-cut", "assets/whoosh.mp3", B["b5"] - 0.05, 0.4),
-    ("sfx-drama", "assets/drama.wav", B["b5"] + 0.2, 0.45),
-    ("sfx-gavel1", "assets/gong.wav", B["gavel1"], 0.45),
-    ("sfx-gavel2", "assets/impact-bass-2.mp3", B["splash2"] - 0.15, 0.45),
-    ("sfx-splash2", "assets/impact-bass-1.mp3", B["splash2"], 0.6),
-    ("sfx-cheer", "assets/applause.wav", B["splash2"] + 0.2, 0.5),
+    ("sfx-sneak", "assets/pop.mp3", 1.2, 0.35),
+    ("sfx-splash", "assets/impact-bass-1.mp3", B["splash1"], 0.55),
+    ("sfx-noo", "assets/say-X2.wav", B["splash1"] + 0.15, 0.9),
+    ("sfx-boom1", "assets/vine-boom.mp3", B["boom1"], 0.8),
+    ("sfx-poof", "assets/explos.wav", B["poof"] - 0.1, 0.5),
+    ("sfx-moo1", "assets/cow.wav", B["poof"] + 0.4, 0.8),
+    ("sfx-laugh", "assets/applause.wav", B["b3"] + 0.1, 0.3),
+    ("sfx-bruh", "assets/say-X1.wav", B["bruh"] + 0.05, 1.0),
+    ("sfx-boom2", "assets/vine-boom.mp3", B["bruh"] + 0.55, 0.8),
+    ("sfx-ring1", "assets/ping.mp3", B["b4"] + 0.1, 0.45),
+    ("sfx-ring2", "assets/ping.mp3", B["b4"] + 0.9, 0.45),
+    ("sfx-horse", "assets/horse.wav", B["b5"] + 0.1, 0.8),
+    ("sfx-crash", "assets/explos.wav", B["crash"], 0.6),
+    ("sfx-drama", "assets/drama.wav", B["b7"] + 0.1, 0.45),
+    ("sfx-gavel", "assets/gong.wav", B["gavel1"], 0.45),
+    ("sfx-launch1", "assets/laser.wav", B["launch"], 0.6),
+    ("sfx-launch2", "assets/explos.wav", B["launch"] + 0.05, 0.5),
+    ("sfx-fall", "assets/falling.wav", B["b10"] - 0.3, 0.45),
+    ("sfx-space", "assets/space.wav", B["b10"], 0.35),
+    ("sfx-land", "assets/impact-bass-2.mp3", B["land"], 0.5),
+    ("sfx-what", "assets/say-X3.wav", B["land"] + 0.7, 1.0),
+    ("sfx-moo2", "assets/cow.wav", B["land"] + 1.4, 0.8),
+    ("sfx-boom3", "assets/vine-boom.mp3", B["b11"], 0.85),
     ("sfx-end", "assets/whoosh-short.mp3", B["end"] - 0.05, 0.4),
 ]
 
