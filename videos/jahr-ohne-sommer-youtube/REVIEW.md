@@ -18,7 +18,7 @@
 
 ## Geprüft
 
-- `hyperframes check`: siehe unten. Snapshots jeder Szene bei ~80 % ihrer Laufzeit angesehen; Layoutfehler korrigiert.
+- `hyperframes check`: 0 Fehler; Warnungen: zwei lange Szenendateien (generiert) und ein Kalender, der beim Aufploppen kurz klein ist. Snapshots jeder Szene bei ~80 % ihrer Laufzeit angesehen; Layoutfehler korrigiert.
 - Ton wurde gemessen, nicht gehört.
 
 ## Schwächste Stellen
@@ -26,3 +26,16 @@
 - Einige Kartenszenen (s36 Auswanderungsrouten) sind Skizzen ohne echte Küstenlinien.
 - Das Pferd in s42 ist sehr einfach gezeichnet.
 - Die Kamera nutzt oft ein leichtes Heranzoomen; mit mehr Zeit: mehr Übergänge durch Objekte.
+
+## Ton
+
+- Stimme auf −16 LUFS normalisiert (`tools/normalize.sh`), Musik bei Volume 0.22 (≈ 13 dB unter der Stimme).
+- Das gerenderte MP4 wird mit `tools/master.sh` (ffmpeg loudnorm, 2 Durchgänge) auf −14 LUFS / −1,5 dBTP gebracht.
+- Alles gemessen, nicht gehört.
+
+## Bilder
+
+- Alle 10 Bilder gemeinfrei bzw. CC0 von Wikimedia Commons, Nachweise in `assets/img/credits.json` und YOUTUBE.md.
+- Das Hungerbild (Babeli Giezendanner) entstand um 1850, also rückblickend, nicht 1817.
+- Wikimedia drosselt Downloads stark (429 mit 10 min Sperre); `tools/images.py` wartet und setzt fort.
+  Fehlt ein Bild, zeichnen die Szenen ein Ersatzmotiv (`has_img`).

@@ -31,29 +31,12 @@
           </filter>
         </defs>
         <g filter="url(#s41-boil)">
-<g id="s41-ph" transform="translate(450,860) scale(1.6)" ><g id="s41-ph-in">
-      <line x1="0" y1="-158" x2="0" y2="-66"/>
-      <g id="s41-ph-legl"><line x1="0" y1="-66" x2="-30" y2="0"/></g>
-      <g id="s41-ph-legr"><line x1="0" y1="-66" x2="30" y2="0"/></g>
-      <g id="s41-ph-arml"><polyline points="0,-140 -46,-92" fill="none"/></g>
-      <g id="s41-ph-armr"><polyline points="0,-140 46,-92" fill="none"/></g>
-      
-      <g id="s41-ph-head">
-        <circle cx="0" cy="-200" r="40" fill="#fff8ec"/>
-        <circle cx="-13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
-        <circle cx="13" cy="-206" r="4.5" fill="#1f1d1a" style="stroke:none"/>
-        <g id="s41-ph-smile" style="opacity:1"><path d="M-14,-186 Q0,-174 14,-186" fill="none" style="stroke-width:5"/></g>
-        <g id="s41-ph-sad" style="opacity:0"><path d="M-13,-178 Q0,-190 13,-178" fill="none" style="stroke-width:5"/></g>
-        <g id="s41-ph-oh" style="opacity:0"><ellipse cx="0" cy="-182" rx="7" ry="9" fill="#1f1d1a" style="stroke:none"/></g>
-        <path d="M-42,-206 Q0,-262 42,-206 Q0,-226 -42,-206 Z" fill="#8a6fb0"/>
-      </g></g></g>
-<g id="s41-quill"><path d="M560,600 L660,420 Q690,470 580,610 Z" fill="#fff"/></g>
-<g id="s41-fr" transform="translate(1400,760) scale(2)"><rect x="-90" y="-250" width="180" height="210" rx="16" fill="#9fc48a"/><rect x="-96" y="-270" width="192" height="44" fill="#1f1d1a"/><line x1="-120" y1="-120" x2="-90" y2="-120" style="stroke-width:12"/><line x1="90" y1="-120" x2="120" y2="-120" style="stroke-width:12"/><circle cx="-38" cy="-160" r="10" fill="#1f1d1a" style="stroke:none"/><circle cx="38" cy="-160" r="10" fill="#1f1d1a" style="stroke:none"/><path d="M-50,-90 L50,-90" /></g>
+
         </g>
 
       </svg>
-<div id="s41-lm" class="label box" style="left:300px;top:120px;font-size:64px;color:#1f1d1a;text-align:center;" data-rot="0"><span class="wd">Mary</span> <span class="wd">Shelley</span></div>
-<div id="s41-lf" class="label " style="left:1180px;top:120px;font-size:64px;color:#e8483b;text-align:center;" data-rot="0"><span class="wd">Frankenstein</span> <span class="wd">(1818)</span></div>
+<div id="s41-ph" class="photo" style="left:180px;top:110px;width:540px;height:700px;"><div class="ph-clip"><img id="s41-ph-img" src="assets/img/shelley.jpg" alt="" style="object-fit:cover;object-position:50% 22%"/></div><div class="tape" style="left:-28px;top:-18px;"></div><div class="tape" style="right:-28px;top:-18px;"></div><div class="credit">Mary Shelley · R. Rothwell, 1840</div></div>
+<div id="s41-fr" class="photo" style="left:1120px;top:100px;width:560px;height:720px;"><div class="ph-clip"><img id="s41-fr-img" src="assets/img/frankenstein.jpg" alt="" style="object-fit:cover;object-position:50% 35%"/></div><div class="tape" style="left:-28px;top:-18px;"></div><div class="tape" style="right:-28px;top:-18px;"></div><div class="credit">„Frankenstein“ 1831 · Th. von Holst</div></div>
 <div id="s41-la" class="label box" style="left:760px;top:260px;font-size:60px;color:#1f1d1a;text-align:center;" data-rot="-4"><span class="wd">18</span> <span class="wd">Jahre</span> <span class="wd">alt</span></div>
     </div>
   </div>
@@ -88,12 +71,9 @@
       const clock = { t: 0 };
       tl.to(clock, { t: 7.89, duration: 7.89, ease: "none", onUpdate: () => turb.setAttribute("seed", String(1 + (Math.floor(clock.t * 12) % 6))) }, 0);
       tl.fromTo("#s41-cam", { scale: 1.0 }, { scale: 1.03, duration: 7.89, ease: "sine.inOut" }, 0);
-      D("#s41-ph", 0.9, 0.6);
-      W("#s41-lm", 1.52, 0.08);
-      D("#s41-quill", 1.95, 0.4);
+      P("#s41-ph", 0.9, -2);
       W("#s41-la", 0.52, 0.08);
-      D("#s41-fr", 5.02, 0.6);
-      W("#s41-lf", 6.23, 0.08);
+      P("#s41-fr", 5.12, 3);
       window.__timelines["s41"] = tl;
     })();
   </script>

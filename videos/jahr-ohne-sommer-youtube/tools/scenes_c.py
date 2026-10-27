@@ -208,7 +208,7 @@ def scenes():
         s.add(figure("ph", 450, 860, 1.6, hat="scarf"), '<g id="quill"><path d="M560,600 L660,420 Q690,470 580,610 Z" fill="#fff"/></g>')
         s.label("lm", "Mary Shelley", 300, 120, size=64, cls="box")
     if has_img("frankenstein.jpg"):
-        s.photo("fr", "assets/img/frankenstein.jpg", 1120, 100, 560, 720, "„Frankenstein“, Ausgabe 1831", rot=3, pos="50% 35%")
+        s.photo("fr", "assets/img/frankenstein.jpg", 1120, 100, 560, 720, "„Frankenstein“ 1831 · Th. von Holst", rot=3, pos="50% 35%")
     else:
         s.add('<g id="fr" transform="translate(1400,760) scale(2)"><rect x="-90" y="-250" width="180" height="210" rx="16" fill="#9fc48a"/><rect x="-96" y="-270" width="192" height="44" fill="#1f1d1a"/><line x1="-120" y1="-120" x2="-90" y2="-120" style="stroke-width:12"/><line x1="90" y1="-120" x2="120" y2="-120" style="stroke-width:12"/><circle cx="-38" cy="-160" r="10" fill="#1f1d1a" style="stroke:none"/><circle cx="38" cy="-160" r="10" fill="#1f1d1a" style="stroke:none"/><path d="M-50,-90 L50,-90" /></g>')
         s.label("lf", "Frankenstein (1818)", 1180, 120, size=64, color=RED)
@@ -238,7 +238,7 @@ def scenes():
     # 43 — Achtzehnhundertsiebzehn baut Karl Drais eine Laufmaschine. Zwei Räder, ein Lenker, kein Pferd. Der Urahn des Fahrrads.
     s = Scene("s43", cam=("none",))
     if has_img("drais.jpg"):
-        s.photo("ph", "assets/img/drais.jpg", 120, 90, 640, 480, "Drais-Laufmaschine 1817 · gemeinfrei", rot=-3)
+        s.photo("ph", "assets/img/drais.jpg", 120, 90, 640, 480, "Drais-Laufmaschine 1817 · Foto: Mattes", rot=-3)
     s.add(ground("gr", 900, "#c9b98f"),
           '<g id="rider">' + laufmaschine("lm", 0, 0, 1.0) + figure("dr", 0, -130, 0.95, hat="top") + "</g>",
           f'<g id="nohorse"><circle cx="1650" cy="230" r="90" fill="#fff"/><path d="M1590,250 L1700,250 L1700,210 L1640,210 L1610,180 Z" fill="#a8774f" style="stroke-width:4"/>'
@@ -271,7 +271,7 @@ def scenes():
     # 45 — Und in Württemberg gründet König Wilhelm der Erste eine Landwirtschaftsschule. Damit so ein Hunger nie wieder passiert.
     s = Scene("s45", cam=("push", 1.0, 1.03))
     if has_img("wilhelm.jpg"):
-        s.photo("ph", "assets/img/wilhelm.jpg", 160, 100, 500, 720, "König Wilhelm I. von Württemberg", rot=-2, pos="50% 18%")
+        s.photo("ph", "assets/img/wilhelm.jpg", 160, 100, 500, 720, "König Wilhelm I. · J. K. Stieler", rot=-2, pos="50% 18%")
     else:
         s.add(figure("ph", 420, 860, 1.7, hat="crown"))
         s.label("lk", "König Wilhelm I.", 200, 140, size=60, cls="box")

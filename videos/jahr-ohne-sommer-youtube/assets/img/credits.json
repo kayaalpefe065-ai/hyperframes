@@ -38,5 +38,45 @@
     "artist": "Thomas Phillips",
     "license": "Public domain",
     "date": "1813date QS:P571,+1813-00-00T00:00:00Z/9"
+  },
+  "shelley": {
+    "file": "shelley.jpg",
+    "title": "RothwellMaryShelley.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:RothwellMaryShelley.jpg",
+    "artist": "Richard Rothwell",
+    "license": "Public domain",
+    "date": "exhibited 1840"
+  },
+  "frankenstein": {
+    "file": "frankenstein.jpg",
+    "title": "Frontispiece to Frankenstein 1831.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Frontispiece_to_Frankenstein_1831.jpg",
+    "artist": "Theodor von Holst",
+    "license": "Public domain",
+    "date": "1831date QS:P571,+1831-00-00T00:00:00Z/9"
+  },
+  "drais": {
+    "file": "drais.jpg",
+    "title": "Laufmaschine des Karl Friedrich Drais 1817 (vorne rechts), gefertigt durch Johann Frey.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Laufmaschine_des_Karl_Friedrich_Drais_1817_(vorne_rechts),_gefertigt_durch_Johann_Frey.jpg",
+    "artist": "User:Mattes",
+    "license": "Public domain",
+    "date": "Taken on 25 October 2009"
+  },
+  "wilhelm": {
+    "file": "wilhelm.jpg",
+    "title": "König Wilhelm I Württ.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:K%C3%B6nig_Wilhelm_I_W%C3%BCrtt.jpg",
+    "artist": "Joseph Karl Stieler",
+    "license": "Public domain",
+    "date": "1827date QS:P571,+1827-00-00T00:00:00Z/9"
+  },
+  "pinatubo": {
+    "file": "pinatubo.jpg",
+    "title": "Eruption of Mount Pinatubo, June 15, 1991.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Eruption_of_Mount_Pinatubo,_June_15,_1991.jpg",
+    "artist": "NOAA/NGDC, R. Lapointe, U.S. Air Force.",
+    "license": "Public domain",
+    "date": "1991-06-15"
   }
 }

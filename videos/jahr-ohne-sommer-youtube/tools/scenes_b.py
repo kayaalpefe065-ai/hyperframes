@@ -164,7 +164,7 @@ def scenes():
     for k, m in enumerate(months):
         x, y = 1270 + (k % 4) * 150, 180 + (k // 4) * 170
         s.add(f'<g id="m{k}"><rect x="{x}" y="{y}" width="130" height="140" rx="14" fill="#fff"/></g>')
-        s.add(f'<g id="f{k}"><path d="M{x + 65},{y + 70} l0,50 M{x + 43},{y + 82} l44,26 M{x + 43},{y + 108} l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>')
+        s.add(f'<g id="sn{k}"><path d="M{x + 65},{y + 70} l0,50 M{x + 43},{y + 82} l44,26 M{x + 43},{y + 108} l44,-26" fill="none" style="stroke:#3a6fb0;stroke-width:6"/></g>')
         s.label(f"t{k}", m, x, y + 6, size=40, w=130)
     s.label("ls", "Schweiz", 700, 600, size=60)
     s.pop("#cal", s.w("Mai"), origin="50% 50%").draw("#frost", s.w("Frost"), 0.4)
@@ -174,7 +174,7 @@ def scenes():
         s.draw(f"#m{k}", t + k * 0.05, 0.3).write(f"#t{k}", t + k * 0.05 + 0.1)
     t = s.w("jedem", off=-0.1)
     for k in range(12):
-        s.draw(f"#f{k}", t + k * 0.09, 0.25)
+        s.draw(f"#sn{k}", t + k * 0.09, 0.25)
     s.save()
 
     # 24 — Dazu regnet es. Wochenlang. Flüsse und Seen treten über die Ufer.

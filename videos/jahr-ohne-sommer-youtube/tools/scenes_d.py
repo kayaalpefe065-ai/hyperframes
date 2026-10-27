@@ -39,7 +39,7 @@ def scenes():
     # 49 — Neunzehnhunderteinundneunzig zum Beispiel: Der Pinatubo auf den Philippinen. Danach war es weltweit messbar kühler.
     s = Scene("s49", cam=("push", 1.0, 1.03))
     if has_img("pinatubo.jpg"):
-        s.photo("ph", "assets/img/pinatubo.jpg", 180, 130, 960, 640, "Pinatubo, 15. Juni 1991 · Foto: USGS, gemeinfrei", rot=-2)
+        s.photo("ph", "assets/img/pinatubo.jpg", 180, 130, 960, 640, "Pinatubo, 15. Juni 1991 · Foto: U.S. Air Force", rot=-2)
     else:
         s.add(ground("gr", 880, "#9fb48a"), volcano("ph", 620, 890, s=0.8, crater=True),
               '<g id="plume">' + "".join(f'<circle cx="{620 + dx}" cy="{420 + dy}" r="{r}" fill="#9a958e"/>' for dx, dy, r in
