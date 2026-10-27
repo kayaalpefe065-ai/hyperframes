@@ -298,6 +298,203 @@ function shot(t0, t1, from, to, e = "inOut", opts = {}) {
 const B = T.marks;
 
 // ------------------------------------------------------------------ emoji faces for the animal avatars
+// detailed meme faces (rage wrinkles, tears, sunglasses...) drawn over the avatar's head colour
+function drawMeme(g, kind) {
+  const ink = "#1d1a26";
+  const line = (w, pts) => {
+    g.lineWidth = w;
+    g.beginPath();
+    g.moveTo(pts[0], pts[1]);
+    for (let i = 2; i < pts.length; i += 4)
+      g.quadraticCurveTo(pts[i], pts[i + 1], pts[i + 2], pts[i + 3]);
+    g.stroke();
+  };
+  const bigEye = (x, y, r, pupil, veins = false) => {
+    g.fillStyle = "#ffffff";
+    g.strokeStyle = ink;
+    g.lineWidth = 5;
+    g.beginPath();
+    g.ellipse(x, y, r, r * 0.85, 0, 0, Math.PI * 2);
+    g.fill();
+    g.stroke();
+    if (veins) {
+      g.strokeStyle = "#d6404a";
+      g.lineWidth = 2;
+      for (let k = 0; k < 5; k++) {
+        const a = k * 1.3 + 0.4;
+        g.beginPath();
+        g.moveTo(x + Math.cos(a) * r * 0.95, y + Math.sin(a) * r * 0.8);
+        g.lineTo(x + Math.cos(a + 0.2) * r * 0.5, y + Math.sin(a + 0.25) * r * 0.42);
+        g.stroke();
+      }
+    }
+    g.fillStyle = ink;
+    g.beginPath();
+    g.arc(x, y + 2, pupil, 0, Math.PI * 2);
+    g.fill();
+  };
+  g.strokeStyle = ink;
+  g.lineCap = "round";
+  g.lineJoin = "round";
+  if (kind === "rage") {
+    bigEye(86, 112, 26, 5, true);
+    bigEye(170, 112, 26, 5, true);
+    g.fillStyle = ink;
+    for (const s of [-1, 1]) {
+      g.beginPath();
+      g.moveTo(128 - s * 8, 92);
+      g.lineTo(128 - s * 92, 58);
+      g.lineTo(128 - s * 88, 74);
+      g.lineTo(128 - s * 10, 104);
+      g.closePath();
+      g.fill();
+    }
+    g.strokeStyle = ink;
+    for (let k = 0; k < 4; k++)
+      line(3, [92 + k * 4, 48 - k * 8, 128, 40 - k * 9, 164 - k * 4, 48 - k * 8]);
+    line(4, [120, 100, 128, 130, 122, 150]);
+    line(4, [136, 100, 128, 130, 134, 150]);
+    for (const s of [-1, 1]) {
+      line(4, [128 + s * 40, 150, 128 + s * 62, 176, 128 + s * 58, 206]);
+      line(3, [128 + s * 66, 136, 128 + s * 80, 150, 128 + s * 84, 168]);
+      line(3, [128 + s * 54, 86 + 40, 128 + s * 70, 128, 128 + s * 86, 126]);
+    }
+    g.fillStyle = "#ffffff";
+    g.strokeStyle = ink;
+    g.lineWidth = 5;
+    g.beginPath();
+    g.roundRect(76, 172, 104, 38, 10);
+    g.fill();
+    g.stroke();
+    g.lineWidth = 3;
+    g.beginPath();
+    g.moveTo(76, 191);
+    g.lineTo(180, 191);
+    for (let x = 89; x < 180; x += 13) {
+      g.moveTo(x, 172);
+      g.lineTo(x, 210);
+    }
+    g.stroke();
+    g.strokeStyle = "#d6404a";
+    g.lineWidth = 6;
+    for (const [dx, dy] of [
+      [0, -1],
+      [1, 0],
+      [0, 1],
+      [-1, 0],
+    ]) {
+      g.beginPath();
+      g.moveTo(206 + dx * 6, 40 + dy * 6);
+      g.quadraticCurveTo(
+        206 + dx * 14 + dy * 6,
+        40 + dy * 14 - dx * 6,
+        206 + dx * 20,
+        40 + dy * 20,
+      );
+      g.stroke();
+    }
+    return true;
+  }
+  if (kind === "shock") {
+    bigEye(84, 106, 32, 6);
+    bigEye(172, 106, 32, 6);
+    line(5, [56, 62, 84, 50, 110, 60]);
+    line(5, [146, 60, 172, 50, 200, 62]);
+    g.fillStyle = "#5a1f2b";
+    g.beginPath();
+    g.ellipse(128, 192, 30, 40, 0, 0, Math.PI * 2);
+    g.fill();
+    g.fillStyle = "#ffffff";
+    g.fillRect(108, 154, 40, 12);
+    g.fillStyle = "#f07c8f";
+    g.beginPath();
+    g.ellipse(128, 218, 18, 10, 0, 0, Math.PI * 2);
+    g.fill();
+    g.fillStyle = "#7cc8f0";
+    g.beginPath();
+    g.ellipse(212, 66, 10, 16, 0.3, 0, Math.PI * 2);
+    g.fill();
+    return true;
+  }
+  if (kind === "laughcry") {
+    for (const x of [84, 172]) line(11, [x - 26, 116, x, 82, x + 26, 116]);
+    g.fillStyle = "#5a1f2b";
+    g.beginPath();
+    g.moveTo(58, 146);
+    g.quadraticCurveTo(128, 260, 198, 146);
+    g.closePath();
+    g.fill();
+    g.fillStyle = "#ffffff";
+    g.fillRect(70, 146, 116, 16);
+    g.fillStyle = "#f07c8f";
+    g.beginPath();
+    g.ellipse(128, 200, 30, 14, 0, 0, Math.PI * 2);
+    g.fill();
+    g.fillStyle = "#7cc8f0";
+    for (const s of [-1, 1]) {
+      g.beginPath();
+      g.moveTo(128 + s * 66, 112);
+      g.quadraticCurveTo(128 + s * 112, 120, 128 + s * 122, 160);
+      g.quadraticCurveTo(128 + s * 100, 140, 128 + s * 70, 126);
+      g.fill();
+    }
+    return true;
+  }
+  if (kind === "cry") {
+    bigEye(86, 108, 26, 10);
+    bigEye(170, 108, 26, 10);
+    g.fillStyle = "#ffffff";
+    for (const x of [80, 164]) {
+      g.beginPath();
+      g.arc(x, 100, 5, 0, Math.PI * 2);
+      g.fill();
+    }
+    line(6, [58, 70, 84, 80, 108, 74]);
+    line(6, [148, 74, 172, 80, 198, 70]);
+    g.fillStyle = "rgba(124,200,240,0.9)";
+    for (const x of [74, 98, 158, 182]) g.fillRect(x - 7, 128, 14, 128);
+    g.lineWidth = 7;
+    g.strokeStyle = ink;
+    g.beginPath();
+    g.moveTo(90, 196);
+    for (let i = 0; i <= 6; i++) g.lineTo(90 + i * 13, 196 + (i % 2 ? -10 : 0));
+    g.stroke();
+    return true;
+  }
+  if (kind === "cool") {
+    g.fillStyle = ink;
+    g.beginPath();
+    g.roundRect(42, 86, 76, 44, 12);
+    g.roundRect(138, 86, 76, 44, 12);
+    g.fill();
+    g.fillRect(110, 94, 36, 10);
+    g.fillStyle = "rgba(255,255,255,0.75)";
+    g.fillRect(54, 94, 26, 6);
+    g.fillRect(150, 94, 26, 6);
+    line(10, [86, 180, 140, 196, 180, 160]);
+    return true;
+  }
+  if (kind === "dead") {
+    for (const x of [86, 170]) {
+      g.fillStyle = "#ffffff";
+      g.beginPath();
+      g.ellipse(x, 112, 24, 20, 0, 0, Math.PI * 2);
+      g.fill();
+      g.stroke();
+      g.fillStyle = ink;
+      g.beginPath();
+      g.arc(x, 120, 7, 0, Math.PI * 2);
+      g.fill();
+      g.fillStyle = "#c9a26b";
+      g.fillRect(x - 26, 88, 52, 18);
+      line(6, [x - 26, 106, x, 104, x + 26, 106]);
+      line(3, [x - 18, 140, x, 148, x + 18, 140]);
+    }
+    line(8, [96, 186, 128, 186, 160, 186]);
+    return true;
+  }
+  return false;
+}
 const EMO = {};
 function emoji(kind, glasses = false) {
   const key = kind + (glasses ? "-g" : "");
@@ -331,7 +528,9 @@ function emoji(kind, glasses = false) {
     };
     g.lineCap = "round";
     g.strokeStyle = ink;
-    if (kind === "laugh") {
+    if (drawMeme(g, kind)) {
+      // detailed meme face drawn above
+    } else if (kind === "laugh") {
       g.lineWidth = 10;
       for (const x of [86, 170]) {
         g.beginPath();
@@ -1346,12 +1545,12 @@ function renderAt(t) {
       if (t > B.poof + 0.5) cow.neck.rotation.x = -0.3;
       if (t >= B.b3) {
         for (const k of kids) {
-          setEmo(k, "laugh");
+          setEmo(k, "laughcry");
           k.body.rotation.z = Math.sin(t * 14 + k.root.position.x) * 0.08;
         }
       }
       if (t >= B.bruh) {
-        setEmo(kids[1], "stern");
+        setEmo(kids[1], "dead");
         kids[1].body.rotation.z = 0;
         kids[1].neck.rotation.y = 0.3;
       }
@@ -1361,7 +1560,7 @@ function renderAt(t) {
         cow.armR.rotation.set(-2.6, 0, 0.5);
         banana.visible = t < B.b5;
         holds.push([banana, cow, 1, 0, 0.12, 0]);
-        cow.face.material.map = emoji("stern", true);
+        cow.face.material.map = emoji("rage", true);
         for (const k of kids) setEmo(k, "shock");
       }
       if (t >= B.b5) {
@@ -1380,7 +1579,7 @@ function renderAt(t) {
         cop.legL.rotation.set(0, 0, 0.9);
         cop.legR.rotation.set(0, 0, -0.9);
         cop.armR.rotation.set(-2.4, 0, 0);
-        cop.face.material.map = faceTex("angry");
+        cop.face.material.map = emoji("rage");
         if (t >= B.crash)
           bricks.forEach((b) => {
             const dt = Math.min(t - B.crash, 1.2);
@@ -1403,7 +1602,7 @@ function renderAt(t) {
       cop.root.rotation.y = -Math.PI / 2;
       cop.legL.rotation.set(0, 0, 0.9);
       cop.legR.rotation.set(0, 0, -0.9);
-      cop.face.material.map = faceTex("angry");
+      cop.face.material.map = emoji("rage");
       cat.root.position.set(0.8, 0, 3.6);
       cat.root.rotation.y = 0.5;
       setEmo(cat, "neutral");
@@ -1421,9 +1620,9 @@ function renderAt(t) {
     cuffs.position.set(CX - 2.3, 0.62, -0.85);
     cop.root.position.set(CX - 3.3, 0, -0.4);
     cop.root.rotation.y = Math.PI / 2;
-    cop.face.material.map = faceTex("flat");
+    cop.face.material.map = emoji("dead");
     judge.root.position.set(CX, 0.75, -3.75);
-    judge.face.material.map = faceTex("angry");
+    judge.face.material.map = emoji("rage");
     gavel.visible = true;
     const g1 = Math.sin(Math.PI * seg(t, B.gavel1 - 0.3, B.gavel1 + 0.05));
     judge.armR.rotation.x = -1.1 - 1.2 * g1;
@@ -1465,7 +1664,7 @@ function renderAt(t) {
       }
       cow.root.position.set(MX + 1.3, 0, -0.4);
       cow.root.rotation.y = -0.8;
-      cow.face.material.map = emoji("laugh", true);
+      cow.face.material.map = emoji("laughcry", true);
       cow.armL.rotation.set(0, 0, 2.5 + Math.sin(t * 10) * 0.3);
       cow.armR.rotation.x = -1.3;
       cake.visible = true;
@@ -1474,7 +1673,7 @@ function renderAt(t) {
       cop.root.position.y = -60;
       for (const k of kids) k.root.position.y = -60;
       if (t >= B.b11) {
-        setEmo(cat, "smirk");
+        setEmo(cat, "cool");
         cat.root.rotation.y = 0;
       }
     }

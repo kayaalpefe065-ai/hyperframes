@@ -1,4 +1,4 @@
-"""Builds "POV: when you prank your teacher" v2 (blocky 3D, absurd, meme sound effects, no narration).
+"""Builds "POV: when you prank your teacher" v2 (blocky 3D, absurd, silent: add a trending sound in TikTok).
 
 Outputs: assets/timing.js, compositions/overlay.html, index.html
 Run: python3 build.py
@@ -218,32 +218,8 @@ def overlay():
 """
 
 
-SFX = [
-    ("sfx-sneak", "assets/pop.mp3", 1.2, 0.35),
-    ("sfx-splash", "assets/impact-bass-1.mp3", B["splash1"], 0.55),
-    ("sfx-noo", "assets/say-X2.wav", B["splash1"] + 0.15, 0.9),
-    ("sfx-boom1", "assets/vine-boom.mp3", B["boom1"], 0.8),
-    ("sfx-poof", "assets/explos.wav", B["poof"] - 0.1, 0.5),
-    ("sfx-moo1", "assets/cow.wav", B["poof"] + 0.4, 0.8),
-    ("sfx-laugh", "assets/applause.wav", B["b3"] + 0.1, 0.3),
-    ("sfx-bruh", "assets/say-X1.wav", B["bruh"] + 0.05, 1.0),
-    ("sfx-boom2", "assets/vine-boom.mp3", B["bruh"] + 0.55, 0.8),
-    ("sfx-ring1", "assets/ping.mp3", B["b4"] + 0.1, 0.45),
-    ("sfx-ring2", "assets/ping.mp3", B["b4"] + 0.9, 0.45),
-    ("sfx-horse", "assets/horse.wav", B["b5"] + 0.1, 0.8),
-    ("sfx-crash", "assets/explos.wav", B["crash"], 0.6),
-    ("sfx-drama", "assets/drama.wav", B["b7"] + 0.1, 0.45),
-    ("sfx-gavel", "assets/gong.wav", B["gavel1"], 0.45),
-    ("sfx-launch1", "assets/laser.wav", B["launch"], 0.6),
-    ("sfx-launch2", "assets/explos.wav", B["launch"] + 0.05, 0.5),
-    ("sfx-fall", "assets/falling.wav", B["b10"] - 0.3, 0.45),
-    ("sfx-space", "assets/space.wav", B["b10"], 0.35),
-    ("sfx-land", "assets/impact-bass-2.mp3", B["land"], 0.5),
-    ("sfx-what", "assets/say-X3.wav", B["land"] + 0.7, 1.0),
-    ("sfx-moo2", "assets/cow.wav", B["land"] + 1.4, 0.8),
-    ("sfx-boom3", "assets/vine-boom.mp3", B["b11"], 0.85),
-    ("sfx-end", "assets/whoosh-short.mp3", B["end"] - 0.05, 0.4),
-]
+# silent on purpose: the sound gets added in TikTok (a trending sound)
+SFX = []
 
 
 def index():
