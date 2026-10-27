@@ -14,5 +14,29 @@
     "artist": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans",
     "license": "Public domain",
     "date": "7 December 1972date QS:P571,+1972-12-07T00:00:00Z/11"
+  },
+  "hunger1817": {
+    "file": "hunger1817.jpg",
+    "title": "Giezendanner Hunger 1817.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Giezendanner_Hunger_1817.jpg",
+    "artist": "Babeli Giezendanner",
+    "license": "Public domain",
+    "date": "19th centurydate QS:P571,+1850-00-00T00:00:00Z/7"
+  },
+  "diodati": {
+    "file": "diodati.jpg",
+    "title": "Gezicht op villa Diodati, aan het Geneva meer in Zwitserland, RP-P-2018-3585.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Gezicht_op_villa_Diodati,_aan_het_Geneva_meer_in_Zwitserland,_RP-P-2018-3585.jpg",
+    "artist": "Rijksmuseum",
+    "license": "CC0",
+    "date": "ca. 1835 - ca. 1863"
+  },
+  "byron": {
+    "file": "byron.jpg",
+    "title": "Byron 1813 by Phillips.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Byron_1813_by_Phillips.jpg",
+    "artist": "Thomas Phillips",
+    "license": "Public domain",
+    "date": "1813date QS:P571,+1813-00-00T00:00:00Z/9"
   }
 }

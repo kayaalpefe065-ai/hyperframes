@@ -106,7 +106,7 @@ def scenes():
     s = Scene("s34", cam=("push", 1.0, 1.03))
     s.add(ground("gr", 880, "#c9b98f"), house("h1", 200, 880, 0.6), house("h2", 900, 880, 0.6),
           '<g id="beg">' + figure("b1", 360, 900, 0.7, mood="sad", bundle=True) + figure("b2", 480, 900, 0.6, mood="sad") + "</g>")
-    s.photo("ph", "assets/img/hunger1817.jpg", 1060, 140, 760, 470, "Hungersnot 1817 im Toggenburg · zeitgenössisch", rot=2, pos="50% 40%")
+    s.photo("ph", "assets/img/hunger1817.jpg", 1060, 140, 760, 470, "Babeli Giezendanner: Hungersnot 1817", rot=2, pos="50% 40%")
     s.label("lt", "Tausende Hungertote", 1100, 700, size=60, cls="box", color=RED)
     t = s.w("ziehen", off=-0.2)
     s.to("#beg", t, 2.2, ease="power1.inOut", x=460).walk("b1", t, 2.2).walk("b2", t, 2.2)
@@ -176,7 +176,7 @@ def scenes():
 
     # 39 — Juni achtzehnhundertsechzehn, eine Villa am Genfer See. Wegen des Dauerregens sitzen ein paar junge Engländer drinnen fest.
     s = Scene("s39", cam=("push", 1.0, 1.04))
-    s.photo("ph", "assets/img/diodati.jpg", 220, 120, 940, 640, "Villa Diodati (Stich) · Rijksmuseum, CC0", rot=-2)
+    s.photo("ph", "assets/img/diodati.jpg", 200, 130, 960, 620, "Villa Diodati (Stich) · Rijksmuseum, CC0", rot=-2)
     s.add(rain("rn", 80, 39, 0, 1920, -300, 900, color="#4f7fb0"),
           house("h", 1520, 880, 0.9), figure("f1", 1450, 840, 0.45, mood="sad"), figure("f2", 1530, 840, 0.45, mood="sad"), figure("f3", 1610, 840, 0.45, mood="sad"))
     s.raw_html(calendar("cal", "1816", "Juni", 1300, 120, w=230))

@@ -21,7 +21,7 @@ ORDER = _s(1, 5) + ["c1"] + _s(5, 14) + ["c2"] + _s(14, 22) + ["c3"] + _s(22, 29
 CHAPTERS = {"s01": "Einstieg", "c1": "Teil 1 – Der Knall", "c2": "Teil 2 – Der Schleier", "c3": "Teil 3 – Der Sommer, der nicht kam",
             "c4": "Teil 4 – Hunger", "c5": "Teil 5 – Was blieb", "c6": "Teil 6 – Heute"}
 MUSIC = [("a", "s01", "c3"), ("b", "c3", "c5"), ("c", "c5", None)]  # cue, from scene, until scene (crossfade there)
-MUSIC_VOL = 0.13
+MUSIC_VOL = 0.22  # music ~-30 LUFS under a -17 LUFS voice
 
 # Sound effects: (scene, word prefix or seconds, nth, file, volume)
 SFX = [
